@@ -1,0 +1,74 @@
+<div ng-include="'layout/header.view.html'"></div>
+<div class="clr">&nbsp;</div>
+<div class="contact-mn">
+  <div class="container">
+    <div class="row"> </div>
+  </div>
+</div>
+<div class="contact-cont mt10">
+  <div class="container">
+    <div class="col-md-6 cont-sctn1">
+      <h3>Contact Information:</h3>
+      <p><b>CALL:</b> &nbsp;(424) 270 0714</p>
+      <p><b>Email:</b> &nbsp;help@healora.com</p>
+      <p><b>Address:</b> &nbsp;USA, California</p>
+    </div>
+    <div class="col-md-6 cont-sctn2">
+      <h3 class="pl15">Send Us Message</h3>
+      <p  class="pl15">Please don’t hesitate to chat with me just drop a line.</p>
+      <form>
+        <div class="form-group">
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" />
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="name" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12 mt10">
+            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="message" required></textarea>
+          </div>
+          <a href="" class="border-btn ml20">Submit</a> </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+<div id="map" class="maps"> </div>
+<script type="text/javascript">
+ var locations = [
+      ['Doctor Insta – Headquarters',28.414, 77.0412, 1]
+        
+    ];
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 14,
+      center: new google.maps.LatLng(28.414, 77.0412),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+  var currCenter = map.getCenter();
+    var marker, i;
+
+  var image = 'images/map_marker.png';
+  for (i = 0; i < locations.length; i++) {  
+  var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+      map: map,
+      icon: image
+    });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }  </script> 
+<!--Map ends-->
+
+</div>
+</div>
+</div>
+<div ng-include="'layout/footer.view.html'"></div>

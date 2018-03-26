@@ -1,0 +1,40 @@
+<title>Login | Doctor Insta</title>
+<div class="header">
+    <div class="container">
+        <div class="logo"><a href="#"><img src="images/logo.png" alt="Doctor Insta"></a></div>
+    </div>
+</div>
+<!--<a href="http://www.microsoft.com" target="_blank" onclick="window.open('http://www.google.com'); window.open('http://www.yahoo.com');">Click Here</a>-->
+<div class="login-cont">
+  <p>Sign in to your account now</p>
+ 
+<form name="form" ng-submit="vm.login()" role="form">
+    <input class="lgn-inpt" ng-model="vm.username" name="username" type="text" placeholder="Email ID / Phone">
+    <input class="lgn-inpt" name="password" ng-model="vm.password" type="password" placeholder="Password">
+  
+  <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+  <a href="#forgot"><div class="forgt-pwd lft">Forgot Password ?</div></a>
+  <!-- <button class="sign-in rgt mR40" type="submit">Sign in</button> -->
+  <button type="submit" ng-disabled="form.$invalid" class="btn sign-in mR40 rgt">Login</button>
+</form>
+
+  <div class="clr"></div>
+  
+ 
+ </div>
+<div class="rgtr-hr">
+  <p>Don't have an account yet? <a href="#home">Home Here</a></p>
+</div>
+ <div id="status">
+  
+   <input type="hidden" id="fbname" name="fbname" value="">
+   <input type="hidden" id="fbemail" name="fbemail" value="">
+   <input type="hidden" id="fbgender" name="fbgender" value="">
+
+    <input type="hidden" id="gplusname" name="gplusname" value="">
+   <input type="hidden" id="gplusemail" name="gplusemail" value="">
+   <input type="hidden" id="gplusgender" name="gplusgender" value="">
+
+ </div>
+
+

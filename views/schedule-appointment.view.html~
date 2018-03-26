@@ -1,0 +1,20 @@
+<div ng-include="'layout/header.view.html'"></div>
+
+<div class="contnt-mn">
+  <div class="container">
+    <div class="pg-hd">{{docName}}</div>
+    <div class="schdl-cont">
+      <div class="schdl-lft"><img src="images/{{image}}.png" alt="Doctor-Image"></div>
+      
+      <div class="schdl-rgt">
+        
+        <a ng-click="instant()" ng-if="vm.doctorType == '1' || vm.doctorType == '2'"><button class="them-btn"><img src="images/camera.png" alt="Video Call"> See a Medical Doctor Now</button></a>
+        <a href="#/who-is-patient"><button class="them-btn btn-red"><img src="images/camera.png" alt="Video Call"> Schedule an appointment</button></a>
+        <a href="#/search-doctor"><button class="them-btn"><img src="images/search-icon.png" alt="Video Call"> Search by Doctor</button></a>
+      </div>
+    </div>
+    <div id="instant_error" class="lgn-inpt alert-danger w65 mrgn-auto" style="color: red; margin-top: 15px; display: none;">No slot available. Please schedue your appointment.</div>
+  </div>
+</div>
+
+<div ng-include="'layout/footer.view.html'"></div>
