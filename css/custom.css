@@ -360,9 +360,9 @@ span.navbar-toggler-icon i.fa {
 .product-mn{position:relative;}
 .pw-circle{position: absolute;cursor: pointer;opacity: 0.4;width: 26px;height: 26px;border:2px solid #FFF;border-radius: 50%;background-color:#00b2e2;
     z-index: 1000;}
-.modal-content{width:60% !important;}
+/*.modal-content{width:60% !important;}
 .modal-header{border-top:4px solid #00b2e2;}
-.btn-modal{margin-top:30px;padding-bottom:30px;}
+.btn-modal{margin-top:30px;padding-bottom:30px;}*/
 .close{font-size:28px;}
 
 /*Register*/

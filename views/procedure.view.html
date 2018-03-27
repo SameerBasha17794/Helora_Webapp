@@ -1,94 +1,42 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
-<div class="modal fade col-md-offset-2" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Fill the Details</h4>
-        </div>
-        <div class="modal-body">
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Fill the Details</h4>
+      </div>
+      <div class="modal-body">
         <div class="form-group">
-             <label for="sel1">Choose Your Body Part or Category:</label>
-                  <select class="form-control" id="sel1" style="width:100%;">
-                    <option>Ankle</option>
-                    <option>Breast</option>
-                    <option>Ears</option>
-                    <option>Elbow</option>
-                    <option>Eye</option>
-                  </select>
-        
+          <label for="sel1">Choose Your Body Part or Category:</label>
+          <select class="form-control" id="sel1" style="width:100%;">
+            <option>Ankle</option>
+            <option>Breast</option>
+            <option>Ears</option>
+            <option>Elbow</option>
+            <option>Eye</option>
+          </select>
         </div>
-        
-         <div class="form-group">
-             <label for="sel1">Choose Your Procedure:</label>
-                  <select class="form-control" id="sel1" style="width:100%;">
-                    <option>Achilles Repair</option>
-                    <option>Neuroma Excision</option>
-                    <option>Achilles Repair</option>
-                    <option>Achilles Repair</option>
-                  </select>
-        
+        <div class="form-group">
+          <label for="sel1">Choose Your Procedure:</label>
+          <select class="form-control" id="sel1" style="width:100%;">
+            <option>Achilles Repair</option>
+            <option>Neuroma Excision</option>
+            <option>Achilles Repair</option>
+            <option>Achilles Repair</option>
+          </select>
         </div>
-        
         <div class="form-group btn-modal">
+          <br>
           <a href="#" class="button select-btn mt10">Check your procedure</a>
         </div>
-        
-        
-        </div>
-       
       </div>
-      
-    </div>
-  </div>
-
-
-
-
-
-<div class="hd-procedure1 text-center">
-  <div class="container">
-  
-  <div class="row">
-  
-     <div class="col-md-offset-2  col-md-8 text-center">  <h1>Save up to 70% on Healthcare Procedures</h1>
-            <h3>Select your dot to start</h3>
-        </div>
-  </div>
-  
-    <div class="row">
-        <div class="col-md-offset-3 col-md-6 text-center">
-              
-           <div class="product-mn">
-            
-              <img src="images/body.png" />
-              <div class="pw-circle" style="left:85px;top:12px;" data-toggle="modal" data-target="#myModal"></div>
-              <div class="pw-circle" style="left:120px;top:50px;"></div>
-              <div class="pw-circle" style="left:70px;top:80px;"></div>
-              <div class="pw-circle" style="left:90px;top:105px;"></div>
-              <div class="pw-circle" style="left:90px;top:138px;"></div>
-              <div class="pw-circle" style="left:100px;top:165px;"></div>
-              <div class="pw-circle" style="left:110px;top:220px;"></div>
-              <div class="pw-circle" style="left:70px;top:275px;"></div>
-              <div class="pw-circle" style="left:108px;top:285px;"></div>
-              <div class="pw-circle" style="left:245px;top:30px;"></div>
-              <div class="pw-circle" style="left:245px;top:80px;"></div>
-              <div class="pw-circle" style="left:200px;top:100px;"></div>
-              <div class="pw-circle" style="left:220px;top:150px;"></div>
-              <div class="pw-circle" style="left:305px;top:150px;"></div>
-              <div class="pw-circle" style="left:400px;top:150px;"></div>
-              <div class="pw-circle" style="left:350px;top:100px;"></div>
-              <div class="pw-circle" style="left:420px;top:75px;"></div>
-              <div class="pw-circle" style="left:380px;top:65px;"></div>
-              <div class="pw-circle" style="left:380px;top:255px;"></div>
-              <div class="pw-circle" style="left:380px;top:285px;"></div>
-              <div class="pw-circle" style="left:430px;top:255px;"></div>
-              <div class="pw-circle" style="left:460px;top:255px;"></div>
-              <div class="pw-circle" style="left:460px;top:285px;"></div>
-            </div>
-        </div> 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
     </div>
   </div>
 </div>
@@ -96,25 +44,71 @@
 
 
 
+<div class="hd-procedure1 text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2  col-md-8 text-center">
+        <h1>Save up to 70% on Healthcare Procedures</h1>
+
+        <h3>Select your dot to start</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 text-center">
+        <div class="product-mn">
+          <img src="images/body.png" />
+          <div class="pw-circle" style="left:85px;top:12px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:120px;top:50px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:70px;top:80px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:90px;top:105px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:90px;top:138px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:100px;top:165px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:110px;top:220px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:70px;top:275px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:108px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:245px;top:30px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:245px;top:80px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:200px;top:100px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:220px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:305px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:400px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:350px;top:100px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:420px;top:75px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:380px;top:65px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:380px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:380px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:430px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:460px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
+          <div class="pw-circle" style="left:460px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <div id="services" class="container-fluid text-center">
   <div class="container">
-    <h3 class="thm-hd">Services
+    <h3 class="thm-hd">
+      Services
       <div class="divider"></div>
     </h3>
     <br>
-    <div class="row"> <br>
+    <div class="row">
+      <br>
       <div class="row slideanim slide">
-        <div class="col-sm-4"> <span><img src="images/dermat-icn.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/dermat-icn.png" width="50"></span>
           <h5>DERMATOLOGY</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/general-surgery.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/general-surgery.png" width="50"></span>
           <h5>GENERAL SURGERY</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/opthamology.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/opthamology.png" width="50"></span>
           <h5>OPTHALMOLOGY</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
@@ -122,15 +116,18 @@
       <br>
       <br>
       <div class="row slideanim slide">
-        <div class="col-sm-4"> <span><img src="images/plastic-surgery.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/plastic-surgery.png" width="50"></span>
           <h5>PLASTIC SURGERY</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/ent.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/ent.png" width="50"></span>
           <h5>ENT</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/neurology.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/neurology.png" width="50"></span>
           <h5 style="color:#303030;">NEUROLOGY</h5>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
@@ -138,15 +135,18 @@
       <br>
       <br>
       <div class="row slideanim slide">
-        <div class="col-sm-4"> <span><img src="images/opthamology.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/opthamology.png" width="50"></span>
           <h4>ORTHOPEDICS</h4>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/opthamology.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/opthamology.png" width="50"></span>
           <h4>PODIATRY</h4>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
-        <div class="col-sm-4"> <span><img src="images/opthamology.png" width="50"></span>
+        <div class="col-sm-4">
+          <span><img src="images/opthamology.png" width="50"></span>
           <h4 style="color:#303030;">UROLOGY</h4>
           <p>Lorem ipsum dolor sit amet..</p>
         </div>
@@ -155,4 +155,45 @@
   </div>
 </div>
 <div class="clr">&nbsp;</div>
+
+
+<!-- 
+
+<script>
+  $('document').ready(function(){
+  
+  var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+  
+  
+  // $(document).on("click", "a[data-modal-id]", function () {
+  
+  $('a[data-modal-id]').click(function(){
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });
+  
+  
+    
+  $(".js-modal-close, .modal-overlay, .js-modal-close1").click(function() {
+    $(".modal-box, .modal-overlay").fadeOut(500, function() {
+          $(".modal-overlay").remove();
+  });
+  
+  });
+  
+  $(window).resize(function() {
+    $(".modal-box").css({
+        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
+        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+    });
+  });
+  
+  $(window).resize();
+  
+  });
+</script> -->
+
+
 <div ng-include="'layout/footer.view.html'"></div>
