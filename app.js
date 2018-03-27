@@ -45,6 +45,12 @@
                 controllerAs: 'vm',
                 title: 'Search'
             })
+            .when('/myspeciality', {
+                controller: 'SpecialityController',
+                templateUrl: 'views/speciality.view.html',
+                controllerAs: 'vm',
+                title: 'Speciality'
+            })
             .when('/register', {
                 controller: 'RegisterController',
                 templateUrl: 'views/register.view.html',
