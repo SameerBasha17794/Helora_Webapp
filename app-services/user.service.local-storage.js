@@ -22,8 +22,15 @@
         
         service.setSpeciality = setSpeciality;
         service.getSpeciality = getSpeciality;
-        
-
+        service.setProcedureId = setProcedureId;
+        service.getProcedureId = getProcedureId;
+        service.setDotClicked = setDotClicked;
+        service.getDotClicked = getDotClicked;
+        service.setBodyParts = setBodyParts;
+        service.getBodyParts = getBodyParts;
+        service.setCategoryList = setCategoryList;
+        service.getCategoryList = getCategoryList;
+         
         return service;
 
 
@@ -124,6 +131,49 @@
                 localStorage.specialityName = JSON.stringify("");
             }
             return JSON.parse(localStorage.specialityName);
+        }
+
+        function setProcedureId(procedureId) {
+            localStorage.procedureId = JSON.stringify(procedureId);
+        }
+        
+        function getProcedureId(){
+            if(!localStorage.procedureId){
+                localStorage.procedureId = JSON.stringify("");
+            }
+            return JSON.parse(localStorage.procedureId);
+        }
+
+        function setDotClicked(dotClicked) {
+            localStorage.dotClicked = JSON.stringify(dotClicked);
+        }
+        
+        function getDotClicked(){
+            if(!localStorage.dotClicked){
+                localStorage.dotClicked = JSON.stringify("");
+            }
+            return JSON.parse(localStorage.dotClicked);
+        }
+
+        function setBodyParts(bodyParts) {
+            localStorage.bodyParts = JSON.stringify(bodyParts);
+        }
+        
+        function getBodyParts(){
+            if(!localStorage.bodyParts){
+                localStorage.bodyParts = JSON.stringify("");
+            }
+            return JSON.parse(localStorage.bodyParts);
+        }
+        function setCategoryList(categoryList) {
+            localStorage.categoryList = JSON.stringify(categoryList);
+        }
+        
+        function getCategoryList(){
+            if(!localStorage.categoryList){
+                localStorage.categoryList = JSON.stringify("");
+            }
+            return JSON.parse(localStorage.categoryList);
         }
        
     }

@@ -4,71 +4,20 @@
 <div class="select-doctor">
   <div class="container">
     <div class="row">
-      <h2 class="thm-hd">OBGYN Pick your procedure
+      <h2 class="thm-hd">Testing
         <div class="divider"></div>
       </h2>
       <br />
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Laparoscopy, Abdomen, Peritoneum,
-</h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
+      <div ng-repeat="data in displayProcedure">
+          <div class="col-md-12 pb20 select-doctor-inner select-doctor">
+           
+            <div class="col-md-10"><h3 class="mt0">{{data.name}}</h3></div>
+            
+            <div class="col-md-2 mt5 text-right"> <a ng-click="showProcedure(data.id)" class="button select-btn">Select</a> </div>
+          </div>
+          <div class="clr">&nbsp;</div><br>
       </div>
       
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Dilation and Curettage (DandC) Hysteroscopy</h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Vaginal Wall Repair Anterior</h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Vaginal Wall Repair Posterior </h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Endometrial Ablation </h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Endometrial Ablation </h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor ">
-       
-        <div class="col-md-10"><h3 class="mt0">Laparoscopic Endometriosis Resection
- </h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      
-      
-      <div class="col-md-12 pb20 select-doctor-inner select-doctor">
-       
-        <div class="col-md-10"><h3 class="mt0">Laparoscopy, Abdomen, Peritoneum, and Omentum, Diagnostic
- </h3></div>
-        
-        <div class="col-md-2 mt5 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
     </div>
   </div>
 </div>

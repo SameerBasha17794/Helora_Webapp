@@ -6,7 +6,8 @@ be available for all the controllers
 
 //Variables
 
-var domain = "http://api.healora.com";
+// var domain = "http://api.healora.com";
+var domain = "http://127.0.0.1:5000";
 var domainurl = "http://localhost/webapp_angular/";
 var purposePageCookieName = 'dr_insta_purpose_page_cookies';
 
@@ -25,15 +26,8 @@ var SOMETHING_WENT_WRONG = "Oops! Something went wrong";
 var CHILD_UPDATED = "Child updated successfully";
 //URLs
 var getListing = domain +"/product/getListing/";
+var getProcedure = domain +"/product/getProcedure/";
+var test = domain +"/product/test/";
+var getAverage = domain +"/product/getAverageQuote/";
 
 
-//set amount for payworld
-var basePrice=100;
-var taxPrice=15;
-var totalPrice=115;
-
-
-//set amount for payworld
-var basePriceaisect=100;
-var taxPriceaisect=15;
-var totalPriceaisect=115;

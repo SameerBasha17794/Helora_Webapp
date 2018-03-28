@@ -12,7 +12,7 @@
         function initController() {
             // loadCurrentUser();
             
-            $location.path('/');
+            // $location.path('/');
         }
 
         function loadCurrentUser() {

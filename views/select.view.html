@@ -4,13 +4,14 @@
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
-          <div class="col-md-6"><b class="hd-select">Achilles Repair</b></div>
-          <div class="col-md-6 text-right"><b>CPT:</b>27650 &nbsp;<b>SKU:</b>OR28</div>
+          <div class="col-md-6"><b class="hd-select">{{catName}}</b></div>
+          <div class="col-md-6 text-right"><b>CPT:</b>{{cpt}} &nbsp;<b>SKU:</b>{{sku}}</div>
         </div>
-        <p class="p15">Achilles Rendon Repair surgery is a type of surgery to fix a damage achilles rendon.</p>
-        <p class="p15 amt-sctn text-right"> <span class="pb5 mt10"><b>Avg Insurance:</b> $10,618.44</span><br />
-          <span class="pb5 mt10"><b>Avg Insurance: </b>$10,618.44</span><br />
-          <span class="pb5 mt10"><b>Avg Insurance: </b> $10,618.44</span> </p>
+        <p class="p15">{{desc}}</p>
+        <p class="p15 amt-sctn text-right"> <span class="pb5 mt10"><b>Avg Healora Price:</b> ${{averagePrice}}</span><br />
+          <span class="pb5 mt10"><b>Avg Insaurance Price: </b>${{insaurancePrice}}</span><br />
+          <span class="pb5 mt10"><b>Saving: </b>${{saving}}</span><br />
+          
       </div>
     </div>
   </div>
@@ -22,38 +23,20 @@
         <div class="divider"></div>
       </h2>
       <br />
+      <div ng-repeat="getDoc in doctorList">
       <div class="col-md-12 pb20 select-doctor">
         <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
         <div class="col-md-6">
-          <h3 class="mt0">Dr. Michael Linden</h3>
-          <h4>Throat Specialist</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum</p>
-          <span><b>Degree:</b> MBBS, MBD</span><br />
+          <h3 class="mt0">{{getDoc.doctor_name}}</h3>
+          <h4>{{getDoc.doctor_speciality}}</h4>
+          <span><b>Degree:</b>{{getDoc.degree_title}}/span><br />
           <span><b>Experience:</b> 11yrs</span> </div>
         <div class="col-md-4 mt65 text-right"> <a href="#" class="button select-btn">Select</a> </div>
       </div>
-      <div class="col-md-12 pb20 select-doctor">
-        <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
-        <div class="col-md-6">
-          <h3 class="mt0">Dr. Michael Linden</h3>
-          <h4>Throat Specialist</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s.</p>
-          <span><b>Degree:</b> MBBS, MBD</span><br />
-          <span><b>Experience:</b> 11yrs</span> </div>
-        <div class="col-md-4 mt65 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
-      <div class="col-md-12 pb20 select-doctor">
-        <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
-        <div class="col-md-6">
-          <h3 class="mt0">Dr. Michael Linden</h3>
-          <h4>Throat Specialist</h4>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s.</p>
-          <span><b>Degree:</b> MBBS, MBD</span><br />
-          <span><b>Experience:</b> 11yrs</span> </div>
-        <div class="col-md-4 mt65 text-right"> <a href="#" class="button select-btn">Select</a> </div>
-      </div>
+     </div>
+
+
+
     </div>
   </div>
 </div>

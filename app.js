@@ -39,11 +39,11 @@
                 controllerAs: 'vm',
                 title: 'Contact'
             })
-            .when('/search', {
-                controller: 'SearchController',
-                templateUrl: 'views/search.view.html',
+            .when('/select', {
+                controller: 'SelectController',
+                templateUrl: 'views/select.view.html',
                 controllerAs: 'vm',
-                title: 'Search'
+                title: 'select'
             })
             .when('/myspeciality', {
                 controller: 'SpecialityController',
