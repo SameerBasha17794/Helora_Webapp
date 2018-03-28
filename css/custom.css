@@ -67,7 +67,7 @@ body{font-family: 'ralewayregular';}
 
 /*Index Page*/
 .repair-header{padding:5px 0;}
-.thm-hd{text-align:left;}
+.thm-hd{text-align:left;width:100%;}
 .how-mn{background:url(../images/abt-bg.png);background-size:cover;overflow:hidden;}
 .clr{clear:both;margin:10px 0 !important;}
 .divider{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-top:15px;}
@@ -386,6 +386,10 @@ label{display: inline-block;margin: 0 0 -1px;padding: 15px 25px;font-weight: 600
 .register-mn p{font-size:24px;margin-bottom:20px;}
 .sign-in-btn{width:100%;background:#00b2e2;padding:15px;border:0;color:#fff;font-size:20px;}
 p.alrdy-act{font-size:14px !important;}
+
+
+.logomn{padding:10px;}
+
 
 
 
