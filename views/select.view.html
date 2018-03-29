@@ -1,7 +1,7 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="section-detail">
   <div class="container">
-    <div class="row">
+    <div ng-hide="username.length != 0" class="row">
       <div class="col-md-2 col-md-offset-10">
         <div class="btn-home" data-toggle="modal" data-target="#myModal">Register</div>
       </div>
@@ -20,7 +20,7 @@
     </div>
   </div>
 </div>
-<div class="select-doctor">
+<div ng-hide="username.length == 0" class="select-doctor">
   <div class="container">
     <div class="row">
       <h2 class="thm-hd">

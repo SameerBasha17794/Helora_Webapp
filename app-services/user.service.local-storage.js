@@ -19,6 +19,10 @@
         
 //        service.getWalletBalance = getWalletBalance;
 //        service.setWalletBalance = setWalletBalance;
+
+
+        service.SetUserName = SetUserName;
+        service.GetUserName = GetUserName;
         
         service.setSpeciality = setSpeciality;
         service.getSpeciality = getSpeciality;
@@ -121,6 +125,18 @@
         // private functions Ends
 
         // Our Functions
+
+
+        function SetUserName(username) {
+            localStorage.username = JSON.stringify(username);
+        }
+        
+        function GetUserName(){
+            if(!localStorage.username){
+                localStorage.username = JSON.stringify("");
+            }
+            return JSON.parse(localStorage.username);
+        }
 
        function setSpeciality(specialityName) {
             localStorage.specialityName = JSON.stringify(specialityName);
