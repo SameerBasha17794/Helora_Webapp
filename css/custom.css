@@ -392,6 +392,23 @@ p.alrdy-act{font-size:14px !important;}
 
 
 
+/*Reserve price*/
+span.speciality-active{color:#00b2e2;font-size:18px;font-weight:bold;}
+.fn-rp{font-size:22px;font-weight:600;margin-top:40px;margin-left:0;padding:0;}
+.rp-btn a{padding:20px;border-radius:30px;background:#00b2e2;color:#FFF;}
+.rp-btn{margin-top:60px;}
+
+
+.popup-lft ul li{list-style-type:none;border-bottom:1px solid #dfdfdf;padding:10px 0;color:#666666;}
+.popup-lft ul li div{display:inline-block;padding-right:10px;}
+.popup-lft ul{margin-left:0;padding-left:0;padding-top:15px;}
+.popup-lft p, h3{padding:0;margin:0;}
+
+.rp-popmn{width:80% !important;}
+.pop-top{border-bottom:1px solid #ccc;padding-bottom:15px;}
+
+
+
 
 
 
