@@ -4,8 +4,8 @@
         .module('app')
         .controller('SelectController', SelectController);
 
-    SelectController.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location'];
-    function SelectController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
+    SelectController.$inject = ['$cookieStore','UserService','$route', '$rootScope','$scope','$http','$location'];
+    function SelectController($cookieStore,UserService, $route, $rootScope, $scope,$http,$location) {
         var vm = this;
         vm.register = register;
         vm.login = login;
@@ -26,10 +26,11 @@
             }).success(function (data, status, headers, config) {
                 
                 UserService.SetUserName(data.data['username']);
-                $location.path('/select');
+                $route.reload();
 
             }).error(function (data, status, headers, config) {
-                console.log("error");
+                console.log("errorsss1");
+                $route.reload();
                
             });
         }
@@ -54,10 +55,11 @@
             }).success(function (data, status, headers, config) {
 
                 UserService.setName(data.data['name']);
-                $location.path('/select');
+                $route.reload();
                 
             }).error(function (data, status, headers, config) {
-                console.log("error");
+                console.log("errorss2");
+                $route.reload();
                
             });
         }
@@ -88,7 +90,8 @@
                     $scope.sku = data.data['sku'];
                     $scope.doctorList = data.data['doctorPriceList'];
                 }).error(function (data, status, headers, config) {
-                    console.log("error")
+                    console.log("errorsss3");
+
                    
                 });
         }
