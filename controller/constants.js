@@ -29,5 +29,5 @@ var getListing = domain +"/product/getListing/";
 var getProcedure = domain +"/product/getProcedure/";
 var test = domain +"/product/test/";
 var getAverage = domain +"/product/getAverageQuote/";
-
-
+var loginUrl = domain +"/user/login/";
+var registerUrl = domain +"/user/register/";
