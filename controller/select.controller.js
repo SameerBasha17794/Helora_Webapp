@@ -14,8 +14,8 @@
         function login() {
 
             var parameters = JSON.stringify({
-                "name" : vm.uname, 
-                "token" :vm.lpassword,
+                "password" : vm.uname, 
+                "user_name" :vm.lpassword,
             });
 
             $http({
@@ -38,7 +38,9 @@
         function register() {
 
             var parameters = JSON.stringify({
-                "name" : vm.name, 
+                "user_name" : vm.name,
+                "first_name" : vm.name,
+                "last_name" : vm.name, 
                 "email" :vm.email,
                 "phone" :vm.phone,
                 "password" :vm.password,
