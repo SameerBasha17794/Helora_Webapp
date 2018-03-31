@@ -6,8 +6,8 @@ be available for all the controllers
 
 //Variables
 
-// var domain = "http://api.healora.com";
-var domain = "http://127.0.0.1:5000";
+var domain = "http://api.healora.com";
+// var domain = "http://127.0.0.1:5000";
 var domainurl = "http://localhost/webapp_angular/";
 var purposePageCookieName = 'dr_insta_purpose_page_cookies';
 
