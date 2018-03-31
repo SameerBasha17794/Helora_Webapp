@@ -15,12 +15,24 @@
             AuthenticationService.Login(vm.username, vm.password, function (response) {
                 if (response.ResponseCode) {
                     AuthenticationService.SetCredentials(vm.username, vm.password,response.MessageWhatHappen);
+                } else {
+                    FlashService.Error(response.MessageWhatHappen);
+                    vm.dataLoading = false;
+                }
+            });
+        };
+
+        function register(){
+            vm.dataLoading = true;
+            AuthenticationService.Register(vm.username, vm.password, function (response) {
+                if (response.ResponseCode) {
+                    AuthenticationService.SetCredentials(vm.username, vm.password,response.MessageWhatHappen);
                     $location.path('/');
                 } else {
                     FlashService.Error(response.MessageWhatHappen);
                     vm.dataLoading = false;
                 }
             });
-        };   
+        };    
     }
 })();

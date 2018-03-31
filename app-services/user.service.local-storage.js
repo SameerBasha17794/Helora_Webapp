@@ -19,7 +19,12 @@
         
 //        service.getWalletBalance = getWalletBalance;
 //        service.setWalletBalance = setWalletBalance;
-
+        service.GetId = getId;
+        service.SetId = setId;
+        service.SetName = setName;
+        service.GetName = getName;
+        service.setEmail = setEmail;
+        service.getEmail = getEmail;
 
         service.SetUserName = SetUserName;
         service.GetUserName = GetUserName;
@@ -34,6 +39,8 @@
         service.getBodyParts = getBodyParts;
         service.setCategoryList = setCategoryList;
         service.getCategoryList = getCategoryList;
+        service.setPlan = setPlan;
+        service.getPlan = getPlan;
          
         return service;
 
@@ -122,10 +129,45 @@
             return deferred.promise;
         }
 
+
         // private functions Ends
 
         // Our Functions
 
+        function getUsers() {
+            if(!localStorage.users){
+                localStorage.users = JSON.stringify([]);
+            }
+
+            return JSON.parse(localStorage.users);
+        }
+        
+        function setUsers(users) {
+            localStorage.users = JSON.stringify(users);
+        }
+        function setId(id) {
+            localStorage.id = JSON.stringify(id);
+        }
+        
+        function getId() {
+            if(!localStorage.id){
+                localStorage.id = JSON.stringify([]);
+            }
+            return JSON.parse(localStorage.id);
+        }
+
+        function setEmail(email) {
+           
+            localStorage.email = JSON.stringify(email);
+        }
+        
+        function getEmail() {
+            if(!localStorage.email){
+                localStorage.email = JSON.stringify("");
+            }
+
+            return JSON.parse(localStorage.email);
+        }
 
         function SetUserName(username) {
             localStorage.username = JSON.stringify(username);
@@ -190,6 +232,27 @@
                 localStorage.categoryList = JSON.stringify("");
             }
             return JSON.parse(localStorage.categoryList);
+        }
+        function setName(name){
+             localStorage.name = JSON.stringify(name.charAt(0).toUpperCase() + name.slice(1));
+        }
+        function getName() {
+            if(!localStorage.name){
+                localStorage.name = JSON.stringify([]);
+            }
+
+            return JSON.parse(localStorage.name);
+        }
+
+        function setPlan(planid){
+             localStorage.planid = JSON.stringify(planid);
+        }
+        function getPlan() {
+            if(!localStorage.planid){
+                localStorage.planid = JSON.stringify([]);
+            }
+
+            return JSON.parse(localStorage.planid);
         }
        
     }

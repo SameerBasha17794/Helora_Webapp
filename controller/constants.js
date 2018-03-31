@@ -31,3 +31,4 @@ var test = domain +"/product/test/";
 var getAverage = domain +"/product/getAverageQuote/";
 var loginUrl = domain +"/user/login/";
 var registerUrl = domain +"/user/register/";
+var finalPrice = domain +"/product/getFinalPrice/";

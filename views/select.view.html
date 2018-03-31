@@ -1,11 +1,6 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="section-detail">
   <div class="container">
-    <div ng-hide="username.length != 0" class="row">
-      <div class="col-md-2 col-md-offset-10">
-        <div class="btn-home" data-toggle="modal" data-target="#myModal">Register</div>
-      </div>
-    </div>
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
@@ -21,31 +16,35 @@
   </div>
 </div>
 
-<div class="select-doctor"><a href="#/procedure" class="btn-home">Select Via Dot</a></div>
+  <div ng-hide="getId != ''" class="row">
+    <div class="col-md-2 col-md-offset-10">
+      <div class="btn-home" data-toggle="modal" data-target="#myModal">Register</div>
+    </div>
+  </div>
 
-<div ng-hide="username.length == 0" class="select-doctor">
-  <div class="container">
-    <div class="row">
-      <h2 class="thm-hd">
-        Choose your Doctor or Provider
-        <div class="divider"></div>
-      </h2>
-      <br />
-      <div ng-repeat="getDoc in doctorList">
-        <div class="col-md-12 pb20 select-doctor">
-          <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
-          <div class="col-md-6">
-            <h3 class="mt0">{{getDoc.doctor_name}}</h3>
-            <h4>{{getDoc.doctor_speciality}}</h4>
-            <span><b>Degree:</b>{{getDoc.degree_title}}/span><br />
-            <span><b>Experience:</b> 11yrs</span> 
+  <div ng-hide="getId == ''" class="select-doctor">
+    <div class="container">
+      <div class="row">
+        <h2 class="thm-hd">
+          Choose your Doctor or Provider
+          <div class="divider"></div>
+        </h2>
+        <br />
+        <div ng-repeat="getDoc in doctorList">
+          <div class="col-md-12 pb20 select-doctor">
+            <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
+            <div class="col-md-6">
+              <h3 class="mt0">{{getDoc.doctor_name}}</h3>
+              <h4>{{getDoc.doctor_speciality}}</h4>
+              <span><b>Degree:</b>{{getDoc.degree_title}}/span><br />
+              <span><b>Experience:</b> 11yrs</span> 
+            </div>
+            <div class="col-md-4 mt65 text-right"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
           </div>
-          <div class="col-md-4 mt65 text-right"> <a href="#" class="button select-btn">Select</a> </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 <div class="clr">&nbsp;</div>
 
 
@@ -54,7 +53,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <p>Sign In to your Account New</p>
+      <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
       </div>
       <div class="modal-body">
         <div class="register-mn">
@@ -71,7 +70,7 @@
                       <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
                         <input class="lgn-inpt" ng-model="vm.uname" type="text" placeholder="User Name">
                         <br> 
-                        <input class="lgn-inpt" ng-model="vm.lpassword" type="text" placeholder="Password">
+                        <input class="lgn-inpt" ng-model="vm.password" type="text" placeholder="Password">
                         <br>
                         <input class="sign-in-btn" type="submit" value="Sign In">
                       </form>
@@ -80,15 +79,19 @@
                   <section id="content2">
                     <div class="signup">
                       <form id="formregister" name="form" ng-submit="vm.register()" role="form">
-                        <input class="lgn-inpt" ng-model="vm.name" type="text" placeholder="Name">
-                        <br>
-                        <input class="lgn-inpt" ng-model="vm.email" type="text" placeholder="Email">
-                        <br>
-                        <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone">
-                        <br>
-                        <input class="lgn-inpt" ng-model="vm.password" type="text" placeholder="Password">
-                        <br>
-                        <input class="sign-in-btn" type="submit" value="Sign Up">
+                       <input class="lgn-inpt" ng-model="vm.fname" type="text" placeholder="First Name *">
+                           <br>
+                          <input class="lgn-inpt" ng-model="vm.lname" type="text" placeholder="Last Name *">
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.email" type="text" placeholder="Email *">
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone *">
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.password" type="password" placeholder="Password *">
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.promocode" type="text" placeholder="Prmom Code">
+                          <br>
+                          <input class="sign-in-btn" type="submit" value="Sign Up">
                       </form>
                     </div>
                   </section>

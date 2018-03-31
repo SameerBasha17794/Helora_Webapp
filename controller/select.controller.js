@@ -4,72 +4,28 @@
         .module('app')
         .controller('SelectController', SelectController);
 
-    SelectController.$inject = ['$cookieStore','UserService','$route', '$rootScope','$scope','$http','$location'];
-    function SelectController($cookieStore,UserService, $route, $rootScope, $scope,$http,$location) {
+    SelectController.$inject = ['$cookieStore','UserService','$route', '$rootScope','$scope','$http','$location','AuthenticationService'];
+    function SelectController($cookieStore,UserService, $route, $rootScope, $scope,$http,$location,AuthenticationService) {
         var vm = this;
         vm.register = register;
         vm.login = login;
-        $scope.username = UserService.GetUserName();
-
+        $scope.getId = UserService.GetId();
+        $('.modal-backdrop').remove();
+        $('#myModal').modal('hide');
+        $('body').removeClass('modal-open');
+        initController();
+        
         function login() {
-
-            var parameters = JSON.stringify({
-                "password" : vm.uname, 
-                "user_name" :vm.lpassword,
-            });
-
-            $http({
-                url: loginUrl,
-                method: "POST",
-                data: parameters,
-                headers: { 'Content-Type': 'application/json' }
-            }).success(function (data, status, headers, config) {
-                
-                UserService.SetUserName(data.data['username']);
-                $route.reload();
-
-            }).error(function (data, status, headers, config) {
-                console.log("errorsss1");
-                $route.reload();
-               
+            var path = "/select";
+            AuthenticationService.Login(vm.uname, vm.password, path, function (response) {
             });
         }
-
 
         function register() {
-
-            var parameters = JSON.stringify({
-                "user_name" : vm.name,
-                "first_name" : vm.name,
-                "last_name" : vm.name, 
-                "email" :vm.email,
-                "phone" :vm.phone,
-                "password" :vm.password,
-            });
-
-            $http({
-                url: registerUrl,
-                method: "POST",
-                data: parameters,
-                headers: { 'Content-Type': 'application/json' }
-            }).success(function (data, status, headers, config) {
-
-                UserService.setName(data.data['name']);
-                $route.reload();
-                
-            }).error(function (data, status, headers, config) {
-                console.log("errorss2");
-                $route.reload();
-               
+            var path = "/select";
+            AuthenticationService.Register(vm.fname,vm.lname,vm.email,vm.phone,vm.password, vm.promocode, path, function (response) {
             });
         }
-
-
-
-
-        initController();
-
-
 
         function initController() {
             var param = JSON.stringify({"procedure":UserService.getProcedureId()});
@@ -92,21 +48,13 @@
                 }).error(function (data, status, headers, config) {
                     console.log("errorsss3");
 
-                   
                 });
         }
+        $scope.selectPlan = function(id) {
+          UserService.setPlan(id);
+          $location.path('/reserve');
+        }
 
-        function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
-                    
-                   
-            });
-        }
-        $scope.instant = function() {
-          
-        }
-     
     }
 
 })();

@@ -2,22 +2,22 @@
 <div class="clr">&nbsp;</div>
 <div class="select-doctor">
   <div class="container">
-    <div class="row">
-      <h2 class="thm-hd">Choose your Doctor or Provider
+    <div class="row">Reserve Your Price
         <div class="divider"></div>
       </h2>
       <br />
       <div class="col-md-12 pb20 select-doctor">
-        <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
+        <div class="col-md-2 pl0"> <img class="img-responsive" src="{{displayProcedure.doctor_image}}" /> </div>
         <div class="col-md-6">
-          <h3 class="mt0">Dr. Michael Linden</h3>
-          <h4>Throat Specialist</h4>
-          <span><b>Degree:</b> MBBS, MBD</span><br />
-          <span><b>Experience:</b> 11yrs</span> </div>
-        <div class="col-md-4 text-right"> <span class="speciality-active">Gastroenterology </span><img src="images/Gastroenterology-Blue.png" width="50"/></div>
+          <h3 class="mt0">{{displayProcedure.doctor_name}}</h3>
+          <h4>{{displayProcedure.doctor_speciality}}</h4>
+          <span><b>Degree:</b> {{displayProcedure.doctor_speciality}}</span><br />
+          <span><b>Experience:</b> 11yrs</span> 
+          <span><b>Total Amount:</b> {{displayProcedure.total}} </span> </div>
+        <div class="col-md-4 text-right"> <span class="speciality-active">{{displayProcedure.doctor_speciality}}</span><img src="images/Gastroenterology-Blue.png" width="50"/></div>
       </div>
       <div class="col-md-12">
-        <div class="col-md-8 fn-rp">Endoscopic Retrograde Cholangiopancreatography (ERCP) Remove Foreign Body/ Stent Biliary</div>
+        <div class="col-md-8 fn-rp">{{displayProcedure.doctor_speciality}}</div>
         <div class="col-md-4 rp-btn text-right"> <a href="" data-toggle="modal" data-target="#myModal1">Reserve the price</a> </div>
       </div>
       <div class="modal fade col-md-offset-1" id="myModal1" role="dialog">
@@ -32,29 +32,16 @@
             <div class="modal-body rp-pop">
               <div class="popup-lft">
                   
-            <h4><b>Achilles Repair</b></h4>
+            <h4><b>{{displayProcedure.shortName}}</b></h4>
             
-            <p>CPT : 27650<br />SKU : OR28<br /><b>with Neil Hecht, M.D.</b></p>
+            <p>CPT : {{displayProcedure.cpt}}<br />SKU : {{displayProcedure.sku}}<br /><b>with {{displayProcedure.doctor_name}}, {{displayProcedure.degree_title}}</b></p>
             
                 <ul>
                   <li>
-                    <div style="display: table-cell;vertical-align: top;"><img src="images/icn-wallet.png" width="28" /> </div>
-                    <div style="display: table-cell;"> <b> DUE NOW: Reservation fee: <br />
-                      $20.00 USD</b></div>
+                    <div style="display: table-cell;vertical-align: top;"> </div>
+                    <div style="display: table-cell;"> <b> Total Amount<br />
+                      {{displayProcedure.total}}</b></div>
                   </li>
-                  <li>
-                    <div style="display: table-cell;vertical-align: top;"><img src="images/icn-wallet.png" width="28" /> </div>
-                    <div style="display: table-cell;"> <b> Amount due at visit:
- <br />
-                      $20.00 USD</b></div>
-                  </li>
-                  <li>
-                    <div style="display: table-cell;vertical-align: top;"><img src="images/icn-wallet.png" width="28" /> </div>
-                    <div style="display: table-cell;"> <b> Total price:
- <br />
-                      $20.00 USD</b></div>
-                  </li>
-                 
                 </ul>
                 <br />
                 

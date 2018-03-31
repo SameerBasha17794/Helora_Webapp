@@ -5,8 +5,8 @@
         .module('app')
         .factory('AuthenticationService', AuthenticationService);
 
-    AuthenticationService.$inject = ['$http','FlashService', '$cookies', '$cookieStore', '$rootScope', '$timeout', 'UserService','$location'];
-    function AuthenticationService($http, FlashService , $cookies, $cookieStore, $rootScope, $timeout, UserService,$location){
+    AuthenticationService.$inject = ['$http','FlashService', '$cookies', '$cookieStore', '$rootScope', '$timeout', 'UserService','$location','$route'];
+    function AuthenticationService($http, FlashService , $cookies, $cookieStore, $rootScope, $timeout, UserService,$location,$route){
         var service = {};
         service.Login = Login;
         service.SetCredentials = SetCredentials;
@@ -14,80 +14,63 @@
         service.Register = Register;
         var submitHit=0;
         return service;
-        function Login(username, password, callback) {
+        function Login(username, password, path, callback) {
             if(submitHit==0){
                submitHit=1
-                $http.post(loginUrl, {password: password, user_name :username})
+                $http.post(loginUrl, { password: password, user_name :username})
                    .success(function (response) {
                     submitHit=0;
-                       if(response.status){
-                         var data = response.data[0]['fields'];
-                         var json  = {"email": data.email, "phone": data.phone,"fname":data.fname,"lname":data.lname,"id":response.data[0].pk};
-                         SetCredentials(username,password,json)
-                         return true
-                         // $location.path('/');
-                       }else{
-                        FlashService.Error(response.message);
-                        return false
-                       }
+                        if(response.status){
+                            var data = response.data;
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            SetCredentials(username,password,json)
+                            if (path=="/"){
+                                 $location.path('/');
+                            }else{
+                                $route.reload();
+                            }
+                        }else{
+                            FlashService.Error(response.message);
+                        }
                    }).error(function (data, status, headers, config) {
-                    // $('.loading').css("display", "none");
                     submitHit=0;
                     FlashService.Error('Something went wrong. Please try after sometime.');
                 });
             }
         }
         
-        function Register(email,fname,lname,phone,dob,sex,password,confirmpassword,check,authkey,otp) {
-            if(submitHit==0){
-                    submitHit=1
-                    var register_success = false;
-                    $http.post(newRegister, { 'otp':otp,authKey:authkey , email: email, fname: fname, lname : lname , phoneNumber : phone ,dob : dob ,sex: sex , password : password, confirmPassword : confirmpassword, check : check, businessId:$cookieStore.get('businessId'),policyId:$cookieStore.get('policyId')  })
-                       .success(function (response) {
-                        submitHit=0
-                           if(response.status){
-                             register_success = true;
-                            $('.loading').css("display", "none");
-                            $(".modal-overlay,.modal-box").hide();
-                              var data = response.data[0]['fields'];
-                              var json  = {"email": email,"businessId": data.business_id,"fname":fname,"lname":lname,"id":response.data[0].pk,"authkey":authkey,"token":response.token,"policyExist":response.policyExist,"alreadyBought":response.alreadyBought,"policyId":response.policyId,"policyPrice":response.policyPrice};
-                              SetCredentials(data.email,password,json)
-                              if(UserService.getBuyBusinessId()!=0 && UserService.getPolicyExist()!=0 && UserService.getAlreadyBought()!=1){
-                                    $cookieStore.remove('businessId');
-                                    $cookieStore.remove('policyId');
-                                    $location.path("/purchase-policy");
-                               }
-                               else{
-                                    $location.path('/');
-                               }
-                              $location.path('/');
-                           }else{
-                                  var register_success = false;
-                                 $('#errmsg').html(response.message);
-                                 $('.loading').css("display", "none");
-                           }
-                          
-                       }).error(function (data, status, headers, config) {
-                         var register_success = false;
-                        $('.loading').css("display", "none");
-                        FlashService.Error("Something went wrong. Please try after some time.");
-                        
-                    });
-                }
-           
-            return register_success;
+        function Register(fname,lname,email,phone,password,promo,path,callback) {
+           if(submitHit==0){
+               submitHit=1
+                $http.post(registerUrl, { password: password,first_name:fname,last_name:lname,email:email,phone:phone,promocode:promo,user_name :''})
+                   .success(function (response) {
+                    submitHit=0;
+                        if(response.status){
+                            var data = response.data;
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            SetCredentials(email,password,json)
+                            if (path=="/"){
+                                 $location.path('/');
+                            }else{
+                                $route.reload();
+                            }   
+                        }else{
+                            FlashService.Error(response.message);
+                        }
+                   }).error(function (data, status, headers, config) {
+                    submitHit=0;
+                    FlashService.Error('Something went wrong. Please try after sometime.');
+                });
+            }
         }
         
         
         function SetCredentials(username,password,UserData) {
-            var authdata = Base64.encode(username + ':' + password);
-            //console.log(UserData);
+            var authdata = Base64.encode(username);
             UserService.Create(UserData);
             UserService.setEmail(UserData.email);
             UserService.SetId(UserData.id);
             UserService.SetName(UserData.fname);
-            // UserService.setAuthKey(UserData.authkey);
-           
             $cookieStore.put('username', UserData.fname);
             $cookieStore.put('forsubdomain','ok');
             $rootScope.globals = {
@@ -99,6 +82,7 @@
 
             $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata; // jshint ignore:line
             $cookieStore.put('globals', $rootScope.globals);
+
         }
 
         function ClearCredentials() {

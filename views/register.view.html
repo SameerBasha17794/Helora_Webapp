@@ -17,7 +17,7 @@
               <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
                 <input class="lgn-inpt" ng-model="vm.uname" type="text" placeholder="User Name">
                 <br> 
-                <input class="lgn-inpt" ng-model="vm.lpassword" type="text" placeholder="Password">
+                <input class="lgn-inpt" ng-model="vm.password" type="text" placeholder="Password">
                 <br>
                 <input class="sign-in-btn" type="submit" value="Sign In">
               </form>
@@ -26,13 +26,17 @@
           <section id="content2">
             <div class="signup">
               <form id="formregister" name="form" ng-submit="vm.register()" role="form">
-                <input class="lgn-inpt" ng-model="vm.name" type="text" placeholder="Name">
+                <input class="lgn-inpt" ng-model="vm.fname" type="text" placeholder="First Name *">
+                 <br>
+                <input class="lgn-inpt" ng-model="vm.lname" type="text" placeholder="Last Name *">
                 <br>
-                <input class="lgn-inpt" ng-model="vm.email" type="text" placeholder="Email">
+                <input class="lgn-inpt" ng-model="vm.email" type="text" placeholder="Email *">
                 <br>
-                <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone">
+                <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone *">
                 <br>
-                <input class="lgn-inpt" ng-model="vm.password" type="text" placeholder="Password">
+                <input class="lgn-inpt" ng-model="vm.password" type="password" placeholder="Password *">
+                <br>
+                <input class="lgn-inpt" ng-model="vm.promocode" type="text" placeholder="Prmom Code">
                 <br>
                 <input class="sign-in-btn" type="submit" value="Sign Up">
               </form>
