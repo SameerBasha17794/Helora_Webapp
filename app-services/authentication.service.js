@@ -11,85 +11,33 @@
         service.Login = Login;
         service.SetCredentials = SetCredentials;
         service.ClearCredentials = ClearCredentials;
-        service.SocialRegister = SocialRegister;
         service.Register = Register;
         var submitHit=0;
         return service;
         function Login(username, password, callback) {
-            /* Dummy authentication for testing, uses $timeout to simulate api call
-             ----------------------------------------------*/
-            // $timeout(function () {
-            //     var response;
-            //     UserService.GetByUsername(username)
-            //         .then(function (user) {
-            //             if (user !== null && user.password === password) {
-            //                 response = { success: true };
-            //             } else {
-            //                 response = { success: false, message: 'Username or password is incorrect' };
-            //             }
-            //             callback(response);
-            //         });
-            // }, 1000);
-
-            /* Use this for real authentication
-             ----------------------------------------------*/
-            $('.loading').css("display", "block");
             if(submitHit==0){
-                submitHit=1
-                $http.post(splashUrl, { deviceType: "1" })
-                   .success(function (responseSplash) {
-                       if(responseSplash.status){
-                            $http.post(loginNewUrl, {password: password, authKey : responseSplash.authKey,userName :username, businessId:$cookieStore.get('businessId'),policyId:$cookieStore.get('policyId') })
-                               .success(function (response) {
-                                $('.loading').css("display", "none");
-                                submitHit=0;
-                                   if(response.status){
-                                     var data = response.data[0]['fields'];
-
-                                     var json  = {"walletAmount": response.walletAmount,"email": data.email, "phone": data.phone, "businessId": data.business_id,"fname":data.fname,"lname":data.lname,"id":response.data[0].pk,"authkey":responseSplash.authKey,"token":response.token,"policyExist":response.policyExist,"alreadyBought":response.alreadyBought,"policyId":response.policyId,"policyPrice":response.policyPrice};
-                                     SetCredentials(username,password,json)
-                                     if(UserService.getBuyBusinessId()!=0 && UserService.getPolicyExist()!=0 && UserService.getAlreadyBought()!=1){
-                                        $cookieStore.remove('businessId');
-                                        $cookieStore.remove('policyId');
-                                        $location.path("/purchase-policy");
-                                        }
-                                     else{
-                                        $location.path('/');
-                                        }
-                                   }else{
-                                    FlashService.Error(response.message);
-                                   }
-                               }).error(function (data, status, headers, config) {
-                                $('.loading').css("display", "none");
-                                submitHit=0;
-                                FlashService.Error('Something went wrong. Please try after sometime.');
-                            });
+               submitHit=1
+                $http.post(loginUrl, {password: password, user_name :username})
+                   .success(function (response) {
+                    submitHit=0;
+                       if(response.status){
+                         var data = response.data[0]['fields'];
+                         var json  = {"email": data.email, "phone": data.phone,"fname":data.fname,"lname":data.lname,"id":response.data[0].pk};
+                         SetCredentials(username,password,json)
+                         return true
+                         // $location.path('/');
                        }else{
-                        $('.loading').css("display", "none");
-                        submitHit=0;
-                        alert('Something went wrong.');
+                        FlashService.Error(response.message);
+                        return false
                        }
-                    }).error(function (data, status, headers, config) {
-                        $('.loading').css("display", "none");
-                        submitHit=0;
-                        alert('Something went wrong. Please try after sometime.');
-                        
-                    });
+                   }).error(function (data, status, headers, config) {
+                    // $('.loading').css("display", "none");
+                    submitHit=0;
+                    FlashService.Error('Something went wrong. Please try after sometime.');
+                });
             }
-            // $http.post(loginUrl, { email: username, password: password, authkey : authkey })
-            //    .success(function (response) {
-            //        if(response.status){
-            //         var data = response.data[0]['fields'];
-                    
-            //         var json  = {"fname":data.fname,"id":response.data[0].pk};
-            //         SetCredentials(username,password,json)
-            //          $location.path('/');
-            //        }else{
-            //         FlashService.Error(response.message);
-            //        }
-            //    });
-
         }
+        
         function Register(email,fname,lname,phone,dob,sex,password,confirmpassword,check,authkey,otp) {
             if(submitHit==0){
                     submitHit=1
@@ -129,62 +77,8 @@
            
             return register_success;
         }
-        function SocialRegister(email,name,gender,method) {
-//       alert("register");
-        $('.loading').css("display", "block");
-        if(method == "google"){
-            var through = 2;
-        }else{
-                var through = 1;
-        }
-         $http.post(splashUrl, { deviceType: "1" })
-               .success(function (responseSplash) {
-                   if(responseSplash.status){
-
-            $http.post(socialregisterUrl, { email: email, name: name, gender : gender ,authKey: responseSplash.authKey,through:through })
-               .success(function (response) {
-                $('.loading').css("display", "none");
-                   if(response.status){
-                    var data = response.data[0]['fields'];
-                       SetSocialCredentials(data.email,data.fname,data.lname,data.user_id,method,response.token,responseSplash.authKey)
-                       $location.path('/');
-                   }else{
-                    $('.loading').css("display", "none");
-                   }
-                  
-               });
-
-             }else{
-                $('.loading').css("display", "none");
-                alert("error");
-            }
-               });
-
-        }
         
-        function SetSocialCredentials(username, fname,lname,id,method,token,authkey) {
-            var authdata = Base64.encode(username + ':' + fname);
-            var name = fname + lname
-            UserService.Create(username);
-            UserService.SetId(id);
-            UserService.SetName(name);
-            UserService.setEmail(username);
-            UserService.setLoginMethod(method);
-
-            UserService.setAuthKey(authkey);
-            UserService.setToken(token);
-//            alert("setcredentials");
-            $rootScope.globals = {
-                currentUser: {
-                    username: username,
-                    authdata: authdata
-                }
-            };
-
-            $http.defaults.headers.common['Authorization'] = 'Basic ' + authdata; // jshint ignore:line
-            $cookieStore.put('globals', $rootScope.globals);
-        }
-
+        
         function SetCredentials(username,password,UserData) {
             var authdata = Base64.encode(username + ':' + password);
             //console.log(UserData);
@@ -192,25 +86,10 @@
             UserService.setEmail(UserData.email);
             UserService.SetId(UserData.id);
             UserService.SetName(UserData.fname);
-            UserService.setAuthKey(UserData.authkey);
-            UserService.setBusinessID(UserData.businessId);
-            UserService.setToken(UserData.token);
-            UserService.setWalletBalance(UserData.walletAmount);
+            // UserService.setAuthKey(UserData.authkey);
+           
             $cookieStore.put('username', UserData.fname);
             $cookieStore.put('forsubdomain','ok');
-//            UserService.setPolicyId(UserService.getPolicyId());
-            if($cookieStore.get('businessId')!='0' && $cookieStore.get('businessId')!= 'undefined' && $cookieStore.get('policyId')!='0'  && $cookieStore.get('policyId')!='undefined' && UserData.policyId == $cookieStore.get('policyId')){
-                UserService.setBuyBusinessId($cookieStore.get('businessId'));
-                UserService.setPolicyId($cookieStore.get('policyId'));
-                UserService.setPolicyExist(UserData.policyExist);
-                UserService.setAlreadyBought(UserData.alreadyBought);
-                UserService.setPolPrice(UserData.policyPrice);
-            }
-            if($cookieStore.get('webid')!='0' && $cookieStore.get('transno')!='0' && $cookieStore.get('checksum')!='0'){
-                UserService.setwebid($cookieStore.get('webid'));
-                UserService.settransno($cookieStore.get('transno'));
-                UserService.setchecksum($cookieStore.get('checksum'));
-            }
             $rootScope.globals = {
                 currentUser: {
                     username: username,
@@ -227,27 +106,19 @@
             $rootScope.globals = {};
             $cookieStore.remove('globals');
             $http.defaults.headers.common.Authorization = 'Basic';
-            // var method = UserService.getLoginMethod();
-            // if(method == 'google'){
-            //     console.log("method: "+method);
-            //         signOut();
-            //     }
             localStorage.clear();
         }
         
         
-    }
+        }
         function signOut() {
            
             var auth2 = gapi.auth2.getAuthInstance();
             auth2.signOut().then(function () {
 
             });
-      }
+        }
      
-     function getMessages(id){
-         
-     }
     
     // Base64 encoding service used by AuthenticationService
     var Base64 = {

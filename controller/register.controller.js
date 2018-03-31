@@ -4,31 +4,27 @@
         .module('app')
         .controller('RegisterController', RegisterController);
 
-    RegisterController.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location'];
-    function RegisterController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
+    RegisterController.$inject = ['$cookieStore','UserService','AuthenticationService','$rootScope','$scope','$http','$location','FlashService'];
+    function RegisterController($cookieStore,UserService, AuthenticationService,$rootScope, $scope,$http,$location,FlashService) {
     var vm = this;
     vm.register = register;
     vm.login = login;
 
 
     function login() {
-
-        var parameters = JSON.stringify({
-            "password" : vm.uname, 
-            "user_name" :vm.lpassword,
-        });
-
-        $http({
-            url: loginUrl,
-            method: "POST",
-            data: parameters,
-            headers: { 'Content-Type': 'application/json' }
-        }).success(function (data, status, headers, config) {
-            $location.path('/myspeciality');
-        }).error(function (data, status, headers, config) {
-            console.log("error");
-           
-        });
+        vm.dataLoading = true;
+            AuthenticationService.Login(vm.uname, vm.password, function (response) {
+                alert("here1");
+                console.log("here");
+                console.log(response);
+                if (response.status) {
+                    AuthenticationService.SetCredentials(vm.username, vm.password,response.message);
+                    $location.path('/');
+                } else {
+                    FlashService.Error(response.message);
+                    console.log("error");
+                }
+            });
     }
 
 

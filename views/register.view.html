@@ -5,6 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="register-cont">
+        <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
         <p>Sign In to your Account New</p>
         <div class="tab-panel">
           <input id="tab1" type="radio" name="tabs" checked>
