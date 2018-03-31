@@ -1,19 +1,24 @@
-<header class="header-area fixed-menu-bg">
-  <nav class="main-nav navbar navbar-expand-lg  header2">
-    <div class="container">
-      <h1><a class="navbar-brand kash-logo" href="#"> <img class="img-responsive" src="images/logo-white.png" alt="abokash"></a> </h1>
-      <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
-      <!-- Brand -->
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-        <ul id="navScrollspy" class="navbar-nav pull-right mtm5">
-          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-          <li class="nav-item"><a href="#/about" class="nav-link">ABOUT Us</a></li>
-          <li class="nav-item"><a href="#/procedure" class="nav-link">Procedure</a></li>
-          <li class="nav-item"><a href="#/register" class="nav-link">Register</a></li>
-        </ul>
+<div ng-controller="Header">
+  <header class="header-area fixed-menu-bg">
+    <nav class="main-nav navbar navbar-expand-lg  header2">
+      <div class="container">
+        <h1><a class="navbar-brand kash-logo" href="#"> <img class="img-responsive" src="images/healora-logo.png" width="170" alt="abokash"></a> </h1>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse"
+                      data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
+        <!-- Brand -->
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul id="navScrollspy" class="navbar-nav pull-right mtm5">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#/about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#/procedure" class="nav-link">Procedure</a></li>
+
+            <li class="nav-item" ><a href="#/register" class="nav-link">Register</a></li>
+            <li class="nav-item" ng-if="name"><a href="#/register" class="nav-link">Hello, {{name}}</a></li>
+            <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">logout</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
+</div>

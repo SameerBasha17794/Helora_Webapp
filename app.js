@@ -39,6 +39,12 @@
                 controllerAs: 'vm',
                 title: 'Contact'
             })
+            .when('/reserve', {
+                controller: 'ReserveController',
+                templateUrl: 'views/reserve.view.html',
+                controllerAs: 'vm',
+                title: 'Contact'
+            })
             .when('/select', {
                 controller: 'SelectController',
                 templateUrl: 'views/select.view.html',

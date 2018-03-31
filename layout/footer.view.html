@@ -5,6 +5,13 @@
       <div class="col-md-4 pl50"> <span><b>Address: </b>685 LaneSrive St. California, 33020</span><br />
         <span><b>Email: </b>info@healora.com</span> </div>
       <div class="col-md-6">
+
+
+    <!-- PAYPAL BUTTON -->
+      <div id="myContainerElement"></div>
+
+      <div id="paypal-button-container"></div>
+
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">HOME</a></li>
           <li><a href="#/about">ABOUT US</a></li>
@@ -12,6 +19,9 @@
           <li><a href="#/faq">FAQ</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#/contact">CONTACT</a></li>
+
+
+
         </ul>
       </div>
     </div>
@@ -19,3 +29,105 @@
 </div>
 
 <div class="footer">&copy; Copyright 2018 Healora.</div>
+
+ 
+
+    <script>
+        paypal.Button.render({
+
+            env: 'sandbox', // sandbox | production
+
+            // Show the buyer a 'Pay Now' button in the checkout flow
+            commit: true,
+
+            // payment() is called when the button is clicked
+            payment: function() {
+
+                // Set up a url on your server to create the payment
+                var CREATE_URL = '/payment/create/';
+
+                // Make a call to your server to set up the payment
+                return paypal.request.post(CREATE_URL)
+                    .then(function(res) {
+                        return res.paymentID;
+                    });
+            },
+
+            // onAuthorize() is called when the buyer approves the payment
+            onAuthorize: function(data, actions) {
+
+                // Set up a url on your server to execute the payment
+                var EXECUTE_URL = '/payment/execute/';
+
+                // Set up the data you need to pass to your server
+                var data = {
+                    paymentID: data.paymentID,
+                    payerID: data.payerID
+                };
+
+                // Make a call to your server to execute the payment
+                return paypal.request.post(EXECUTE_URL, data)
+                    .then(function (res) {
+                        window.alert('Payment Complete!');
+                    });
+            }
+
+        }, '#paypal-button-container');
+    </script>
+
+
+
+
+
+<script>
+    // Render the button into the container element
+
+    paypal.Button.render({
+
+
+      env: 'sandbox', // Or 'sandbox',
+        // Pass the client ids to use to create your transaction on sandbox and production environments
+
+        client: {
+            sandbox:    'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC', // from https://developer.paypal.com/developer/applications/
+            production: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC'  // from https://developer.paypal.com/developer/applications/
+        },
+
+        // Pass the payment details for your transaction
+        // See https://developer.paypal.com/docs/api/payments/#payment_create for the expected json parameters
+
+        payment: function(data, actions) {
+            return actions.payment.create({
+                transactions: [
+                    {
+                        amount: {
+                            total:    '1.00',
+                            currency: 'USD'
+                        }
+                    }
+                ]
+            });
+        },
+
+        // Display a "Pay Now" button rather than a "Continue" button
+
+        commit: true,
+
+        // Pass a function to be called when the customer completes the payment
+
+        onAuthorize: function(data, actions) {
+            return actions.payment.execute().then(function(response) {
+                console.log('The payment was completed!');
+            });
+        },
+
+        // Pass a function to be called when the customer cancels the payment
+
+        onCancel: function(data) {
+            console.log('The payment was cancelled!');
+        }
+
+    }, '#myContainerElement');
+</script>
+
+

@@ -19,7 +19,7 @@
         </div>
         <div class="form-group btn-modal">
           <br>
-          <a ng-click="procedureClicked()" class="button select-btn mt10">Check your procedure</a>
+          <button type="button" ng-click="procedureClicked()" class="button select-btn mt10" data-dismiss="modal">Check your procedure</button>
         </div>
       </div>
       <div class="modal-footer">
@@ -47,28 +47,28 @@
         <div class="product-mn">
           <img src="images/body.png" />
           <div ng-click="clicked('Head')" class="pw-circle" style="left:85px;top:12px;" data-toggle="modal" data-target="#myModal"></div>
-          <div ng-click="clicked('Abdoman')" class="pw-circle" style="left:120px;top:50px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:70px;top:80px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:90px;top:105px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:90px;top:138px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:100px;top:165px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:110px;top:220px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:70px;top:275px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:108px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:245px;top:30px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:245px;top:80px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:200px;top:100px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:220px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:305px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:400px;top:150px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:350px;top:100px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:420px;top:75px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:380px;top:65px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:380px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:380px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:430px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:460px;top:255px;" data-toggle="modal" data-target="#myModal"></div>
-          <div class="pw-circle" style="left:460px;top:285px;" data-toggle="modal" data-target="#myModal"></div>
+          <div ng-click="clicked('Abdoman')" class="pw-circle" style="left:120px;top:50px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:70px;top:80px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:90px;top:105px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:90px;top:138px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:100px;top:165px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:110px;top:220px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:70px;top:275px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:108px;top:285px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:245px;top:30px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:245px;top:80px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:200px;top:100px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:220px;top:150px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:305px;top:150px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:400px;top:150px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:350px;top:100px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:420px;top:75px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:380px;top:65px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:380px;top:255px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:380px;top:285px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:430px;top:255px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:460px;top:255px;" data-toggle="modal" data-target="#myModal1"></div>
+          <div class="pw-circle" style="left:460px;top:285px;" data-toggle="modal" data-target="#myModal1"></div>
         </div>
       </div>
     </div>
@@ -143,46 +143,7 @@
     </div>
   </div>
 </div>
+
 <div class="clr">&nbsp;</div>
-
-
-<!-- 
-
-<script>
-  $('document').ready(function(){
-  
-  var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
-  
-  
-  // $(document).on("click", "a[data-modal-id]", function () {
-  
-  $('a[data-modal-id]').click(function(){
-    $("body").append(appendthis);
-    $(".modal-overlay").fadeTo(500, 0.7);
-    var modalBox = $(this).attr('data-modal-id');
-    $('#'+modalBox).fadeIn($(this).data());
-  });
-  
-  
-    
-  $(".js-modal-close, .modal-overlay, .js-modal-close1").click(function() {
-    $(".modal-box, .modal-overlay").fadeOut(500, function() {
-          $(".modal-overlay").remove();
-  });
-  
-  });
-  
-  $(window).resize(function() {
-    $(".modal-box").css({
-        top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
-        left: ($(window).width() - $(".modal-box").outerWidth()) / 2
-    });
-  });
-  
-  $(window).resize();
-  
-  });
-</script> -->
-
 
 <div ng-include="'layout/footer.view.html'"></div>
