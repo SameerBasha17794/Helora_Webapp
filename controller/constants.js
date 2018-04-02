@@ -8,7 +8,7 @@ be available for all the controllers
 
 // var domain = "http://api.healora.com";
 var domain = "http://127.0.0.1:5000";
-var domainurl = "http://localhost/webapp_angular/";
+var domainurl = "http://localhost/healora_webapp";
 var purposePageCookieName = 'dr_insta_purpose_page_cookies';
 
 var psychologyCookie = 'psy_cookie';
@@ -32,3 +32,5 @@ var getAverage = domain +"/product/getAverageQuote/";
 var loginUrl = domain +"/user/login/";
 var registerUrl = domain +"/user/register/";
 var finalPrice = domain +"/product/getFinalPrice/";
+var order = domain +"/product/placeOrder/";
+var redirect = domainurl +"/paypal/payredirect.php";

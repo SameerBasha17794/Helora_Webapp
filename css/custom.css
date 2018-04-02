@@ -47,6 +47,10 @@
 
 
 /*Main*/
+html{height:100%;}
+body{min-height:600px;}
+a{cursor:pointer;}
+a:hover{text-decoration:none;}
 body{font-family: 'ralewayregular';}
 .mt5{margin-top:5px !important;}
 .mt10{margin-top:10px !important;}
@@ -66,6 +70,9 @@ body{font-family: 'ralewayregular';}
 .mtm35{margin-top:-35px;}
 
 /*Index Page*/
+.dropdown-menu li a {color:#333 !important;padding:0px 5px;}
+ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
+.header2 h1 img{margin-top:-10px;}
 .repair-header{padding:5px 0;}
 .thm-hd{text-align:left;width:100%;}
 .how-mn{background:url(../images/abt-bg.png);background-size:cover;overflow:hidden;}
@@ -82,7 +89,7 @@ body{font-family: 'ralewayregular';}
 
 
 /*Select-Doctor*/
-.hd-select{color:#00b2e2;}
+.hd-select{color:#00b2e2;vertical-align:bottom;}
 .btn-home{background:#00b2e2;padding:15px 20px;color:#fff;border-radius:50px;margin-top:30px;margin-right:20px;font-size:18px;}
 .btn-home:hover{text-decoration:none;color:#fff;background:#039ec7;}
 .carousel-inner{overflow:inherit !important;}
@@ -91,7 +98,6 @@ body{font-family: 'ralewayregular';}
 .inr-sectiondetail{border:1px solid #ccc;padding:20px;}
 .detail-heading{border-bottom:1px solid #ccc;padding-bottom:10px;overflow:hidden;font-size:18px;}
 .section-detail p{font-size:20px;}
-.amt-sctn span{border-bottom:1px solid #e0e0e0;}
 .select-btn{padding:15px 50px;border-radius:30px;background:transparent;border:1px solid #00b2e2;text-align:right;}
 a.select-btn{color:#00b2e2 !important;}
 a.select-btn:hover{background:#00b2e2 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
@@ -332,6 +338,8 @@ span.navbar-toggler-icon i.fa {
 .homecityinput input{border-radius:0;font-size:14px;}
 .thm-btn{background:#00b2e2;border-radius:0;}
 .procedure-hd{font-size:16px !important;}
+.modal-header h4{margin-top:0 !important;}
+
 
 
 /*About-us*/
@@ -407,10 +415,42 @@ span.speciality-active{color:#00b2e2;font-size:18px;font-weight:bold;}
 .rp-popmn{width:80% !important;}
 .pop-top{border-bottom:1px solid #ccc;padding-bottom:15px;}
 
+/*popup*/
+.modal-header{border-top:3px solid #00b2e2;}
 
 
+body.modal-open {
+  overflow: inherit;
+  padding-right: 0 !important;
+}
+body.modal-open-noscroll
+{
+    margin-right: 0!important;
+    overflow: hidden;
+}
+body.main-nav
+{
+    margin-right: 0!important;
+    overflow: hidden;
+}
+body.navbar-expand-lg
+{
+    margin-right: 0!important;
+    overflow: hidden;
+}
+body.navbar
+{
+    margin-right: 0!important;
+    overflow: hidden;
+}navbar-expand-lg
 
+body.modal {
+ overflow-y: auto;
+}
 
+body.modal-open {
+ overflow: auto;
+}
 
 
 

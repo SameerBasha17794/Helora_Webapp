@@ -2,7 +2,7 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -19,11 +19,14 @@
         </div>
         <div class="form-group btn-modal">
           <br>
-          <button type="button" ng-click="procedureClicked()" class="button select-btn mt10" data-dismiss="modal">Check your procedure</button>
+          <!--<button type="button" ng-click="procedureClicked()" class="button select-btn mt10 btn" data-dismiss="modal">Check your procedure</button>-->
+             <a ng-click="procedureClicked()" class="button select-btn mt10 col-md-offset-2
+             " data-dismiss="modal">Pay The Reservation Fees</a>
         </div>
+
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="myCheck" class="btn btn-default closebutton" data-dismiss="modal">Close</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
@@ -143,7 +146,7 @@
     </div>
   </div>
 </div>
-
+<button type="button" id="myCheck1"  data-dismiss="modal">Close</button>
 <div class="clr">&nbsp;</div>
 
 <div ng-include="'layout/footer.view.html'"></div>

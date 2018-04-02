@@ -11,8 +11,8 @@
         vm.login = login;
         $scope.getId = UserService.GetId();
         $('.modal-backdrop').remove();
+        $('.dropdown-backdrop').remove();
         $('#myModal').modal('hide');
-        $('body').removeClass('modal-open');
         initController();
         
         function login() {

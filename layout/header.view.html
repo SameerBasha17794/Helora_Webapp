@@ -14,8 +14,14 @@
             <li class="nav-item"><a href="#/procedure" class="nav-link">Procedure</a></li>
 
             <li class="nav-item" ><a href="#/register" class="nav-link">Register</a></li>
-            <li class="nav-item" ng-if="name"><a href="#/register" class="nav-link">Hello, {{name}}</a></li>
-            <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">logout</a></li>
+            <li class="nav-item dropdown" ng-if="name"><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, {{name}} <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                       <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">logout</a></li>
+                    </ul>
+                  </li>
+
+            </li>
+           
           </ul>
         </div>
       </div>

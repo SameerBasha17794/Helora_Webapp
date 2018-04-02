@@ -45,6 +45,18 @@
                 controllerAs: 'vm',
                 title: 'Contact'
             })
+            .when('/success/:key', {
+                controller: 'SuccessController',
+                templateUrl: 'views/success.view.html',
+                controllerAs: 'vm',
+                title: 'Thank you!'
+            })
+            .when('/fail/:key', {
+                controller: 'FailController',
+                templateUrl: 'views/fail.view.html',
+                controllerAs: 'vm',
+                title: 'Contact'
+            })
             .when('/select', {
                 controller: 'SelectController',
                 templateUrl: 'views/select.view.html',

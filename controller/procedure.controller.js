@@ -46,9 +46,12 @@
         };
 
         $scope.procedureClicked = function() {
+            $('.modal-backdrop').remove();
+            $('.dropdown-backdrop').remove();
+            $('#myModal').modal('hide');
             var e = document.getElementById("selProc");
-             $('modal').modal('hide');
-             $('#myModal').modal('hide');
+             // $('modal').modal('hide');
+             // $('#myModal').modal('hide');
             UserService.setProcedureId(e.value);
             $location.path('/select');
             // createMenu(UserService.getBodyParts(),UserService.setCategoryList,UserService.getDotClicked())

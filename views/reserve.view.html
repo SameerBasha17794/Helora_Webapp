@@ -1,10 +1,13 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="clr">&nbsp;</div>
 <div class="select-doctor">
+
+<div class="clr">&nbsp;</div>
+
   <div class="container">
-    <div class="row">Reserve Your Price
+    <div class="row"><h3 class="thm-hd">Reserve Your Price
         <div class="divider"></div>
-      </h2>
+      </h3>
       <br />
       <div class="col-md-12 pb20 select-doctor">
         <div class="col-md-2 pl0"> <img class="img-responsive" src="{{displayProcedure.doctor_image}}" /> </div>
@@ -12,7 +15,7 @@
           <h3 class="mt0">{{displayProcedure.doctor_name}}</h3>
           <h4>{{displayProcedure.doctor_speciality}}</h4>
           <span><b>Degree:</b> {{displayProcedure.doctor_speciality}}</span><br />
-          <span><b>Experience:</b> 11yrs</span> 
+          <span><b>Experience:</b> 11yrs</span> <br>
           <span><b>Total Amount:</b> {{displayProcedure.total}} </span> </div>
         <div class="col-md-4 text-right"> <span class="speciality-active">{{displayProcedure.doctor_speciality}}</span><img src="images/Gastroenterology-Blue.png" width="50"/></div>
       </div>
@@ -20,14 +23,18 @@
         <div class="col-md-8 fn-rp">{{displayProcedure.doctor_speciality}}</div>
         <div class="col-md-4 rp-btn text-right"> <a href="" data-toggle="modal" data-target="#myModal1">Reserve the price</a> </div>
       </div>
+
+
+      <div class="clr">&nbsp;</div>
       <div class="modal fade col-md-offset-1" id="myModal1" role="dialog">
         <div class="modal-dialog"> 
           
           <!-- Modal content-->
           <div class="modal-content rp-popmn">
             <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            
               <h4 class="modal-title">Receipt for Healora</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body rp-pop">
               <div class="popup-lft">
@@ -38,7 +45,7 @@
             
                 <ul>
                   <li>
-                    <div style="display: table-cell;vertical-align: top;"> </div>
+                    <div style="display: table-cell;vertical-align: top;"><img src="images/wallet.png" width="30"> </div>
                     <div style="display: table-cell;"> <b> Total Amount<br />
                       {{displayProcedure.total}}</b></div>
                   </li>
@@ -49,7 +56,8 @@
                 
               </div>
             
-            <div class="text-center"><a href="#" class="button select-btn mt10">Pay The Reservation Fees</a></div>
+            <div class="text-center"><a ng-click="reserve()" class="button select-btn mt10">Pay The Reservation Fees</a></div>
+           
             
            <br />
             </div>
@@ -59,4 +67,5 @@
     </div>
   </div>
 </div>
+
 <div ng-include="'layout/footer.view.html'"></div>
