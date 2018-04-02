@@ -39,6 +39,12 @@
                 controllerAs: 'vm',
                 title: 'Contact'
             })
+            .when('/history', {
+                controller: 'HistoryController',
+                templateUrl: 'views/history.view.html',
+                controllerAs: 'vm',
+                title: 'History'
+            })
             .when('/reserve', {
                 controller: 'ReserveController',
                 templateUrl: 'views/reserve.view.html',

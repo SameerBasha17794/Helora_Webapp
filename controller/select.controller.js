@@ -33,7 +33,7 @@
                     url: getAverage,
                     method: "POST",
                     data: param,
-                    headers: { 'Content-Type': 'application/json' }
+                    headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }
                 }).success(function (data, status, headers, config) {
                     $scope.averagePrice = data.data['averagePrice'];
                     $scope.catName = data.data['catName'];

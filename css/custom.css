@@ -455,3 +455,16 @@ body.modal-open {
 
 
 
+/*History*/
+.table-color-header th{background:#00b2e2;padding:15px;color:#fff;}
+.table-custom{width:100%;max-width:100%;}
+.table-custom td{padding:15px;}
+.amnt-paidtr{border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-weight:700;}
+
+/*visit History*/
+.table-custom1 td, th{padding:5px 20px 5px 15px;}
+.table-custom1{border:1px solid #ccc;padding:10px;}
+.table-color-header1{width:100%;}
+.table-custom-responsive{padding:10px;}
+.pttd{padding:20px 0 20px 15px !important;}
+.hr-b{border-bottom:1px solid #ccc;}

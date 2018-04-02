@@ -18,7 +18,7 @@
                     url: getListing,
                     method: "POST",
                     data: param,
-                    headers: { 'Content-Type': 'application/json' }
+                    headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }
                 }).success(function (data, status, headers, config) {
                     $scope.bodyParts = data.data['bodyParts'];
                     $scope.category = data.data['category'];
