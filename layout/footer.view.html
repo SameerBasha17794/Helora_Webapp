@@ -9,9 +9,7 @@
 
 
     <!-- PAYPAL BUTTON -->
-      <div id="myContainerElement"></div>
-
-      <div id="paypal-button-container"></div>
+      <div id="paypal-button"></div>
 
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">HOME</a></li>
@@ -37,49 +35,63 @@
      
   <!--   <script>
         paypal.Button.render({
+=======
+<script>
+    var CREATE_PAYMENT_URL  = 'http://127.0.0.1:5000/product/placeOrder/';
+    var EXECUTE_PAYMENT_URL = 'http://127.0.0.1:5000/paypal/placeOrder/';
 
-            env: 'sandbox', // sandbox | production
+    paypal.Button.render({
+>>>>>>> dd36fab9d7cac53af2724c6a912d39179d360dae
 
-            // Show the buyer a 'Pay Now' button in the checkout flow
-            commit: true,
+        env: 'sandbox', // Or 'sandbox',
+        // Pass the client ids to use to create your transaction on sandbox and production environments
+        client: {
+            sandbox: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC', // from https://developer.paypal.com/developer/applications/
+            production: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC'  // from https://developer.paypal.com/developer/applications/
+        },
 
-            // payment() is called when the button is clicked
-            payment: function() {
-
-                // Set up a url on your server to create the payment
-                var CREATE_URL = '/payment/create/';
-
-                // Make a call to your server to set up the payment
-                return paypal.request.post(CREATE_URL)
-                    .then(function(res) {
-                        return res.paymentID;
-                    });
-            },
-
-            // onAuthorize() is called when the buyer approves the payment
-            onAuthorize: function(data, actions) {
-
-                // Set up a url on your server to execute the payment
-                var EXECUTE_URL = '/payment/execute/';
-
-                // Set up the data you need to pass to your server
-                var data = {
-                    paymentID: data.paymentID,
-                    payerID: data.payerID
-                };
-
-                // Make a call to your server to execute the payment
-                return paypal.request.post(EXECUTE_URL, data)
-                    .then(function (res) {
-                        window.alert('Payment Complete!');
-                    });
-            }
-
-        }, '#paypal-button-container');
-    </script>
+        commit: true, // Show a 'Pay Now' button
 
 
+        payment: function(data, actions) {
 
+            return paypal.request.post(CREATE_PAYMENT_URL).then(function(data) {
+                return 34234432;
+            });
+            return actions.payment.create({
+                transactions: [
+                    {
+
+                        reference_id: 454565,
+                        description: `Online Order at Healora.`,
+
+
+                        amount: {
+                            total:    '0.01',
+                            currency: 'USD'
+                        }
+                    }
+                ]
+            });
+        },
+
+        onAuthorize: function(data) {
+            return paypal.request.post(EXECUTE_PAYMENT_URL, {
+                paymentID: data.paymentID,
+                payerID:   data.payerID
+            }).then(function() {
+
+                // The payment is complete!
+                // You can now show a confirmation message to the customer
+            });
+        }
+
+    }, '#paypal-button');
+</script>
+
+
+
+<!-- 
 
 
 <script>
@@ -88,23 +100,31 @@
     paypal.Button.render({
 
 
-      env: 'sandbox', // Or 'sandbox',
-        // Pass the client ids to use to create your transaction on sandbox and production environments
-
-        client: {
-            sandbox:    'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC', // from https://developer.paypal.com/developer/applications/
-            production: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC'  // from https://developer.paypal.com/developer/applications/
-        },
+    env: 'sandbox', // Or 'sandbox',
+    // Pass the client ids to use to create your transaction on sandbox and production environments
+    client: {
+        sandbox: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC', // from https://developer.paypal.com/developer/applications/
+        production: 'AUD4gHNK2Jko7f9aeUEb9ttHncvs5VqMUmTUvRWmhUGHWWcfFjPJRWFpJsq0t3dz3qBkbnozRdij2tUC'  // from https://developer.paypal.com/developer/applications/
+    },
 
         // Pass the payment details for your transaction
         // See https://developer.paypal.com/docs/api/payments/#payment_create for the expected json parameters
 
         payment: function(data, actions) {
+
+            return paypal.request.post(CREATE_PAYMENT_URL).then(function(data) {
+                return data.id;
+            });
             return actions.payment.create({
                 transactions: [
                     {
+
+                        reference_id: 454565,
+                        description: `Online Order at Healora.`,
+
+
                         amount: {
-                            total:    '1.00',
+                            total:    '0.01',
                             currency: 'USD'
                         }
                     }
@@ -130,8 +150,7 @@
             console.log('The payment was cancelled!');
         }
 
-    }, '#myContainerElement');
+    }, '#paypal-button-container');
 </script>
  -->
 
- 
