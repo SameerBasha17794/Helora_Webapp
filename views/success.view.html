@@ -15,7 +15,7 @@
   <div class="container">
     <div class="row">
       
-      <h1 class="text-center"><b> You Purchased 2 Items</b></h1>
+      <h1 class="text-center"><b> Purchase Detail</b></h1>
           
           <div class="clr">&nbsp;</div>
           
@@ -26,35 +26,27 @@
                 <table class="table-custom table-color-header">
                   <thead>
                     <tr>
-                      <th>Product</th>
-                      <th>Price</th>
+                      <th>Procedure</th>
+                      <th>Date</th>
                       <th>Quantity</th>
-                      <th>Total</th>
+                      <th>Amount</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                     
-                      <td>COLONOSCOPY w/ 2 biopsies, Pre Exam, Post Exam</td>
-                      <td>$29.00</td>
+                      <td>{{name}}</td>
+                      <td>{{date_created}}</td>
                       <td>
                         <div class="stepper ">1</div>
                       </td>
-                      <td>$29.00</td>
+                      <td>${{total_amount}}</td>
                     </tr>
                    
                   </tbody>
                   
                    <tbody>
-                    <tr>
                     
-                      <td>COLONOSCOPY w/ 2 biopsies, Pre Exam, Post Exam</td>
-                      <td>$29.00</td>
-                      <td>
-                        <div class="stepper ">1</div>
-                      </td>
-                      <td>$29.00</td>
-                    </tr>
                     
                     
                      <tr class="amnt-paidtr">
@@ -62,7 +54,7 @@
                       <td>Total Amount Paid</td>
                       <td></td>
                       <td></td>
-                      <td>$58.00</td>
+                      <td>${{total_amount}}</td>
                     </tr>
                    
                   </tbody>

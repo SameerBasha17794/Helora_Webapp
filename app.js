@@ -27,6 +27,12 @@
                 controllerAs: 'vm',
                 title: 'Search'
             })
+            .when('/category', {
+                controller: 'CategoryController',
+                templateUrl: 'views/category.view.html',
+                controllerAs: 'vm',
+                title: 'Category'
+            })
             .when('/about', {
                 controller: 'AboutController',
                 templateUrl: 'views/about.view.html',

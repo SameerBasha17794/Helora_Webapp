@@ -1,15 +1,9 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="clr"></div>
-<section class="blog-mn">
-  <div class="container">
-    <div class="row">
-      <div class="title-text">
-        <h1>Your Items</h1>
-      </div>
-    </div>
-  </div>
-</section>
 <div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div><br>
+<br>
+<br>
 <div class="blog-section">
   <div class="container">
     <div class="row">
@@ -19,42 +13,44 @@
       <div class="clr">&nbsp;</div>
       <div class="visit-tablemn">
         <div class="table-custom-responsive table-color-header1">
+        
+        <div ng-repeat="data in data">
           <table class="table-custom1 table-color-header1">
             <thead>
               <tr>
                 <th>Order Purchsed</th>
-                <th>Amount Paid</th>
-                <th></th>
-                <th>Order # 2796272-2283525</th>
+                <th>Amount</th>
+                <th>Payment Status</th>
+                <th>Order #</th>
               </tr>
             </thead>
             <tbody class="hr-b">
               <tr>
-                <td>14 December 2017</td>
-                <td>$29.00</td>
-                <td></td>
-                <td>$29.00</td>
+                <td>{{data.date_created}}</td>
+                <td>${{data.total_amount}}</td>
+                <td>{{data.status}}</td>
+                <td>{{data.order_id}}/td>
               </tr>
             </tbody>
             <tbody>
               <tr>
-                <td class="pttd"><b >Gasterology</b>
+                <td class="pttd"><b >{{data.speciality}}</b>
                   <div class="clr">&nbsp;</div>
-                  COLONOSCOPY w/ 2 biopsies, Pre Exam, Post Exam<br /></td>
+                  {{data.name}}<br /></td>
                 <td></td>
                 <td></td>
                 <td><b>Doctor Details:</b><br />
-                  Kunal Monga<br />
-                  A-65, Jawahar Colony<br />
-                  NIT Faridabad<br />
-                  Harayna</td>
+                  {{data.doctor_name}}<br />
+                  {{data.degree_title}}<br />
+                 <!--  NIT Faridabad<br />
+                  Harayna</td> -->
               </tr>
             </tbody>
           </table>
          <div class="clr">&nbsp;</div>
+        </div>
           
-          
-           <table class="table-custom1 table-color-header1">
+          <!--  <table class="table-custom1 table-color-header1">
             <thead>
               <tr>
                 <th>Order Purchsed</th>
@@ -85,7 +81,7 @@
                   Harayna</td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
         </div>
       </div>
     </div>

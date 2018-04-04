@@ -1,8 +1,13 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="clr">&nbsp;</div>
+
+<div class="clr">&nbsp;</div>
+
 <div class="select-doctor">
 
 <div class="clr">&nbsp;</div>
+
+
 
   <div class="container">
     <div class="row"><h3 class="thm-hd">Reserve Your Price
@@ -13,10 +18,10 @@
         <div class="col-md-2 pl0"> <img class="img-responsive" src="{{displayProcedure.doctor_image}}" /> </div>
         <div class="col-md-6">
           <h3 class="mt0">{{displayProcedure.doctor_name}}</h3>
-          <h4>{{displayProcedure.doctor_speciality}}</h4>
-          <span><b>Degree:</b> {{displayProcedure.doctor_speciality}}</span><br />
-          <span><b>Experience:</b> 11yrs</span> <br>
-          <span><b>Total Amount:</b> {{displayProcedure.total}} </span> </div>
+          <h4>&nbsp; {{displayProcedure.doctor_speciality}}</h4>
+          <span><b>Degree:</b>&nbsp;  {{displayProcedure.doctor_speciality}}</span><br />
+          <span><b>Experience:</b>&nbsp;  11yrs</span> <br>
+          <span><b>Total Amount:</b> &nbsp; ${{displayProcedure.total}} </span> </div>
         <div class="col-md-4 text-right"> <span class="speciality-active">{{displayProcedure.doctor_speciality}}</span><img src="images/Gastroenterology-Blue.png" width="50"/></div>
       </div>
       <div class="col-md-12">
@@ -26,10 +31,80 @@
 
 
       <div class="clr">&nbsp;</div>
-      <div class="modal fade col-md-offset-1" id="myModal1" role="dialog">
+
+
+
+  <div class="modal fade col-md-offset-1" id="myModal1" role="dialog">
         <div class="modal-dialog"> 
           
-          <!-- Modal content-->
+         
+          <div class="modal-content rp-popmn">
+            
+            <div class="modal-body col-md-12">
+
+   <button type="button" class="close custom-close" data-dismiss="modal" aria-label="Close">
+          <img src="images/cancel-btn.png" width="30">
+        </button>
+
+              <div class="col-md-6 popup-lft pull-right mt65">
+                  
+                  <div class="text-center"> <img src="images/dermat-icn.png" width="100"></div>
+                  
+              <div class="paymnt-popb mt65">
+                       <div><h4><b>Respngervation Fees : </b><span class="pull-right">$874.00</span></h4></div>
+                            <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">$874 .00</span></h4></div>
+                             <div><h4><b>Total Price: </b><span class="pull-right">$874.00</span></h4></div>
+                    </div>
+
+                    <div class="align-center"><a ng-click="reserve()" class="button reserve-btn mt10 col-md-10">Pay The Reservation Fees</a></div>
+                
+              </div>
+ 
+              <div class="popup-rgt pull-left col-md-6">
+
+              <div class="f16"><h3>Achilles Repair</h3><p><b>CPT :</b> <span class="pull-right">12134</span></p><p> <b>SKU :</b> <span class="pull-right">12134</span></p></div>
+
+                    <div class="paymnt-popm">
+
+                                       <ul>
+                                         
+                              <li><div class="mr10"><img src="images/wallet.png" width="20"> </div><div> Pre-procedure consult, review and go over any questions </div></li>
+                                <li><div class="mr10"><img src="images/wallet.png" width="20"> </div> <div> MAC anesthesia </div>  </li>
+                     <li><div class="mr10"><img src="images/wallet.png" width="20"> </div><div>Physician Professional Fee (Colonoscopy) </div></li>
+              <li><div class="mr10"><img src="images/wallet.png" width="20"> </div><div>Physician Professional Fee (Colonoscopy) </div></li> 
+              <li><div class="mr10"><img src="images/wallet.png" width="20"> </div><div>Physician Professional Fee (Colonoscopy) </div></li>     
+
+                            </ul>
+
+                    </div>
+
+
+      
+
+               </div>
+            
+            
+           
+            
+             <br />
+            </div>
+          </div>
+        </div>
+      </div> 
+
+
+
+
+
+
+
+
+
+
+     <!--  <div class="modal fade col-md-offset-1" id="myModal1" role="dialog">
+        <div class="modal-dialog"> 
+          
+         
           <div class="modal-content rp-popmn">
             <div class="modal-header">
             
@@ -47,7 +122,7 @@
                   <li>
                     <div style="display: table-cell;vertical-align: top;"><img src="images/wallet.png" width="30"> </div>
                     <div style="display: table-cell;"> <b> Total Amount<br />
-                      {{displayProcedure.total}}</b></div>
+                      &nbsp;${{displayProcedure.total}}</b></div>
                   </li>
                 </ul>
                 <br />
@@ -63,7 +138,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --!>
     </div>
   </div>
 </div>
