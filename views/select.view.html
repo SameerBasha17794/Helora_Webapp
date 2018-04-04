@@ -1,10 +1,13 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
+
+<div class="clr">&nbsp;</div>
+
 <div class="section-detail">
   <div class="container">
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
-          <div class="col-md-6"><b class="hd-select">{{catName}}</b></div>
+          <div class="col-md-6"><img src="images/dermat-icn.png" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
           <div class="col-md-6 text-right"><b>CPT:</b>{{cpt}} &nbsp;<b>SKU:</b>{{sku}}</div>
         </div>
         <p class="p15">{{desc}}</p>
@@ -16,9 +19,9 @@
   </div>
 </div>
 
-  <div ng-hide="getId != ''" class="row">
-    <div class="col-md-2 col-md-offset-10">
-      <div class="btn-home" data-toggle="modal" data-target="#myModal">Register</div>
+  <div ng-hide="getId != ''" class="row select-doctor">
+    <div class="col-md-3 col-md-offset-4">
+      <div class="btn-home text-center" data-toggle="modal" data-target="#myModal">Register</div>
     </div>
   </div>
 
@@ -36,7 +39,7 @@
             <div class="col-md-6">
               <h3 class="mt0">{{getDoc.doctor_name}}</h3>
               <h4>{{getDoc.doctor_speciality}}</h4>
-              <span><b>Degree:</b>{{getDoc.degree_title}}/span><br />
+              <span><b>Degree:</b>{{getDoc.degree_title}}</span><br />
               <span><b>Experience:</b> 11yrs</span> 
             </div>
             <div class="col-md-4 mt65 text-right"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
@@ -103,13 +106,12 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>
 </div>
-
 
 
 
