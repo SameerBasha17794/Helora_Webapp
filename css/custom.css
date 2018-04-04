@@ -1,8 +1,8 @@
 
 @font-face {
-    font-family: 'ralewaybold';
-    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-family: 'source_sans_probold';
+    src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
+         url('sourcesanspro-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -12,9 +12,9 @@
 
 
 @font-face {
-    font-family: 'ralewaylight';
-    src: url('../fonts/raleway-light-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-light-webfont.woff') format('woff');
+    font-family: 'source_sans_proitalic';
+    src: url('../fonts/sourcesanspro-it-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-it-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,9 +24,9 @@
 
 
 @font-face {
-    font-family: 'ralewaymedium';
-    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-family: 'source_sans_prolight';
+    src: url('../fonts/sourcesanspro-light-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -36,9 +36,21 @@
 
 
 @font-face {
-    font-family: 'ralewayregular';
-    src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
-         url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-family: 'source_sans_proregular';
+    src: url('../fonts/sourcesanspro-regular-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../fonts/sourcesanspro-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/sourcesanspro-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -48,10 +60,10 @@
 
 /*Main*/
 html{height:100%;}
-body{min-height:600px;}
+body{min-height:600px;font-size:14px;}
 a{cursor:pointer;}
 a:hover{text-decoration:none;}
-body{font-family: 'ralewayregular';}
+body{font-family: 'source_sans_proregular';}
 .mt5{margin-top:5px !important;}
 .mt10{margin-top:10px !important;}
 .ml20{margin-left:15px !important;}
@@ -66,8 +78,11 @@ body{font-family: 'ralewayregular';}
 .pl50{padding-left:50px !important;}
 .pr0{padding-right:0 !important;}
 .mtm5{margin-top:-5px !important;}
-.f16{font-size:16px;}
+.f16{font-size:16px !important;}
+.f14{font-size:14px !important;}
 .mtm35{margin-top:-35px;}
+.f22{font-size:22px !important;}
+.mr10{margin-right:10px !important;}
 
 /*Index Page*/
 .dropdown-menu li a {color:#333 !important;padding:0px 5px;}
@@ -79,7 +94,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .clr{clear:both;margin:10px 0 !important;}
 .divider{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-top:15px;}
 .how-mn{color:#fff;}
-.search-doctor{background:#00b2e2;color:#fff;border-radius:50px;padding:15px;}
+.search-doctor{background:#FF7600;color:#fff;border-radius:50px;padding:15px;font-size:16px;}
 #services{padding:20px 20px 40px 20px;}
 .wht-clr{color:#fff;}
 
@@ -90,18 +105,21 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 
 /*Select-Doctor*/
 .hd-select{color:#00b2e2;vertical-align:bottom;}
-.btn-home{background:#00b2e2;padding:15px 20px;color:#fff;border-radius:50px;margin-top:30px;margin-right:20px;font-size:18px;}
-.btn-home:hover{text-decoration:none;color:#fff;background:#039ec7;}
+.btn-home{background:#FF7600;padding:15px 20px;color:#fff;border-radius:10px;margin-right:20px;font-size:18px;  transition: transform .2s;}
+.btn-home:hover{text-decoration:none;color:#fff;background:#db6601; transition: transform .2s; }
 .carousel-inner{overflow:inherit !important;}
 .select-doctor-inner:hover{background:#eee;}
 .section-detail{margin-top:70px; padding:20px;}
 .inr-sectiondetail{border:1px solid #ccc;padding:20px;}
 .detail-heading{border-bottom:1px solid #ccc;padding-bottom:10px;overflow:hidden;font-size:18px;}
 .section-detail p{font-size:20px;}
-.select-btn{padding:15px 50px;border-radius:30px;background:transparent;border:1px solid #00b2e2;text-align:right;}
-a.select-btn{color:#00b2e2 !important;}
-a.select-btn:hover{background:#00b2e2 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
-.select-doctor{border-bottom:1px solid #ccc;padding:30px 0;}
+.select-btn{padding:15px 50px;border-radius:30px;background:transparent;border:1px solid #FF7600;text-align:right;font-size:18px;}
+a.select-btn{color:#FF7600 !important;}
+a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
+.select-btnwht{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #fff;text-align:right;font-size:18px;}
+a.select-btnwht{color:#fff !important;}
+a.select-btnwht:hover{background:#fff !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
+
 
 /*Index Header*/
 ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
@@ -150,20 +168,20 @@ ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 }
 
 .border-btn {
-	border: 1px solid #00b2e2;
+	border: 1px solid #FF7600;
 	padding: 7px 15px;
 	border-radius: 2px;
 	display: inline-block;
 }
 
 a.border-btn {
-	color: #00b2e2;
+	color: #FF7600;
 	text-transform: uppercase;
 	font-weight: 500;
 }
 
 .border-btn:hover {
-	background: #00b2e2;
+	background: #FF7600;
 	color: #fff;
 }
 
@@ -184,7 +202,7 @@ a.border-btn {
 .main-nav ul.navbar-nav li a {
 	color: #fff;
 	font-weight: 700;
-	font-size: 11px;
+	font-size: 14px !important;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
 }
@@ -403,17 +421,26 @@ p.alrdy-act{font-size:14px !important;}
 /*Reserve price*/
 span.speciality-active{color:#00b2e2;font-size:18px;font-weight:bold;}
 .fn-rp{font-size:22px;font-weight:600;margin-top:40px;margin-left:0;padding:0;}
-.rp-btn a{padding:20px;border-radius:30px;background:#00b2e2;color:#FFF;}
+.rp-btn a{padding:20px;border-radius:30px;background:#FF7600;color:#FFF;}
 .rp-btn{margin-top:60px;}
-
+.rp-popmn{width:630px !important;margin-left:-160px;margin-top:7.75rem !important;}
+.reserve-btn{padding:10px;border-radius: 30px;background: transparent;border: 1px solid #FF7600;text-align:center;font-size: 18px;margin-left:25px;}
 
 .popup-lft ul li{list-style-type:none;border-bottom:1px solid #dfdfdf;padding:10px 0;color:#666666;}
 .popup-lft ul li div{display:inline-block;padding-right:10px;}
 .popup-lft ul{margin-left:0;padding-left:0;padding-top:15px;}
+.popup-lft{height:100%;}
 .popup-lft p, h3{padding:0;margin:0;}
-
-.rp-popmn{width:80% !important;}
+.paymnt-popm ul li{padding-bottom:10px;}
+.rp-popmn .modal-body{margin:0 !important;padding:0 !important;}
 .pop-top{border-bottom:1px solid #ccc;padding-bottom:15px;}
+.popup-rgt h3{color:#00b2e2;margin-bottom:10px;}
+.popup-rgt{padding:20px;}
+.paymnt-popm ul li div{display:inline-block;vertical-align:top;}
+.paymnt-popm{padding:20px 0;}
+.custom-close{top:-19px;position:absolute;right:-15px;opacity:1 !important;background:#fff;}
+
+
 
 /*popup*/
 .modal-header{border-top:3px solid #00b2e2;}
@@ -455,3 +482,24 @@ body.modal-open {
 
 
 
+/*History*/
+.table-color-header th{background:#00b2e2;padding:15px;color:#fff;}
+.table-custom{width:100%;max-width:100%;}
+.table-custom td{padding:15px;}
+.amnt-paidtr{border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-weight:700;}
+
+/*visit History*/
+.blog-section{background:url(images/blog.jpg);}
+.table-custom1 td, th{padding:5px 20px 5px 15px;}
+.table-custom1{border:1px solid #ccc;padding:10px;}
+.table-color-header1{width:100%;}
+.table-custom-responsive{padding:10px;}
+.pttd{padding:20px 0 20px 15px !important;}
+.hr-b{border-bottom:1px solid #ccc;}
+
+
+/*Reserve Popup*/
+.popup-lft ul li{display:block;font-size:18px;border-bottom:1px solid #fff;color:#fff;}
+.popup-lft ul li div{vertical-align:top;}
+.paymnt-popm ul{margin-left:0;padding-left:0;}
+.paymnt-popm ul li{list-style-type: none;}

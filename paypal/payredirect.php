@@ -25,8 +25,8 @@ $transaction = new \PayPal\Api\Transaction();
 $transaction->setAmount($amount);
 
 $redirectUrls = new \PayPal\Api\RedirectUrls();
-$redirectUrls->setReturnUrl("http://front.healora.com/test.php")
-    ->setCancelUrl("http://front.healora.com/test.php");
+$redirectUrls->setReturnUrl("http://localhost/healora_webapp/paypal/payresponse.php")
+    ->setCancelUrl("http://localhost/healora_webapp/paypal/payresponse.php");
 
 $payment = new \PayPal\Api\Payment();
 $payment->setIntent('sale')

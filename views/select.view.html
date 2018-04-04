@@ -2,27 +2,30 @@
 
 <div class="clr">&nbsp;</div>
 
+
 <div class="section-detail">
   <div class="container">
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
           <div class="col-md-6"><img src="images/dermat-icn.png" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
-          <div class="col-md-6 text-right"><b>CPT:</b>{{cpt}} &nbsp;<b>SKU:</b>{{sku}}</div>
+          <div class="col-md-6 text-right"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
         </div>
         <p class="p15">{{desc}}</p>
-        <p class="p15 amt-sctn text-right"> <span class="pb5 mt10"><b>Avg Healora Price:</b> ${{averagePrice}}</span><br />
-          <span class="pb5 mt10"><b>Avg Insaurance Price: </b>${{insaurancePrice}}</span><br />
+        <p class="p15 amt-sctn text-right"> <span class="pb5 "><b>Avg Healora Price:</b> ${{averagePrice}}</span><br /><br />
+          <span class="pb5 mt10"><b>Avg Insaurance Price: </b>${{insaurancePrice}}</span><br /><br />
           <span class="pb5 mt10"><b>Saving: </b>${{saving}}</span><br />
       </div>
     </div>
   </div>
 </div>
 
+<div class="container">
   <div ng-hide="getId != ''" class="row select-doctor">
     <div class="col-md-3 col-md-offset-4">
-      <div class="btn-home text-center" data-toggle="modal" data-target="#myModal">Register</div>
+      <div class="btn-home text-center f22" data-toggle="modal" data-target="#myModal">Register</div>
     </div>
+  </div>
   </div>
 
   <div ng-hide="getId == ''" class="select-doctor">
@@ -48,7 +51,7 @@
       </div>
     </div>
   </div>
-<div class="clr">&nbsp;</div>
+
 
 
 

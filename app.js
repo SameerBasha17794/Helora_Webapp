@@ -27,6 +27,12 @@
                 controllerAs: 'vm',
                 title: 'Search'
             })
+            .when('/category', {
+                controller: 'CategoryController',
+                templateUrl: 'views/category.view.html',
+                controllerAs: 'vm',
+                title: 'Category'
+            })
             .when('/about', {
                 controller: 'AboutController',
                 templateUrl: 'views/about.view.html',
@@ -38,6 +44,12 @@
                 templateUrl: 'views/contact.view.html',
                 controllerAs: 'vm',
                 title: 'Contact'
+            })
+            .when('/history', {
+                controller: 'HistoryController',
+                templateUrl: 'views/history.view.html',
+                controllerAs: 'vm',
+                title: 'History'
             })
             .when('/reserve', {
                 controller: 'ReserveController',
