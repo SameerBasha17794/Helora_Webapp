@@ -18,7 +18,7 @@
                 url: testing,
                 method: "GET",
                 data: param,
-                headers: {"Access-Control-Allow-Origin":"*"}
+                headers: {'Content-Type': 'application/json'}
             }).success(function (data, status, headers, config) {
                 console.log("success");
             }).error(function (data, status, headers, config) {
