@@ -10,16 +10,19 @@
         initController();
 
         function initController() {
+
+
+
             var param = JSON.stringify({});
             $http({
                 url: testing,
-                method: "POST",
+                method: "GET",
                 data: param,
-                headers: { 'Content-Type': 'application/json','Access-Control-Allow-Origin': '*' }
+                headers: {"Access-Control-Allow-Origin":"*"}
             }).success(function (data, status, headers, config) {
                 console.log("success");
             }).error(function (data, status, headers, config) {
-                console.log("error");
+                console.log("fds");
 
             });
             // loadCurrentUser();

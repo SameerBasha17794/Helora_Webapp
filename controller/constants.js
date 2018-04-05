@@ -34,6 +34,6 @@ var registerUrl = domain +"/user/register/";
 var finalPrice = domain +"/product/getFinalPrice/";
 var getOrder = domain +"/product/getOrder/";
 var getHistory = domain +"/product/getOrderHistory/";
-var testing = domain +"/product/testing/";
+var testing = domain +"/";
 var order = domain +"/product/placeOrder/";
 var redirect = domainurl +"/paypal/payredirect.php";
