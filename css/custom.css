@@ -81,6 +81,8 @@ body{font-family: 'source_sans_proregular';}
 .pl50{padding-left:50px !important;}
 .pr0{padding-right:0 !important;}
 .mtm5{margin-top:-5px !important;}
+.mt40{margin-top:40px !important;}
+.f26{font-size:26px !important;}
 .f16{font-size:16px !important;}
 .f14{font-size:14px !important;}
 .f18{font-size:18px !important;}
@@ -506,8 +508,10 @@ body.modal-open {
 /*Reserve*/
 .sctn-reserve span{font-size:18px !important;}
 .reserve-cont h3{color:#00b2e2;}
-
+.reserve-cont{margin-left:20px;}
 .sctn-reserve{border-bottom:1px solid #ccc;padding:20px 0;overflow:hidden;}
+.adrs-sctn{display:inline-block;width:6%;vertical-align:top;}
+.adrs-sctn1{display:inline-block;width:90%;}
 
 
 /*Reserve Popup*/
