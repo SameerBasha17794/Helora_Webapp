@@ -15,8 +15,8 @@
 
             var param = JSON.stringify({});
             $http({
-                url: testing,
-                method: "GET",
+                url: testing1,
+                method: "POST",
                 data: param,
                 headers: {'Content-Type': 'application/json'}
             }).success(function (data, status, headers, config) {
