@@ -18,6 +18,9 @@
                 }).success(function (data, status, headers, config) {
                     $scope.displayProcedure = data.data;
                     $scope.total = data.data['total'];
+                    $scope.balance = data.data['balance'];
+                    $scope.reservePrice = data.data['reservePrice'];
+                    $scope.covered = data.data['proc_detail'];
                 }).error(function (data, status, headers, config) {
                     console.log("error")
                    
@@ -25,7 +28,7 @@
         }
 
         $scope.reserve = function(name) {
-             var param = JSON.stringify({"temp": "1","total": $scope.total,"user_id": UserService.GetId(),"doctor_procedure": UserService.getPlan()});
+             var param = JSON.stringify({"temp": "1","total": $scope.total,"balance": $scope.balance,"reservePrice": $scope.reservePrice,"user_id": UserService.GetId(),"doctor_procedure": UserService.getPlan()});
                 $http({
                     url: order,
                     method: "POST",

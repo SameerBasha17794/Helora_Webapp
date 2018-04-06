@@ -8,9 +8,9 @@
     function SpecialityController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
         var vm = this;
         initController();
-
+        $scope.spec=UserService.getSpeciality();
         function initController() {
-            var param = JSON.stringify({"speciality": "Gastroenterology"});
+            var param = JSON.stringify({"speciality":UserService.getSpeciality()});
                 $http({
                     url: getProcedure,
                     method: "POST",

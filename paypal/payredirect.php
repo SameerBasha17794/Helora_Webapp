@@ -18,7 +18,7 @@ $placeOrderId = $_REQUEST["placeOrderId"];
 $payer = new \PayPal\Api\Payer();
 $payer->setPaymentMethod('paypal');
 $amount = new \PayPal\Api\Amount();
-$amount->setTotal('1.00');
+$amount->setTotal('2.00');
 $amount->setCurrency('USD');
 
 $transaction = new \PayPal\Api\Transaction();
@@ -34,10 +34,11 @@ $payment->setIntent('sale')
     ->setTransactions(array($transaction))
     ->setRedirectUrls($redirectUrls);
 // 4. Make a Create Call and print the values
-
+echo "here";
 try {
     // print_r($apiContext);
     $data = $payment->create($apiContext);
+    echo $data;die;
     // echo "<pre>";
     // echo $payment->getId();
     // echo "</pre>";
@@ -46,6 +47,7 @@ try {
 
     $ch = curl_init();
     echo "<pre>";
+    echo "fasdfdad";
     $myparam = array("temp" => "2", "payment_id" => (string)$payment->getId(), "request" => (string)$payment, "placeOrderId" => (string)$placeOrderId); 
     $myparam = json_encode($myparam);
     curl_setopt($ch, CURLOPT_URL,"127.0.0.1:5000/product/placeOrder/");
@@ -55,12 +57,16 @@ try {
     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));                                           
     $server_output = curl_exec ($ch);
     curl_close ($ch);
-   
+    print_r($server_output);
+   echo "fasdfasdf";
 
 }
 catch (\PayPal\Exception\PayPalConnectionException $ex) {
+    echo "<pre>";
+    print_r($ex);
     echo $ex->getData();
 }
+echo "here";
 ?>
 
 <html>

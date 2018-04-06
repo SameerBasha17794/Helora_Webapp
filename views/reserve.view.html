@@ -17,12 +17,12 @@
       
       
       <div class="sctn-reserve col-md-7">
-        <div class="img-reverse col-md-3"><img src="images/doctor.png"></div>
+        <div class="img-reverse col-md-3"><img src="{{displayProcedure.doctor_image}}"></div>
         <div class="reserve-cont col-md-7">
-          <h3>Dr. Pradeep Aggarwal</h3>
-          <p class="f18 pt5">Gastroenterology</p>
-          <p class="f18"><b>Degree :</b> <span>MBBS, MD</span></p>
-           <p class="f18"><b>Experience :</b> <span>11yrs</span></p>
+          <h3>{{displayProcedure.doctor_title}} {{displayProcedure.doctor_name}}</h3>
+          <p class="f18 pt5">{{displayProcedure.doctor_speciality}}</p>
+          <p class="f18"><b>Degree :</b> <span>{{displayProcedure.degree_title}}</span></p>
+           <p class="f18"><b>Experience :</b> <span>{{displayProcedure.doctor_speciality}}</span></p>
             
         </div>
         
@@ -33,7 +33,7 @@
           
           <h3><b>My Address:</b></h3><br>
           
-      <div class="adrs-sctn">    <img src="images/location.png" width="25"></div><div class="adrs-sctn1"><span class="f18" style="margin-top:10px;color:#737373;">24334 Washington court<br>Appartment 77 <br> Farmington Hills, <br> Michigan, USA, 48335</span></div></div>
+      <div class="adrs-sctn">    <img src="images/location.png" width="25"></div><div class="adrs-sctn1"><span class="f18" style="margin-top:10px;color:#737373;">{{displayProcedure.address1}}<br>{{displayProcedure.appartment}}, {{displayProcedure.address2}}<br> {{displayProcedure.city}}, <br> {{displayProcedure.state}}, USA, {{displayProcedure.zip}}</span></div></div>
           
          </div>
          
@@ -44,9 +44,10 @@
            
            <h2 class="mt0">Payment Summary</h2>
            <div class="paymnt-popb mt40">
-                            <div class="pb5"><h4><b>Respngervation Fees : </b><span class="pull-right">$874.00</span></h4></div>
-                            <div class="pb5"><h4><b>Amount Due at visit :</b> <span class="pull-right">$874 .00</span></h4></div>
-                            <div class="pb5"><h4><b>Total Price: </b><span class="pull-right">$874.00</span></h4></div>
+                            <div class="pb5"><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
+                            <div class="pb5"><h4><b>Reservation Charges : </b><span class="pull-right">${{displayProcedure.reservePrice}}</span></h4></div>
+                            <div class="pb5"><h4><b>Amount Due at visit :</b> <span class="pull-right"> ${{displayProcedure.balance}}</span></h4></div>
+                            
                              
                              <div class="clr">&nbsp;</div>
                              
@@ -124,12 +125,13 @@
 
               <div class="col-md-6 popup-lft pull-right mt65">
                   
-                  <div class="text-center"> <img src="images/dermat-icn.png" width="80"></div>
+                  <div class="text-center"> <img src="{{displayProcedure.image}}" width="80"></div>
                   
               <div class="paymnt-popb mt40">
-                       <div><h4><b>Respngervation Fees : </b><span class="pull-right">$874.00</span></h4></div>
-                            <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">$874 .00</span></h4></div>
-                             <div><h4><b>Total Price: </b><span class="pull-right">$874.00</span></h4></div>
+                      <div><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
+                       <div><h4><b>Pay Now : </b><span class="pull-right">{{displayProcedure.reservePrice}}</span></h4></div>
+                      <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">${{displayProcedure.balance}}</span></h4></div>
+                       
                     </div>
 
                     <div class="align-center"><a ng-click="reserve()" class="button reserve-btn mt40 col-md-10">Pay The Reservation Fees</a></div>
@@ -138,22 +140,17 @@
  
               <div class="popup-rgt pull-left col-md-6">
 
-              <div class="f16"><h3 class="f26">Achilles Repair</h3><p><b>CPT :</b> <span>12134</span>&nbsp; <b>SKU :</b> <span>12134</span></p>
+              <div class="f16"><h3 class="f26">{{displayProcedure.catName}}</h3>
+              <p><b>CPT :</b> <span>{{displayProcedure.cpt}}</span>&nbsp; <b>SKU :</b> <span>{{displayProcedure.sku}}</span></p>
               
-              <p>wih <b>Dr. Pradeep Aggarwal</b></p>
+              <p>wih <b>{{displayProcedure.doctor_title}} {{displayProcedure.doctor_name}}</b></p>
               
               </div>
 
                     <div class="paymnt-popm">
 
-                                       <ul>
-                                         
-                              <li><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text"> Pre-procedure consult, review and go over any questions </div></li>
-                                <li><div class="mr10"><img src="images/tick.png" width="20"> </div> <div class="pop-text"> MAC anesthesia </div>  </li>
-                     <li><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text">Physician Professional Fee (Colonoscopy) </div></li>
-              <li><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text">Physician Professional Fee</div></li> 
-              <li><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text">Physician Professional Fee</div></li>     
-
+                            <ul>
+                              <li ng-repeat="getRep in covered"><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text"> {{getRep.data}} </div></li>
                             </ul>
 
                     </div>

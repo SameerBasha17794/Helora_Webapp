@@ -10,30 +10,11 @@
         initController();
 
         function initController() {
-
-
-
-            var param = JSON.stringify({});
-            $http({
-                url: test,
-                method: "POST",
-                data: param,
-                headers: {'Content-Type': 'application/json'}
-            }).success(function (data, status, headers, config) {
-                console.log("fasdfasdfasdfsadf");
-            }).error(function (data, status, headers, config) {
-                console.log("fds");
-
-            });
-            // loadCurrentUser();
-            
-            // $location.path('/');
+ // $location.path('/');
         }
-
         function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username)
                 .then(function (user) {
-            
             });
         }
         $scope.instant = function(name) {
