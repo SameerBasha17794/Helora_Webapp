@@ -15,12 +15,12 @@
 
             var param = JSON.stringify({});
             $http({
-                url: testing1,
+                url: test,
                 method: "POST",
                 data: param,
                 headers: {'Content-Type': 'application/json'}
             }).success(function (data, status, headers, config) {
-                console.log("success");
+                console.log("fasdfasdfasdfsadf");
             }).error(function (data, status, headers, config) {
                 console.log("fds");
 

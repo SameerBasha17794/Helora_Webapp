@@ -36,6 +36,7 @@ var registerUrl = domain +"/user/register/";
 var finalPrice = domain +"/product/getFinalPrice/";
 var getOrder = domain +"/product/getOrder/";
 var getHistory = domain +"/product/getOrderHistory/";
+var test = domain +"/product/test/";
 var testing1 = domain +"/product/testing/";
 var testing = domain +"/";
 var order = domain +"/product/placeOrder/";
