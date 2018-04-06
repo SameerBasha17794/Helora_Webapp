@@ -74,6 +74,7 @@ body{font-family: 'source_sans_proregular';}
 .mt0{margin-top:0 !important;}
 .pb5{padding-bottom:5px !important;}.
 .pb10{padding-bottom:10px !important;}
+.pt10{padding-bottom:10px !important;}
 .pl0{padding-left:0 !important;}
 .pb20{padding-bottom:20px;}
 .pt5{padding-top:5px;}
@@ -104,6 +105,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .search-doctor{background:#FF7600;color:#fff;border-radius:50px;padding:15px;font-size:16px;}
 #services{padding:20px 20px 40px 20px;}
 .wht-clr{color:#fff;}
+.works-btn{padding:15px 40px;font-size:20px;background:#FF7600;border-radius:30px;color:#fff;border:0;margin-top:40px;}
 
 /*Footer*/
 .footer{background:#3e3e3e;padding:40px 20px;color:#fff;font-size:16px;}
@@ -116,6 +118,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .btn-home:hover{text-decoration:none;color:#fff;background:#db6601; transition: transform .2s; }
 .carousel-inner{overflow:inherit !important;}
 .select-doctor-inner:hover{background:#eee;}
+.select-doctor{border-bottom:1px solid #ccc;}
 .section-detail{margin-top:70px; padding:20px;}
 .inr-sectiondetail{border:1px solid #ccc;padding:20px;}
 .detail-heading{border-bottom:1px solid #ccc;padding-bottom:10px;overflow:hidden;font-size:18px;}
@@ -125,7 +128,7 @@ a.select-btn{color:#FF7600 !important;}
 a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
 .select-btnwht{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #fff;text-align:right;font-size:18px;}
 a.select-btnwht{color:#fff !important;}
-a.select-btnwht:hover{background:#fff !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
+a.select-btnwht:hover{background:#fff !important;color:#000 !important; transition-duration: 0.7s;text-decoration:none !important;}
 
 
 /*Index Header*/
@@ -512,6 +515,7 @@ body.modal-open {
 .sctn-reserve{border-bottom:1px solid #ccc;padding:20px 0;overflow:hidden;}
 .adrs-sctn{display:inline-block;width:6%;vertical-align:top;}
 .adrs-sctn1{display:inline-block;width:90%;}
+.works-mn ul li{list-style-type:none;display:inline-block;width:32%;text-align:center;}
 
 
 /*Reserve Popup*/
@@ -520,3 +524,10 @@ body.modal-open {
 .paymnt-popm ul{margin-left:0;padding-left:0;}
 .paymnt-popm ul li{list-style-type: none;}
 .pop-text{width:240px;}
+
+
+
+/*Sucess Page*/
+.sucess-pnts ul li{list-style-type:none;}
+
+
