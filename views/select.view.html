@@ -28,7 +28,7 @@
   </div>
   </div>
 
-  <div ng-hide="getId == ''" class="select-doctor">
+  <div ng-hide="getId == ''">
     <div class="container">
       <div class="row">
         <h2 class="thm-hd">
@@ -37,7 +37,7 @@
         </h2>
         <br />
         <div ng-repeat="getDoc in doctorList">
-          <div class="col-md-12 pb20 select-doctor">
+          <div class="col-md-12 pb10 pt10 select-doctor">
             <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
             <div class="col-md-6">
               <h3 class="mt0">{{getDoc.doctor_name}}</h3>
