@@ -49,10 +49,10 @@
       <div class="col-md-offset-3 col-md-6 text-center">
         <div class="product-mn">
           <img src="images/body.png" />
-          <div ng-click="clicked('Head')" class="pw-circle" style="left:85px;top:12px;" data-toggle="modal" data-target="#myModal"></div>
-          <div ng-click="clicked('Abdoman')" class="pw-circle" style="left:120px;top:50px;" data-toggle="tooltip" data-placement="top" title="Hooray!"></div>
-
-
+          <div ng-click="clicked('Head')" class="pw-circle" style="left:85px;top:12px;" data-toggle="modal" data-placement="top" title="Hooray!"  data-target="#myModal"></div>
+     <div ng-click="clicked('Abdoman')" class="pw-circle" style="left:120px;top:50px;" data-toggle="tooltip modal" data-placement="top" title="Hooray!" data-target="#myModal">
+       
+     </div>
 
 
           <div class="pw-circle" style="left:70px;top:80px;" data-toggle="tooltip" data-placement="top" title="Hooray!"></div>
@@ -88,9 +88,17 @@
 
 
 <script>
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
+
+$(document).ready(function() {
+$('body').tooltip({
+selector: "[data-tooltip=tooltip]",
+container: "body"
+});
 });
 </script>
+
+
+
+
 
 <div ng-include="'layout/footer.view.html'"></div>
