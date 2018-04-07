@@ -81,6 +81,12 @@
                 controllerAs: 'vm',
                 title: 'select'
             })
+            .when('/faq', {
+                controller: 'FaqController',
+                templateUrl: 'views/faq.view.html',
+                controllerAs: 'vm',
+                title: 'Faq'
+            })
             .when('/myspeciality', {
                 controller: 'SpecialityController',
                 templateUrl: 'views/speciality.view.html',

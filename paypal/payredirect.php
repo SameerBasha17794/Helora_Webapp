@@ -18,7 +18,22 @@ $placeOrderId = $_REQUEST["placeOrderId"];
 $payer = new \PayPal\Api\Payer();
 $payer->setPaymentMethod('paypal');
 $amount = new \PayPal\Api\Amount();
-$amount->setTotal('2.00');
+
+
+$ch1 = curl_init();
+$param = array("id" => $_REQUEST["placeOrderId"]); 
+$param = json_encode($param);
+curl_setopt($ch1, CURLOPT_URL,"127.0.0.1:5000/product/getOrderPrice/");
+curl_setopt($ch1, CURLOPT_POST, 1);
+curl_setopt($ch1, CURLOPT_POSTFIELDS,$param);
+curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch1, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));                                           
+$server_output1 = curl_exec ($ch1);
+$server_output1 = (array)json_decode($server_output1);
+curl_close ($ch1);
+
+
+$amount->setTotal($server_output1["amount"]);
 $amount->setCurrency('USD');
 
 $transaction = new \PayPal\Api\Transaction();

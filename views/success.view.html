@@ -1,16 +1,91 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
-<div class="clr"></div>
-<section class="blog-mn">
-  <div class="container">
-     <div class="row">
-        <div class="title-text">
-           <h1>Thanks for Puchasing</h1>
-        </div>
-     </div>
-  </div>
-</section>
+
+<div class="clr">&nbsp;</div>
 <div class="clr">&nbsp;</div>
 
+<div class="blog-section">
+  <div class="container">
+    <div class="row">
+      
+      <h1 class="text-center"><b> Congratulations! For your Purchase</b></h1>
+          
+          <div class="clr">&nbsp;</div>
+          
+          
+          
+          
+          <div class="table-custom-responsive table-color-header">
+                <table class="table-custom table-color-header">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                     
+                      <th>Doctor</th>
+             <th>Total Price</th>
+                      <th>Amount Paid</th>
+            <th>Pay On Visit</th>
+              <th>Coupon</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                    
+                      <td><b>{{name}}</b></td>
+                     
+                      <td>
+                     <b> {{title}} {{name}}</b><br> {{address1}}, {{appartment}}<br>{{city}}, {{state}} {{zip}} USA<br> Ph: {{phone}} <br>Fax: {{fax}}<br> 
+                      </td>
+             <td><b>${{total_amount}}</b></td>
+                      <td><b>${{reserve_price}}</b></td>
+            <td><b>${{balance}}</b></td>
+            <td>Coupon1234</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              
+        <div class="clr">&nbsp;</div>
+              
+          
+      <div class="sucess-pnts1">
+      
+      <div class="container">
+      
+      <div class="row"> 
+      
+     <h3 class="thm-hd">Steps to Follow
+      <div class="divider"></div>
+    </h3>
+      
+       <div class="clr">&nbsp;</div>
+      <ul>
+        <li><img src="images/appointment.png" width="50"> <br> <br>&nbsp; Make an appointment with the Doctor</li>
+         <li><img src="images/coupon-no.png" width="60">  <br> <br>&nbsp; Bring the coupon Number with you</li>
+         <li><img src="images/done.png" width="50">  <br> <br>&nbsp; Have the procedure done</li>
+      
+      </ul>
+      
+      </div>
+      
+      
+      </div>
+     
+      
+      </div>
+          
+           
+        
+          
+           
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- 
 <div class="blog-section">
   <div class="container">
     <div class="row">
@@ -69,7 +144,7 @@
            
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="clr">&nbsp;</div>
 <div ng-include="'layout/footer.view.html'"></div>
