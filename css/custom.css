@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'source_sans_probold';
     src: url('sourcesanspro-bold-webfont.woff2') format('woff2'),
@@ -82,6 +81,8 @@ body{font-family: 'source_sans_proregular';}
 .pl0{padding-left:0 !important;}
 .pb20{padding-bottom:20px;}
 .pt5{padding-top:5px;}
+.pt25{padding-top:25px !important;}
+.pb25{padding-bottom:25px !important;}
 .pl15{padding-left:15px !important;}
 .pt10{padding-top:25px !important;}
 .pl50{padding-left:50px !important;}
@@ -135,7 +136,18 @@ a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transiti
 .select-btnwht{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #fff;text-align:right;font-size:18px;}
 a.select-btnwht{color:#fff !important;}
 a.select-btnwht:hover{background:#fff !important;color:#000 !important; transition-duration: 0.7s;text-decoration:none !important;}
+.img-degree{margin-top:-3px;}
+.select-pagepnt ul li{list-style-type:none;font-size:16px;margin-bottom:10px;}
+.select-pagepnt ul{margin-left:0;padding-left:0;}
+.amt-sctn{border-left:1px solid #ccc;}
+.amt-sctn ul li{list-style-type:none;font-size:20px;margin-bottom:15px;}
 
+
+
+
+.inr-sectiondetail{overflow:hidden;}
+.select-pagepnt{border-left:1px solid #ccc;}
+.pl70{padding-left:70px !important;}
 
 /*Index Header*/
 ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
@@ -374,8 +386,6 @@ span.navbar-toggler-icon i.fa {
 .procedure-hd{font-size:16px !important;}
 .modal-header h4{margin-top:0 !important;}
 
-
-
 /*About-us*/
 .about-cont{margin-top:70px;}
 .abt-cont{padding:40px 10px;background:#00b2e2;}
@@ -539,8 +549,7 @@ body.modal-open {
 .sucess-pnts ul li{list-style-type:none;}
 
 /*Speciality Page*/
-.select-doctor-inner{background:#fff;}
-
+.select-doctor-inner{background:#fff;padding-top:20px;border-left:3px solid #00b2e2;}
 
 
 

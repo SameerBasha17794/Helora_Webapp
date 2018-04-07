@@ -12,9 +12,38 @@
           <div class="col-md-6 text-right"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
         </div>
         <p class="p15">{{desc}}</p>
-        <p class="p15 amt-sctn text-right"> <span class="pb5 "><b>Avg Healora Price:</b> ${{averagePrice}}</span><br /><br />
-          <span class="pb5 mt10"><b>Avg Insaurance Price: </b>${{insaurancePrice}}</span><br /><br />
-          <span class="pb5 mt10"><b>Saving: </b>${{saving}}</span><br />
+		
+		
+			
+			<div class="select-pagepnt pull-left p15 col-md-6">
+			  <ul>
+				 <li><img src="images/check.png" width="20px"> &nbsp;&nbsp; Pre-procedure consult, review and go over any questions</li>
+				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; MAC anesthesia</li>
+				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Physician Professional Fee (Esophagogastroduodenoscopy)</li>
+				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Facility Fee</li>
+				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Post-procedure consult and review</li>
+			  </ul>
+			</div>
+			
+			<!-- <p class="p15 amt-sctn text-right col-md-6 pl70">
+			<span class="pb5 pull-left"><b>Avg Healora Price:</b></span> <span class="pull-right"> ${{averagePrice}}</span><br /><br />
+			 <span class="pull-left"><b>Avg Insaurance Price: </b></span>   <span class="pull-right">${{insaurancePrice}}</span><br /><br />
+			 <span class="pull-left"><b>Saving: </b></span> <span class="pull-right">${{saving}}</span><br />
+			  </p> -->
+			  
+			  
+			  <div class="amt-sctn col-md-6 p15">
+			  <ul>
+			    <li class="col-md-12"><div class="col-md-6 pull-left"><b>Avg Healora Price:</b></div><div class="col-md-6 pull-right text-right">${{averagePrice}}</div></li>
+				<li class="col-md-12"><div class="col-md-6 pull-left"><b>Avg Insaurance Price:</b></div><div class="col-md-6 pull-right text-right">${{insaurancePrice}}</div></li>
+				<li class="col-md-12"><div class="col-md-6 pull-left"><b>Saving:</b></div><div class="col-md-6 pull-right text-right">${{saving}}</div></li>
+			  </ul>
+			  
+			  
+			  </div>
+			  
+	
+		  
       </div>
     </div>
   </div>
@@ -37,14 +66,14 @@
         </h2>
         <br />
         <div ng-repeat="getDoc in doctorList">
-          <div class="col-md-12 pt10 select-doctor">
+          <div class="col-md-12 pt25 pb25 select-doctor">
             <div class="col-md-2 pl0"> <img class="img-responsive" src="images/doctor.png" /> </div>
             <div class="col-md-6">
               <h3 class="mt0 f26"><b>Dr. {{getDoc.doctor_name}}</b></h3>
-              <h4 class="f18 pt5">{{getDoc.doctor_speciality}}</h4>
+              <h4 class="f18">{{getDoc.doctor_speciality}}</h4>
      <!--         <span><b>Degree:</b>{{getDoc.degree_title}}</span>-->
-              <p class="f18 m0 p0"><b><img src="images/qualification.png" width="40"></b> <span>MBBS, MD</span></p>
-               <p class="f18"><b><img src="images/experience.png" width="40"></b> <span>11yrs</span></p>
+              <p class="f18 m0 pt5"><img class="img-degree" src="images/qualification1.png" width="35">&nbsp; <span>MBBS, MD</span></p>
+              <!-- <p class="f18"><b><img src="images/experience.png" width="40"></b> <span>11yrs</span></p> -->
               <br />
            <!--   <span><b>Experience:</b> 11yrs</span> -->
             </div>
