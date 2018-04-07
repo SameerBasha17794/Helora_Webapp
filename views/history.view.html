@@ -3,7 +3,7 @@
 <div class="clr">&nbsp;</div>
 <div class="clr">&nbsp;</div><br/>
 
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"></script>
 <div>
 <div class="container">
   <div class="row">
@@ -26,7 +26,7 @@
       </h3>
       <div class="clr">&nbsp;</div>
       <div class="visit-tablemn">
-        <div class="table-custom-responsive table-color-header1">
+        <div class="table-custom-responsive1 table-color-header1">
         
         <div ng-repeat="data in data">
           <table class="table-custom1 table-color-header1">
@@ -37,7 +37,7 @@
                 <th>Paid</th>
                 <th>Balance</th>
                 <!-- <th>Payment Status</th> -->
-                <th>Order #</th>
+                <th>Coupon #</th>
               </tr>
             </thead>
             <tbody class="hr-b">
@@ -54,9 +54,10 @@
               <tr>
                 <td class="pttd"><b >{{data.speciality}}</b>
                   <div class="clr">&nbsp;</div>
-                  {{data.name}}<br /></td>
+                  {{data.name}}<br /><br/><p class="btn-hstrya" style="font-weight:bold;"><a href="#">PRINT</a> &nbsp;&nbsp;&nbsp;&nbsp;<a href="#">LOCATION</a></p></td>
                 <td></td>
                 <td></td>
+				<td></td>
                 <td><b>Doctor Details:</b><br />
                   {{data.doctor_name}}<br />
                   {{data.degree_title}}<br />
