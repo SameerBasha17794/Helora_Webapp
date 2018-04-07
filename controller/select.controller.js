@@ -28,6 +28,7 @@
         }
 
         function initController() {
+            alert(UserService.getProcedureId());
             var param = JSON.stringify({"procedure":UserService.getProcedureId()});
                 $http({
                     url: getAverage,

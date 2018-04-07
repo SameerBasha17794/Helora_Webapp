@@ -10,12 +10,11 @@
         initController();
 
         function initController() {
- // $location.path('/');
         }
         function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
-            });
+            // UserService.GetByUsername($rootScope.globals.currentUser.username)
+            //     .then(function (user) {
+            // });
         }
         $scope.instant = function(name) {
           UserService.setSpeciality(name);

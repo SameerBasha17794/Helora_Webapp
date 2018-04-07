@@ -31,18 +31,18 @@
                 });
         }
 
-        function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
-                    
         
-            });
-        }
-       
-
-        $scope.clicked = function(value) {
-            UserService.setDotClicked(value);
-            // createMenu(UserService.getBodyParts(),UserService.setCategoryList,UserService.getDotClicked())
+        $scope.clicked = function(val) {
+            var parts = UserService.getBodyParts()
+            for (var x in parts){
+                if (parts[x].name.toString() == val.toString()){
+                    alert(parts[x].name);
+                    alert(val);
+                    UserService.setDotClicked(parts[x].id);
+                }
+            }
+            // console.log(UserService.getDotClicked());
+            createMenu(UserService.getBodyParts(),UserService.getCategoryList(),UserService.getDotClicked())
         };
 
         $scope.procedureClicked = function() {
@@ -50,8 +50,6 @@
             $('.dropdown-backdrop').remove();
             $('#myModal').modal('hide');
             var e = document.getElementById("selProc");
-             // $('modal').modal('hide');
-             // $('#myModal').modal('hide');
             UserService.setProcedureId(e.value);
             $location.path('/select');
             // createMenu(UserService.getBodyParts(),UserService.setCategoryList,UserService.getDotClicked())
@@ -65,7 +63,7 @@
 
             for(var key in category){
                 var checked = 0
-                console.log(category[key]["name"]);
+                // console.log(category[key]["name"]);
                 if (category[key]["body_part"] != selected){
                     bodyMenu = bodyMenu+'<option>'+category[key]['name']+'</option>';
                 }else{
