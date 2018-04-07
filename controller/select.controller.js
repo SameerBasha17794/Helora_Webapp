@@ -28,7 +28,7 @@
         }
 
         function initController() {
-            alert(UserService.getProcedureId());
+            // alert(UserService.getProcedureId());
             var param = JSON.stringify({"procedure":UserService.getProcedureId()});
                 $http({
                     url: getAverage,
@@ -36,16 +36,21 @@
                     data: param,
                     headers: { 'Content-Type': 'application/json'}
                 }).success(function (data, status, headers, config) {
-                    $scope.averagePrice = data.data['averagePrice'];
-                    $scope.catName = data.data['catName'];
-                    $scope.cpt = data.data['cpt'];
-                    $scope.desc = data.data['desc'];
-                    $scope.image = data.data['image'];
-                    $scope.insaurancePrice = data.data['insaurancePrice'];
-                    $scope.name = data.data['name'];
-                    $scope.saving = data.data['saving'];
-                    $scope.sku = data.data['sku'];
-                    $scope.doctorList = data.data['doctorPriceList'];
+                    if (data['status']!="0"){
+                        $scope.averagePrice = data.data['averagePrice'];
+                        $scope.catName = data.data['catName'];
+                        $scope.cpt = data.data['cpt'];
+                        $scope.desc = data.data['desc'];
+                        $scope.image = data.data['image'];
+                        $scope.insaurancePrice = data.data['insaurancePrice'];
+                        $scope.name = data.data['name'];
+                        $scope.saving = data.data['saving'];
+                        $scope.sku = data.data['sku'];
+                        $scope.doctorList = data.data['doctorPriceList'];
+                    }else{
+                        // alert("here");
+                        $location.path('/norecord');
+                    }
                 }).error(function (data, status, headers, config) {
                     console.log("errorsss3");
 

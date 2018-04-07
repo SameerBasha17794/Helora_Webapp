@@ -542,3 +542,15 @@ body.modal-open {
 .select-doctor-inner{background:#fff;}
 
 
+
+
+/*nothing*/
+.bg-search{background:url(../images/bg-search.png);background-size:cover;height:300px;}
+.text-default{color:#9b9b9b;font-weight:normal;}
+.f18{font-size:18px !important;}
+.btn-gray{padding:12px 20px;background:#333;color:#fff;font-size:18px;}
+.btn-gray:hover{color:#fff;text-decoration:none;background:#000;}
+.btn-thm{padding:12px 30px;background:#00b2e2;color:#fff;font-size:18px;}
+.btn-thm:hover{color:#fff;text-decoration:none;background:#019ec9;}
+.pl30{padding-left:30px !important;}
+.thm-txt{color:#00b2e2 !important;}

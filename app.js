@@ -27,6 +27,12 @@
                 controllerAs: 'vm',
                 title: 'Search'
             })
+            .when('/norecord', {
+                controller: 'NoRecord',
+                templateUrl: 'views/norecord.view.html',
+                controllerAs: 'vm',
+                title: 'No Record'
+            })
             .when('/category', {
                 controller: 'CategoryController',
                 templateUrl: 'views/category.view.html',

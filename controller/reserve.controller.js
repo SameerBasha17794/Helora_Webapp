@@ -16,11 +16,16 @@
                     data: param,
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
-                    $scope.displayProcedure = data.data;
-                    $scope.total = data.data['total'];
-                    $scope.balance = data.data['balance'];
-                    $scope.reservePrice = data.data['reservePrice'];
-                    $scope.covered = data.data['proc_detail'];
+                    if (data['status']!="0"){
+                        $scope.displayProcedure = data.data;
+                        $scope.total = data.data['total'];
+                        $scope.balance = data.data['balance'];
+                        $scope.reservePrice = data.data['reservePrice'];
+                        $scope.covered = data.data['proc_detail'];
+                    }else{
+                        // alert("here");
+                        $location.path('/norecord');
+                    }
                 }).error(function (data, status, headers, config) {
                     console.log("error")
                    

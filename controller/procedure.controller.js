@@ -36,8 +36,6 @@
             var parts = UserService.getBodyParts()
             for (var x in parts){
                 if (parts[x].name.toString() == val.toString()){
-                    alert(parts[x].name);
-                    alert(val);
                     UserService.setDotClicked(parts[x].id);
                 }
             }
