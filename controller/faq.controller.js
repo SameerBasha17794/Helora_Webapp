@@ -12,15 +12,7 @@
         function initController() {
         }
 
-        function loadCurrentUser() {
-            UserService.GetByUsername($rootScope.globals.currentUser.username)
-                .then(function (user) {
-                    
-        
-            });
-        }
-       
-        $scope.instant = function() {
+      $scope.instant = function() {
         }
         
     }

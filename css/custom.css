@@ -544,6 +544,12 @@ body.modal-open {
 
 
 
+/*History*/
+.ml35{margin-left:35px !important;}
+.sucess-pnts1 ul li{display:inline-block;width:30%;font-size:18px;font-weight:bold;margin-right:30px;text-align:center;}
+body{font-size:16px;}
+.table-custom-responsive{border:1px solid #ccc;}
+
 /*nothing*/
 .bg-search{background:url(../images/bg-search.png);background-size:cover;height:300px;}
 .text-default{color:#9b9b9b;font-weight:normal;}
@@ -554,3 +560,131 @@ body.modal-open {
 .btn-thm:hover{color:#fff;text-decoration:none;background:#019ec9;}
 .pl30{padding-left:30px !important;}
 .thm-txt{color:#00b2e2 !important;}
+
+/*Visit-History*/
+.profl-user{margin-bottom:30px;}
+.profl-usersp{display:inline-block;margin-right:30px;vertical-align:middle;}
+.profl-user p{color:#9f9f9f;margin-bottom:5px;}
+.table-color-header1{margin-bottom:20px;}
+
+/*FAQ*/
+.faq-bg{background: url(../images/faq-bg.png);
+    background-size: cover;
+    height: 300px;}
+	
+.title-text {position: relative;top: 120px;font-size: 40px;color: #fff;text-align:center;line-height: 50px;font-weight: bold;text-transform: uppercase;}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.faq-block1{display:block;max-width:630px;padding:0;margin:0;}
+.faq-block2{display:block;max-width:630px;padding:0;margin:0;}
+
+
+
+
+.ac-label {
+  font-weight: 700;
+  position: relative;
+  padding: .5em 1em;
+  margin-bottom: .5em;
+  text-align:left;
+  font-size:17px;
+  display: block;
+  cursor: pointer;
+  background-color: whiteSmoke;
+  transition: background-color .15s ease-in-out;
+ transition-duration: 5s;
+ 
+}
+
+.ac-input:checked + label, .ac-label:hover {
+  background-color: #f0f0f0;
+  
+}
+
+.ac-label:after, .ac-input:checked + .ac-label:after {
+  content: "+";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  width: 2em;
+  height: 100%;
+  line-height: 2.25em;
+  text-align: center;
+  transition: background-color .15s ease-in-out;
+}
+
+.ac-label:hover:after, .ac-input:checked + .ac-label:after {
+  background-color: #00b2e2;color:#fff;
+}
+
+.ac-label:after {background-color: #00b2e2;color:#fff;}
+
+.ac-input:checked + .ac-label:after {
+  content: "-";
+}
+
+.ac-input {
+  display: none;
+}
+
+.ac-text, .ac-sub-text {
+  opacity: 0;
+  height: 0;
+  margin-bottom: .5em;
+  transition: opacity .5s ease-in-out;
+  overflow: hidden;
+}
+
+.ac-input:checked ~ .ac-text, .ac-sub .ac-input:checked ~ .ac-sub-text {
+  opacity: 1;
+  height: auto;
+}
+
+.ac-sub .ac-label {
+  background: none;
+  font-weight: 600;
+  padding: .5em 1.5em;
+  margin-bottom: 0;
+}
+
+.ac-sub .ac-label:checked {
+  background: none;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.ac-sub .ac-label:after, .ac-sub .ac-input:checked + .ac-label:after {
+  left: 0;
+  background: none;
+}
+
+.ac-sub .ac-input:checked + label, .ac-sub .ac-label:hover {
+  background: none;
+}
+
+.ac-sub-text {
+  padding: 0 1em 0 2em;
+}
+.ac-label p{color:#9b9b9b;}
+
