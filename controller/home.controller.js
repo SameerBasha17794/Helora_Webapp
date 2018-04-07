@@ -7,8 +7,8 @@
     HomeController.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location'];
     function HomeController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
         var vm = this;
+       $('.loading').css("display", "none");
         initController();
-
         function initController() {
         }
         function loadCurrentUser() {

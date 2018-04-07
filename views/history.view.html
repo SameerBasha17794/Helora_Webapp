@@ -1,7 +1,21 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="clr"></div>
 <div class="clr">&nbsp;</div>
-<div class="clr">&nbsp;</div><br>
+<div class="clr">&nbsp;</div><br/>
+
+
+<div>
+<div class="container">
+  <div class="row">
+    <div>
+       <span class="profl-usersp"><h2>{{name}}</h2>  </span><span class="profl-usersp mt10"></span>
+       </div>
+       <p><i class="fas fa-envelope"></i>&nbsp;&nbsp;{{email}}</p>  
+       <p><i class="fas fa-phone"></i>&nbsp;&nbsp;+1 {{phone}}</p>  
+    </div>
+  </div>
+</div>
+   
 <br>
 <br>
 <div class="blog-section">
@@ -19,8 +33,10 @@
             <thead>
               <tr>
                 <th>Order Purchsed</th>
-                <th>Amount</th>
-                <th>Payment Status</th>
+                <th>Total Amount</th>
+                <th>Paid</th>
+                <th>Balance</th>
+                <!-- <th>Payment Status</th> -->
                 <th>Order #</th>
               </tr>
             </thead>
@@ -28,8 +44,10 @@
               <tr>
                 <td>{{data.date_created}}</td>
                 <td>${{data.total_amount}}</td>
-                <td>{{data.status}}</td>
-                <td>{{data.order_id}}/td>
+                <td>${{data.balance}}</td>
+                <td>${{data.reserve_price}}</td>
+                <!-- <td>{{data.status}}</td> -->
+                <td>{{data.order_id}}</td>
               </tr>
             </tbody>
             <tbody>
