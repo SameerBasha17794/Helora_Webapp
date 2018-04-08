@@ -23,7 +23,7 @@ $amount = new \PayPal\Api\Amount();
 $ch1 = curl_init();
 $param = array("id" => $_REQUEST["placeOrderId"]); 
 $param = json_encode($param);
-curl_setopt($ch1, CURLOPT_URL,"http://front.healora.com/product/getOrderPrice/");
+curl_setopt($ch1, CURLOPT_URL,"http://api.healora.com/product/getOrderPrice/");
 curl_setopt($ch1, CURLOPT_POST, 1);
 curl_setopt($ch1, CURLOPT_POSTFIELDS,$param);
 curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
@@ -65,7 +65,7 @@ try {
     // echo "fasdfdad";
     $myparam = array("temp" => "2", "payment_id" => (string)$payment->getId(), "request" => (string)$payment, "placeOrderId" => (string)$placeOrderId); 
     $myparam = json_encode($myparam);
-    curl_setopt($ch, CURLOPT_URL,"http://front.healora.com/product/placeOrder/");
+    curl_setopt($ch, CURLOPT_URL,"http://api.healora.com/product/placeOrder/");
     curl_setopt($ch, CURLOPT_POST, 1);
     curl_setopt($ch, CURLOPT_POSTFIELDS,$myparam);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
