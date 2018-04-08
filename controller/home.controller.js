@@ -7,9 +7,14 @@
     HomeController.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location'];
     function HomeController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
         var vm = this;
-       $('.loading').css("display", "none");
+        // angular.element('.loading').css("display", "none");
+       // angular.element('#element').css('height', '100px');
+
         initController();
         function initController() {
+            // alert("fasfa");
+            // $('.loading').css("display", "none");
+             // angular.element('.loading').css("display", "none");
         }
         function loadCurrentUser() {
             // UserService.GetByUsername($rootScope.globals.currentUser.username)
