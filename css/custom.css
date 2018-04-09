@@ -717,7 +717,7 @@ body{font-size:16px;}
 .mb15{margin-bottom:15px !important;}   
 .works-btn:hover{background:#db6601;}
 .works-btn:hover{background:#db6601;}
-.zoom.hover{ transform: scale(1.5); }
-.zoom:hover{   -ms-transform: scale(1.5); /* IE 9 */
-   -webkit-transform: scale(1.5); /* Safari 3-8 */
-   transform: scale(1.5); }
+.zoom.hover{ transform: scale(1.2); }
+.zoom:hover{   -ms-transform: scale(1.2); /* IE 9 */
+   -webkit-transform: scale(1.2); /* Safari 3-8 */
+   transform: scale(1.2); }
