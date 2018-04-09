@@ -87,7 +87,7 @@
 <div class="clr">&nbsp;</div>
 
 
-<script>
+<!-- <script>
 
 $(document).ready(function() {
 $('body').tooltip({
@@ -96,9 +96,19 @@ container: "body"
 });
 });
 </script>
+ -->
 
 
-
-
+<div class="classClicked"></div>
 
 <div ng-include="'layout/footer.view.html'"></div>
+
+<script type="text/javascript">
+  function getComboA(data) {
+   var scope = angular.element(document.getElementsByClassName("classClicked")).scope();
+    scope.$apply(function() {
+      scope.changed(data.value);
+    });
+  }
+  
+</script>

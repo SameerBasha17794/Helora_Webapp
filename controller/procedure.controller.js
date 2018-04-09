@@ -33,9 +33,21 @@
 
         
         $scope.clicked = function(val) {
-            var parts = UserService.getBodyParts()
+            var parts = UserService.getBodyParts();
             for (var x in parts){
                 if (parts[x].name.toString() == val.toString()){
+                    UserService.setDotClicked(parts[x].id);
+                }
+            }
+            // console.log(UserService.getDotClicked());
+            createMenu(UserService.getBodyParts(),UserService.getCategoryList(),UserService.getDotClicked())
+        };
+
+        $scope.changed = function(val) {
+            var finResult=val.split(" -")[0];
+            var parts = UserService.getBodyParts();
+            for (var x in parts){
+                if (parts[x].name.toString() == finResult.toString()){
                     UserService.setDotClicked(parts[x].id);
                 }
             }
@@ -56,7 +68,7 @@
         function createMenu(body,category,selected){
             var bodyMenu = ''
             var catMenu = ''
-            bodyMenu=bodyMenu+'<select class="form-control" id="selBody" style="width:100%;">'
+            bodyMenu=bodyMenu+'<select onchange="getComboA(this)" class="form-control" id="selBody" style="width:100%;">'
             catMenu=catMenu+'<select class="form-control" id="selProc" style="width:100%;">'
 
             for(var key in category){
