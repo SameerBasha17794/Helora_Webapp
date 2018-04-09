@@ -7,10 +7,10 @@ be available for all the controllers
 //Variables
 
 // var domain = "http://api.healora.com";
-var domain = "http://127.0.0.1:5000";
-// var domainurl = "http://front.healora.com";
-// var domain = "http://api.healora.com";
-var domainurl = "http://localhost/healora_webapp";
+//var domain = "http://127.0.0.1:5000";
+ var domainurl = "http://front.healora.com";
+ var domain = "http://api.healora.com";
+//var domainurl = "http://localhost/healora_webapp";
 var purposePageCookieName = 'dr_insta_purpose_page_cookies';
 
 var psychologyCookie = 'psy_cookie';
