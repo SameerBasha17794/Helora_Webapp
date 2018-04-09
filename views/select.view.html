@@ -8,7 +8,7 @@
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
-          <div class="col-md-6"><img src="images/dermat-icn.png" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
+          <div class="col-md-6"><img src="images/{{image}}" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
           <div class="col-md-6 text-right"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
         </div>
         <p class="p15">{{desc}}</p>
@@ -17,11 +17,11 @@
 			
 			<div class="select-pagepnt pull-left p15 col-md-6">
 			  <ul>
-				 <li><img src="images/check.png" width="20px"> &nbsp;&nbsp; Pre-procedure consult, review and go over any questions</li>
-				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; MAC anesthesia</li>
+				 <li ng-repeat="getRep in covered"><img src="images/check.png" width="20px"> &nbsp;&nbsp; {{getRep.data}}</li>
+	<!-- 			<li><img src="images/check.png" width="20px">&nbsp;&nbsp; MAC anesthesia</li>
 				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Physician Professional Fee (Esophagogastroduodenoscopy)</li>
 				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Facility Fee</li>
-				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Post-procedure consult and review</li>
+				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Post-procedure consult and review</li> -->
 			  </ul>
 			</div>
 			
@@ -47,7 +47,7 @@
 <div class="container">
   <div ng-hide="getId != ''" class="row select-doctor">
     <div class="col-md-3 col-md-offset-4">
-      <div class="btn-home text-center f22 mb25" data-toggle="modal" data-target="#myModal">Register</div>
+      <div class="btn-home text-center f22 mb25" data-toggle="modal" data-target="#myModal">Find Your Doctor</div>
     </div>
   </div>
   </div>
@@ -128,7 +128,7 @@
                       </form>
                     </div>
                   </section>
-                  <p class="alrdy-act text-center">Already Have Account?</p>
+                  <!-- <p class="alrdy-act text-center">Already Have Account?</p> -->
                 </div>
               </div>
             </div>

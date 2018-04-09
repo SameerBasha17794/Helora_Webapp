@@ -42,6 +42,7 @@
                         $scope.cpt = data.data['cpt'];
                         $scope.desc = data.data['desc'];
                         $scope.image = data.data['image'];
+                        $scope.covered = data.data['detail'];
                         $scope.insaurancePrice = data.data['insaurancePrice'];
                         $scope.name = data.data['name'];
                         $scope.saving = data.data['saving'];
