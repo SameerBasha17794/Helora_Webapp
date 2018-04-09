@@ -46,6 +46,7 @@
                         $scope.insaurancePrice = data.data['insaurancePrice'];
                         $scope.name = data.data['name'];
                         $scope.saving = data.data['saving'];
+                        $scope.savingPercent = data.data['savingPercent'];
                         $scope.sku = data.data['sku'];
                         $scope.doctorList = data.data['doctorPriceList'];
                     }else{
