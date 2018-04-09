@@ -12,7 +12,7 @@
 
         initController();
         function initController() {
-            // alert("fasfa");
+            // alert("fasfa")s;
             // $('.loading').css("display", "none");
              // angular.element('.loading').css("display", "none");
         }
