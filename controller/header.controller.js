@@ -22,6 +22,7 @@
         }
         $scope.logout = function(id) {
           localStorage.clear();
+          $route.reload();
           $location.path('/');
         }
         

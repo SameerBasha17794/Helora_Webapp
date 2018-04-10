@@ -15,9 +15,9 @@
           <section id="content1">
             <div class="login">
               <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
-                <input class="lgn-inpt" ng-model="vm.uname" type="text" placeholder="User Name">
+                <input class="lgn-inpt" required ng-model="vm.uname" type="text" placeholder="User Name *">
                 <br> 
-                <input class="lgn-inpt" ng-model="vm.password" type="text" placeholder="Password">
+                <input class="lgn-inpt" required ng-model="vm.password" type="text" placeholder="Password *">
                 <br>
                 <input class="sign-in-btn" type="submit" value="Sign In">
               </form>
@@ -48,5 +48,7 @@
     </div>
   </div>
 </div>
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
 <div class="clr">&nbsp;</div>
 <div ng-include="'layout/footer.view.html'"></div>
