@@ -385,6 +385,7 @@ span.navbar-toggler-icon i.fa {
 .modal-header h4{margin-top:0 !important;}
 
 /*About-us*/
+.#myModal{z-index:1041;}
 .about-cont{margin-top:70px;}
 .abt-cont{padding:40px 10px;background:#00b2e2;}
 .abt-cont span{font-size:26px;color:#fff;}
@@ -399,7 +400,7 @@ span.navbar-toggler-icon i.fa {
 .easy-steps{padding:50px 0;}
 .contact-mn{background:url(../images/contact-bnr.png);background-size:cover;height:300px;}
 .center-cls{display:inline-block;float:none;}
-.social-mediamn ul li{padding:50px 20px;color:#333;background:#ebebea;list-style-type:none;display:inline-block;text-align:Center;margin-right:10px;}
+.social-mediamn ul li{padding:25px 20px;color:#333;background:#ebebea;list-style-type:none;display:inline-block;text-align:Center;margin-right:10px;}
 .social-mediamn ul{margin:0; padding:0;}
 
 
