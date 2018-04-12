@@ -385,6 +385,7 @@ span.navbar-toggler-icon i.fa {
 .modal-header h4{margin-top:0 !important;}
 
 /*About-us*/
+.ftext{color:#a4a3a3;font-size:20px;font-weight:bold;}
 .#myModal{z-index:1041;}
 .about-cont{margin-top:70px;}
 .abt-cont{padding:40px 10px;background:#00b2e2;}
@@ -400,7 +401,7 @@ span.navbar-toggler-icon i.fa {
 .easy-steps{padding:50px 0;}
 .contact-mn{background:url(../images/contact-bnr.png);background-size:cover;height:300px;}
 .center-cls{display:inline-block;float:none;}
-.social-mediamn ul li{padding:25px 20px;color:#333;background:#ebebea;list-style-type:none;display:inline-block;text-align:Center;margin-right:10px;}
+.social-mediamn ul li{padding:25px 20px;color:#333;list-style-type:none;display:inline-block;text-align:Center;margin-right:10px;}
 .social-mediamn ul{margin:0; padding:0;}
 
 
@@ -726,3 +727,7 @@ body{font-size:16px;}
 .zoom:hover{   -ms-transform: scale(1.2); /* IE 9 */
    -webkit-transform: scale(1.2); /* Safari 3-8 */
    transform: scale(1.2); }
+   
+
+
+   
