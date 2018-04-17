@@ -5,10 +5,18 @@ ini_set('display_errors', 1);
 require __DIR__  . '/vendor/autoload.php';
 // 2. Provide your Secret Key. Replace the given one with your app clientId, and Secret
 // https://developer.paypal.com/webapps/developer/applications/myapps
+// Testing
+// $apiContext = new \PayPal\Rest\ApiContext(
+//     new \PayPal\Auth\OAuthTokenCredential(
+//         'AYCKuZ1CU6juGfxtVv8yEBzjiG-z3H23MdKe_RCNYYiGNrSbcWeyrXiG89YLtVWyeepjLe2pb1sS_eOo',     // ClientID
+//         'ED5RoHz0c8gTv4HgwHyaBUehUvA4ChHOspglDpVjL84ni44WSYO4JuCjClhqTlE-SVipOkjemMTW5dEb'      // ClientSecret
+//     )
+// );
+// Live
 $apiContext = new \PayPal\Rest\ApiContext(
     new \PayPal\Auth\OAuthTokenCredential(
-        'AYCKuZ1CU6juGfxtVv8yEBzjiG-z3H23MdKe_RCNYYiGNrSbcWeyrXiG89YLtVWyeepjLe2pb1sS_eOo',     // ClientID
-        'ED5RoHz0c8gTv4HgwHyaBUehUvA4ChHOspglDpVjL84ni44WSYO4JuCjClhqTlE-SVipOkjemMTW5dEb'      // ClientSecret
+        'AafMyAO2rTUNi0pAd-fX8BT_OSwRYhzBDY_VpbCbEudDhPbTj6ty5MbZf1IROi3aAATNCljtacgUOLlh',     // ClientID
+        'EH30UWXXKsv0oEFxu9jX3QUtDu6tE3s_H5qVrTu4EPYQ0ftpf7qtor1PPbSfrWgGAmdRKRksPrYX78hA'      // ClientSecret
     )
 );
 $placeOrderId = $_REQUEST["placeOrderId"];
