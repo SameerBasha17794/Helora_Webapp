@@ -104,7 +104,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .header2 h1 img{margin-top:-10px;}
 .repair-header{padding:5px 0;}
 .thm-hd{text-align:left;width:100%;}
-.how-mn{background:url(../images/abt-bg.jpg);background-size:cover;overflow:hidden;}
+.how-mn{background:url(../images/abt-bg1.png);background-size:cover;overflow:hidden;}
 .clr{clear:both;margin:10px 0 !important;}
 .divider{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-top:15px;}
 .how-mn{color:#fff;}
@@ -392,14 +392,14 @@ span.navbar-toggler-icon i.fa {
 .abt-cont span{font-size:26px;color:#fff;}
 .abt-cont p{font-size:20px;color:#fff;margin-top:5px;font-weight:lighter;}
 .single-slider-for{padding:10px;}
-.testimonials{background:url(../images/testimonial-bg.jpg);background-size:cover;padding:80px 0 80px 0;}
+.testimonials{background:url(../images/testimonials.png);background-size:cover;padding:80px 0 80px 0;}
 .team-title{padding-top:50px;}
 .single-team-detail{text-align:center;color:#333;}
 .single-team-item{border:1px solid #757589;text-align:center;}
 .single-team-item img{width:100%;}
 .easy-steps p{font-size:18px;margin-top:20px;}
 .easy-steps{padding:50px 0;}
-.contact-mn{background:url(../images/contact-bnr.jpeg);background-size:cover;height:300px;}
+.contact-mn{background:url(../images/sub-banner1.png);background-size:cover;height:300px;}
 .center-cls{display:inline-block;float:none;}
 .social-mediamn ul li{padding:25px 20px;color:#333;list-style-type:none;display:inline-block;text-align:Center;margin-right:10px;}
 .social-mediamn ul{margin:0; padding:0;}
@@ -565,7 +565,7 @@ body{font-size:16px;}
 .table-custom-responsive{border:1px solid #ccc;}
 
 /*nothing*/
-.bg-search{background:url(../images/bg-search.jpeg);background-size:cover;height:300px;}
+.bg-search{background:url(../images/no_doctor.png);background-size:cover;height:300px;}
 .text-default{color:#9b9b9b;font-weight:normal;}
 .f18{font-size:18px !important;}
 .btn-gray{padding:12px 20px;background:#333;color:#fff;font-size:18px;}
