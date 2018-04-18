@@ -45,7 +45,7 @@ $server_output1 = curl_exec ($ch1);
 $server_output1 = (array)json_decode($server_output1);
 curl_close ($ch1);
 
-
+echo $server_output1["amount"]
 $amount->setTotal($server_output1["amount"]);
 $amount->setCurrency('USD');
 

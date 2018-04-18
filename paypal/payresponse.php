@@ -15,8 +15,8 @@ $server_output = curl_exec ($ch);
 curl_close ($ch);
 
 
-$userpass = "AYCKuZ1CU6juGfxtVv8yEBzjiG-z3H23MdKe_RCNYYiGNrSbcWeyrXiG89YLtVWyeepjLe2pb1sS_eOo:ED5RoHz0c8gTv4HgwHyaBUehUvA4ChHOspglDpVjL84ni44WSYO4JuCjClhqTlE-SVipOkjemMTW5dEb";
-$tokenUrl = "https://api.sandbox.paypal.com/v1/oauth2/token";
+$userpass = "AafMyAO2rTUNi0pAd-fX8BT_OSwRYhzBDY_VpbCbEudDhPbTj6ty5MbZf1IROi3aAATNCljtacgUOLlh:EH30UWXXKsv0oEFxu9jX3QUtDu6tE3s_H5qVrTu4EPYQ0ftpf7qtor1PPbSfrWgGAmdRKRksPrYX78hA";
+$tokenUrl = "https://api.paypal.com/v1/oauth2/token";
 $htoken = curl_init();
 curl_setopt($htoken, CURLOPT_URL,$tokenUrl);
 curl_setopt($htoken, CURLOPT_POST, 1);
@@ -31,7 +31,7 @@ $tokenOut = (array)json_decode($tokenOut);
 
 $myarr = array("payer_id" => (string)$_REQUEST['PayerID']); 
 $myarr = json_encode($myarr);
-$executeUrl = "https://api.sandbox.paypal.com/v1/payments/payment/".(string)$_REQUEST['paymentId']."/execute";
+$executeUrl = "https://api.paypal.com/v1/payments/payment/".(string)$_REQUEST['paymentId']."/execute";
 $auth="Authorization:Bearer ".$tokenOut['access_token'];
 $chobj = curl_init();
 curl_setopt($chobj, CURLOPT_URL,$executeUrl);
@@ -44,7 +44,7 @@ $finalOut = (array)json_decode($finalOut);
 curl_close ($chobj);
 
 
-$executeUrl = "https://api.sandbox.paypal.com/v1/payments/payment/".(string)$_REQUEST['paymentId'];
+$executeUrl = "https://api.paypal.com/v1/payments/payment/".(string)$_REQUEST['paymentId'];
 $auth="Authorization:Bearer ".$tokenOut['access_token'];
 $chobj1 = curl_init();
 curl_setopt($chobj1, CURLOPT_URL,$executeUrl);
@@ -55,6 +55,8 @@ $finalOut1 = curl_exec ($chobj1);
 $finalOut1 = (array)json_decode($finalOut1);
 curl_close ($chobj1);
 
+print_r($finalOut1['state']); 
+// die("testing");
 
 if($finalOut1['state']=="approved"){
     $result = $_REQUEST;
