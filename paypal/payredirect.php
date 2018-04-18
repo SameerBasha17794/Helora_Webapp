@@ -46,7 +46,7 @@ $server_output1 = (array)json_decode($server_output1);
 curl_close ($ch1);
 
 
-$amount->setTotal('0.01');
+$amount->setTotal($server_output1["amount"]);
 $amount->setCurrency('USD');
 
 $transaction = new \PayPal\Api\Transaction();
