@@ -19,6 +19,11 @@ $apiContext = new \PayPal\Rest\ApiContext(
         'EH30UWXXKsv0oEFxu9jX3QUtDu6tE3s_H5qVrTu4EPYQ0ftpf7qtor1PPbSfrWgGAmdRKRksPrYX78hA'      // ClientSecret
     )
 );
+$apiContext->setConfig(
+    array(
+        'mode' => 'LIVE'
+    )
+);  
 $placeOrderId = $_REQUEST["placeOrderId"];
 
 // 3. Lets try to create a Payment
