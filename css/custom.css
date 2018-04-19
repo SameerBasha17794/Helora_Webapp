@@ -133,13 +133,13 @@ a.select-btn{color:#FF7600 !important;}
 a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
 .select-btnwht{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #fff;text-align:right;font-size:18px;}
 a.select-btnwht{color:#fff !important;}
-a.select-btnwht:hover{background:#fff !important;color:#000 !important; transition-duration: 0.7s;text-decoration:none !important;}
+a.select-btnwht:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;border:1px solid #FF7600;text-decoration:none !important;}
 .img-degree{margin-top:-3px;}
 .select-pagepnt ul li{list-style-type:none;font-size:16px;margin-bottom:10px;}
 .select-pagepnt ul{margin-left:0;padding-left:0;}
 .amt-sctn{border-left:1px solid #ccc;}
 .amt-sctn ul li{list-style-type:none;font-size:20px;margin-bottom:15px;}
-
+.hvr-btn:hover{background:#FF7600 !important;}
 
 
 
@@ -202,7 +202,6 @@ ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 
 a.border-btn {
 	color: #FF7600;
-	text-transform: uppercase;
 	font-weight: 500;
 }
 
@@ -441,6 +440,7 @@ label{display: inline-block;margin: 0 0 -1px;padding: 15px 25px;font-weight: 600
 .register-mn section{display: none;padding: 20px 0 0;border-top: 1px solid #ddd;}
 .register-mn p{font-size:24px;margin-bottom:20px;}
 .sign-in-btn{width:100%;background:#00b2e2;padding:15px;border:0;color:#fff;font-size:20px;}
+.sign-in-btn:hover{background:#FF7600;}
 p.alrdy-act{font-size:14px !important;}
 
 
