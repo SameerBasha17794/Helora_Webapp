@@ -4,6 +4,7 @@ Description : This file consists of all the constant values which will
 be available for all the controllers
 */
 
+
 //Variables
 
 // var domain = "http://api.healora.com";
