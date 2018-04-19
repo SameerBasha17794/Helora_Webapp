@@ -8,7 +8,7 @@
     function AboutController($cookieStore,UserService, $rootScope, $scope,$http,$location) {
         var vm = this;
         initController();
-
+        
         function initController() {
         }
 

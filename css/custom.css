@@ -141,6 +141,7 @@ a.select-btnwht:hover{background:#FF7600 !important;color:#fff !important;border
 .amt-sctn ul li{list-style-type:none;font-size:20px;margin-bottom:15px;}
 .hvr-btn:hover{background:#FF7600 !important;}
 .clr-2thm{background:#FF7600 !important;}
+.text-justify{text-align:justify;}
 
 
 
@@ -152,7 +153,7 @@ a.select-btnwht:hover{background:#FF7600 !important;color:#fff !important;border
 ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 .navbar{border-radius:0;}
 .hero-area {
-	background-image: url(../images/abokash-hero-bg.jpg);
+	background-image: url(../images/abokash-hero-bg.png);
 	background-size: cover;
 	background-position: center;
 	background-color: #342759;
