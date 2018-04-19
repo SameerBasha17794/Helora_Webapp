@@ -4,12 +4,13 @@ Description : This file consists of all the constant values which will
 be available for all the controllers
 */
 
+
 //Variables
 
 // var domain = "http://api.healora.com";
 // var domain = "http://127.0.0.1:5000";
- var domainurl = "http://healora.com/front/";
- var domain = "http://api.healora.com";
+ var domainurl = "https://healora.com";
+ var domain = "https://api.healora.com";
 //var domainurl = "http://localhost/healora_webapp";
 var purposePageCookieName = 'dr_insta_purpose_page_cookies';
 
