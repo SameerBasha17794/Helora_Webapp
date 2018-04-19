@@ -6,7 +6,7 @@ $result = $_REQUEST;
 $myparam = array("temp" => "3", "payment_id" => $_REQUEST['paymentId'],"payer_id" => $_REQUEST['PayerID'], "responce" => (string)"REQUEST"); 
 $myparam = json_encode($myparam);
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,"http://api.healora.com/product/placeOrder/");
+curl_setopt($ch, CURLOPT_URL,"https://api.healora.com/product/placeOrder/");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS,$myparam);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -63,7 +63,7 @@ if($finalOut1['state']=="approved"){
     $myparam = array("temp" => "4", "payment_id" => $_REQUEST['paymentId'],"comments" => $finalOut1['state'],"status"=>"1", "responce" => (string)"REQUEST"); 
     $myparam = json_encode($myparam);
     $ch1 = curl_init();
-    curl_setopt($ch1, CURLOPT_URL,"http://api.healora.com/product/placeOrder/");
+    curl_setopt($ch1, CURLOPT_URL,"https://api.healora.com/product/placeOrder/");
     curl_setopt($ch1, CURLOPT_POST, 1);
     curl_setopt($ch1, CURLOPT_POSTFIELDS,$myparam);
     curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
@@ -72,10 +72,10 @@ if($finalOut1['state']=="approved"){
     curl_close ($ch1);
     $url = $_SERVER[HTTP_HOST]."/#/success/".$_REQUEST['paymentId'];
     // echo $url; die;
-    header("Location:http://".$url);
+    header("Location:https://".$url);
 }else{
     $url = $_SERVER[HTTP_HOST]."/#/fail/".$_REQUEST['paymentId'];
-    header("Location:http://".$url);
+    header("Location:https://".$url);
 }
 
 
