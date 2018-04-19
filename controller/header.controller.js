@@ -7,7 +7,8 @@
     Header.$inject = ['$location','UserService', '$rootScope','$scope', '$http','$window','$route','$timeout','$sce','$interval'];
     function Header($location,UserService, $rootScope, $scope, $http,$window,$route,$timeout,$sce,$interval){
         var vm = this;
-        $scope.name = ""
+        $scope.name = "";
+        $window.scrollTo(0, 0);
         loadCurrentUser();
         // alert(UserService.GetId());
         function loadCurrentUser() {
@@ -23,6 +24,10 @@
         $scope.logout = function(id) {
           localStorage.clear();
           $route.reload();
+          $location.path('/');
+        }
+        $scope.logoClick = function(name) {
+          $window.scrollTo(0, 0);
           $location.path('/');
         }
         
