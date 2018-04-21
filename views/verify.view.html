@@ -12,19 +12,17 @@
   <div class="container"> 
     <div class="row text-center">  
   <br>
-  <h2>We have some doctors in your area not yet listed on the website.</h2>
+  <h2 ng-if="verify==1">Your email id is verified, You can now login</h2>
+  <h2 ng-if="verify==0">Not a valid request, Please try again.</h2>
   <br>
-  <p class="text-default f18 col-md-8 col-md-offset-2">Please, give us a call and we will be glad to help you find
-the doctor you need. If you have a doctor in mind,
-we are happy to contact them.</p>
-
+  
 <div class="clr">&nbsp;</div>
 
 
      <br>
 
 
-         <a href="#" class="btn-gray">GO TO HOME PAGE</a> &nbsp;&nbsp;<span class="f18 text-default">or</span> &nbsp;&nbsp; <a href="#/listdoc" class="btn-thm">Get Your Doctor</a> 
+         <a href="#" class="btn-gray">GO TO HOME PAGE</a> &nbsp;&nbsp;<span class="f18 text-default">or</span> &nbsp;&nbsp; <a href="#/register" class="btn-thm">LOGIN NOW</a> 
       <br>
      <br>
      <div class="clr">&nbsp;</div>

@@ -188,6 +188,46 @@ ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 	letter-spacing: 0.01em;
 }
 
+.hero-area1 h2 {
+	font-weight: 700;
+	margin-bottom: 55px;
+	text-transform: capitalize;
+	font-size: 32px;
+	letter-spacing: 0.01em;
+}
+
+
+.hero-area1 {
+	background-image: url(../images/image3.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-color: #342759;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	font-size: 14px;
+	padding-top: 190px;
+	padding-bottom: 254px;
+}
+
+.hero-area1::after {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	content: "";
+	z-index: -1;
+	background: -webkit-linear-gradient(top, rgba(9, 5, 47, 0.75) 0%, rgba(18, 15, 48, 0.75) 25%, rgba(48, 47, 54, 0.75) 77%, rgba(56, 56, 56, 0.75) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 5, 47, 0.75)), color-stop(25%, rgba(18, 15, 48, 0.75)), color-stop(77%, rgba(48, 47, 54, 0.75)), to(rgba(56, 56, 56, 0.75)));
+	background: -o-linear-gradient(top, rgba(9, 5, 47, 0.75) 0%, rgba(18, 15, 48, 0.75) 25%, rgba(48, 47, 54, 0.75) 77%, rgba(56, 56, 56, 0.75) 100%);
+	background: linear-gradient(to bottom, rgba(9, 5, 47, 0.75) 0%, rgba(18, 15, 48, 0.75) 25%, rgba(48, 47, 54, 0.75) 77%, rgba(56, 56, 56, 0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf09052f', endColorstr='#bf383838', GradientType=0);
+}
+
+
+
+
 .carousel-item p {
 	color: #fff;
 	font-size: 14px;
@@ -749,9 +789,17 @@ body{font-size:16px;}
    
 /*search-inner*/
 .doc-cont p.clr-grey{color:#989898;}
-   
-   
+
+/*Search*/
+ .cstm-error{border:0;color:red;background:transparent;text-align:left;font-weight: bold;font-size:16px;}
+ .text-inline div{display:inline-block;vertical-align: top;width: 25%;font-size:22px;}
+ .text-inline span{font-size:18px;}   
    
 
+   /*Your Doctor*/
+   .yr-doc h3{margin:10px;}
+   .listdoc-hd{text-align: center;margin-bottom: 20px;}
+   .sbmt-btn{padding:15px;background:#00b2e2;border:0;font-size:20px;color:#fff;width:30%;margin:0 0 0 15px;}
+.yr-doc input{border-top:0;border-left:0;border-right:0;}
 
    
