@@ -1,6 +1,6 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 <div class="clr"></div>
-<div id="ss-home" class="hero-area">
+<div id="ss-home" class="hero-area1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-12 text-center">
@@ -29,7 +29,7 @@
                     <!-- <a href="#/doctor">testing</a> -->
                     <div class="clr"></div>
                 
-                <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div class= "lgn-inpt w90 cstm-error" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message">*</div>
                 </div>
 
               </div>

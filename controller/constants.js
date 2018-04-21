@@ -41,6 +41,7 @@ var test = domain +"/product/test/";
 var testing1 = domain +"/product/testing/";
 var testing = domain +"/";
 var order = domain +"/product/placeOrder/";
+var verifyToken = domain +"/user/verifyToken/";
 var getDoctorProcedure = domain +"/product/getDoctorProcedure/";
 var getDoctors = domain +"/product/getDoctors/";
 var redirect = domainurl +"/paypal/payredirect.php";

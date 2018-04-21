@@ -93,6 +93,12 @@
                 controllerAs: 'vm',
                 title: 'Contact'
             })
+            .when('/confirm/:key', {
+                controller: 'VerifyController',
+                templateUrl: 'views/verify.view.html',
+                controllerAs: 'vm',
+                title: 'Verify'
+            })
             .when('/select', {
                 controller: 'SelectController',
                 templateUrl: 'views/select.view.html',
