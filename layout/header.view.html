@@ -13,7 +13,7 @@
             <li class="nav-item"><a href="#/about" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="#/category" class="nav-link">Procedure</a></li>
 
-            <li class="nav-item" ><a ng-if="!name" href="#/register" class="nav-link">Register</a></li>
+            <li class="nav-item" ng-if="!name" ><a href="#/register" class="nav-link">Register</a></li>
             <li class="nav-item dropdown" ng-if="name"><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, {{name}} <span class="caret"></span></a>
               <ul class="dropdown-menu">
                  <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">Logout</a></li>

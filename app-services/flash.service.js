@@ -10,6 +10,7 @@
         var service = {};
 
         service.Success = Success;
+        service.clearMessage = clearMessage;
         service.Error = Error;
 
         initService();
@@ -48,6 +49,17 @@
                 type: 'error',
                 keepAfterLocationChange: keepAfterLocationChange
             };
+        }
+        function clearMessage() {
+                var flash = $rootScope.flash;
+                if (flash) {
+                    if (!flash.keepAfterLocationChange) {
+                        delete $rootScope.flash;
+                    } else {
+                        // only keep for a single location change
+                        flash.keepAfterLocationChange = false;
+                    }
+                }
         }
     }
 

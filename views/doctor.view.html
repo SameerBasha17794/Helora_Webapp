@@ -1,0 +1,82 @@
+﻿<div ng-include="'layout/header.view.html'"></div>
+
+
+<div class="clr">&nbsp;</div>
+
+
+
+
+  <div class="doctor-geomn mt65">
+
+    <div class="container">
+    
+     <div class="row">
+     
+      <h3 class="thm-hd">Your Doctor
+      <div class="divider"></div>
+    </h3>
+    
+  
+<div class="clr">&nbsp;</div>
+     
+        <div class="image-doc col-md-2">
+          <img src="images/doctor1.png">
+        </div>
+      
+      <div class="doc-cont col-md-8">
+        <h3 class="thm-txt">Dr. {{doctordetail.doctor_name}}</h3>
+        <p class="clr-grey">{{doctordetail.doctor_speciality}}</p>
+        <p class="f18 m0 pt5"><img class="img-degree" src="images/qualification1.png" width="35">&nbsp; <span>{{doctordetail.degree_title}}</span></p>
+        
+        <div class="adrs-doc">
+        <h5 class="clr-grey">ADDRESS:</h5>
+        <p>{{doctordetail.address1}}, {{doctordetail.appartment}} {{doctordetail.address2}}</p>
+        <p>{{doctordetail.city}}, {{doctordetail.state}}, {{doctordetail.zip}}</p>
+        </div>
+      </div>
+      
+      <div class="clr">&nbsp;</div>
+
+    <div ng-if="showproc == 0"><h3 class="thm-hd">No Procedure active with this doctor, Please select other doctor
+    </h3></div>
+    <div ng-if="showproc >= 1"><h3 class="thm-hd">Pick Your Procedure
+    </h3><div class="border"></div></div>
+    
+      
+      
+     </div>
+   
+    </div>
+
+  </div>
+
+<div class="clr">&nbsp;</div>
+
+
+<div class="procedure-sctn">
+  
+   <div class="container">
+   
+      <div class="row">
+        <div ng-repeat="data in procedure">
+          <div class="col-md-10 pb20 select-doctor-inner">
+           
+            <div class="col-md-10"><h3 class="mt0">{{data.name}}</h3></div>
+            
+            <div class="col-md-2 mt5 text-right"><a ng-click="selectPlan(data.id)" class="button select-btn">Select</a> </div>
+      
+          </div>
+      
+          <div class="clr">&nbsp;</div>
+       </div>
+    </div>
+      
+   </div>
+
+</div>
+
+
+
+
+<div ng-include="'layout/footer.view.html'"></div>
+

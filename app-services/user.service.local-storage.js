@@ -41,6 +41,11 @@
         service.getCategoryList = getCategoryList;
         service.setPlan = setPlan;
         service.getPlan = getPlan;
+        service.setSearchLastName = setSearchLastName;
+        service.getSearchLastName = getSearchLastName;
+        service.setSearchDoc = setSearchDoc;
+        service.getSearchDoc = getSearchDoc;
+        
          
         return service;
 
@@ -254,6 +259,29 @@
 
             return JSON.parse(localStorage.planid);
         }
+
+
+        function setSearchLastName(SearchLastName){
+             localStorage.SearchLastName = JSON.stringify(SearchLastName);
+        }
+        function getSearchLastName() {
+            if(!localStorage.SearchLastName){
+                localStorage.SearchLastName = JSON.stringify([]);
+            }
+            return JSON.parse(localStorage.SearchLastName);
+        }
+
+        function setSearchDoc(SearchDoc){
+             localStorage.SearchDoc = JSON.stringify(SearchDoc);
+        }
+        function getSearchDoc() {
+            if(!localStorage.SearchDoc){
+                localStorage.SearchDoc = JSON.stringify([]);
+            }
+            return JSON.parse(localStorage.SearchDoc);
+        }
+
+        
        
     }
 })();

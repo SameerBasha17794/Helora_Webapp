@@ -24,8 +24,8 @@
                             var data = response.data;
                             var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
                             SetCredentials(username,password,json)
-                            if (path=="/"){
-                                 $location.path('/');
+                            if (path!=""){
+                                 $location.path(path);
                             }else{
                                 $route.reload();
                             }
@@ -49,8 +49,8 @@
                             var data = response.data;
                             var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
                             SetCredentials(email,password,json)
-                            if (path=="/"){
-                                 $location.path('/');
+                            if (path!=""){
+                                 $location.path(path);
                             }else{
                                 $route.reload();
                             }   

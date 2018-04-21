@@ -1,3 +1,94 @@
 ﻿<div ng-include="'layout/header.view.html'"></div>
 
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+
+<div class="geo-search">
+  <div class="container">
+    <div class="row">
+	  <div class="form-group">
+	  
+	  <div class="col-md-10">
+	 
+					<div class="col-md-3  homecityinput"> <span>
+                    <input type="text" class="form-control input-lg" ng-model="vm.enterlname" name="lname" placeholder="Search by Last Name">
+                    </span> </div>
+     				 
+                  <div class="col-md-2  homecityinput"> <span><a ng-click="instantSearch()">
+                    <button type="button" class="btn btn-block btn-lg thm-btn hvr-btn">Search</button></a>
+                    </span> </div>
+					</div>
+
+					
+					
+                </div>
+	</div>
+	<br>
+ <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+					
+  </div>
+
+</div>
+
+
+<div ng-hide="getId == ''">
+    <div class="container">
+      <div class="row">
+        <div ng-if="doctorList!=''" >
+        <h2 class="thm-hd">
+          Choose your Doctor or Provider
+          <div class="divider"></div>
+        </h2>
+        <br />
+        	<div ng-repeat="getDoc in doctorList">
+	          <div class="col-md-12 pt25 pb25 select-doctor">
+	            <div class="col-md-2 pl0"> <img class="img-responsive" height="102" src="images/doctor.png" /> </div>
+	            <div class="col-md-6">
+	              <h3 class="mt0 f26"><b>Dr. {{getDoc.doctor_name}}</b></h3>
+	              <h4 class="f18">{{getDoc.doctor_speciality}}</h4>
+	     <!--         <span><b>Degree:</b>{{getDoc.degree_title}}</span>-->
+	              <p class="f18 m0 pt5"><img class="img-degree" src="images/qualification1.png" width="35">&nbsp; <span>MBBS, MD</span></p>
+	              <!-- <p class="f18"><b><img src="images/experience.png" width="40"></b> <span>11yrs</span></p> -->
+	              <br />
+	           <!--   <span><b>Experience:</b> 11yrs</span> -->
+	            </div>
+	            <div class="col-md-4 mt65 text-right"> <a ng-click="selectDoc(getDoc.doctor_id)" class="button select-btn">Select</a> </div>
+	          </div>
+	        </div>
+        </div>
+        <div ng-if="doctorList==''" >
+	        <div class="row text-center">  
+				  <br>
+				  <h2>Oops They are not yet in our network..</h2>
+				  <br>
+				  <p class="text-default f18 col-md-8 col-md-offset-2">Let our Concierge Service get the doctor you want on network</p>
+				  <p class="text-default f10 col-md-8 col-md-offset-2">Doctors Love us!</p>
+
+				<div class="clr">&nbsp;</div>
+
+
+				     <br>
+
+
+				        <a href="#/listdoc" class="btn-thm">Get Your Doctor</a> 
+				      <br>
+				     <br>
+				     <div class="clr">&nbsp;</div>
+				     
+				     <h3 class="thm-txt">Proud to be affiliated with <span>(Peer Physicial Marketing)</span><img class="pl30" src="images/Logo-Sheldon-Group1.png" width="250"></h3>
+				     
+				     <div class="clr">&nbsp;</div>
+				
+  				</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
 <div ng-include="'layout/footer.view.html'"></div>

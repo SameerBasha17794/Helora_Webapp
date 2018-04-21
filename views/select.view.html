@@ -105,7 +105,8 @@
                       <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
                         <input class="lgn-inpt" required ng-model="vm.uname" type="text" placeholder="User Name *">
                         <br> 
-                        <input class="lgn-inpt" required ng-model="vm.password" type="password" placeholder="Password *">
+                        <input id="password-field1" class="lgn-inpt" required ng-model="vm.password1" type="password" placeholder="Password *">
+                        <span toggle="#password-field1" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="30" /></span>
                         <br>
                         <input class="sign-in-btn" type="submit" value="Sign In">
                       </form>
@@ -122,7 +123,8 @@
                           <br>
                           <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone *">
                           <br>
-                          <input class="lgn-inpt" required ng-model="vm.password" type="password" placeholder="Password *">
+                          <input id="password-field" class="lgn-inpt" required ng-model="vm.password2" type="password" placeholder="Password *">
+                         <span toggle="#password-field" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="30" /></span>
                           <br>
                           <input class="lgn-inpt" ng-model="vm.promocode" type="text" placeholder="Promo Code">
                           <br>
@@ -149,3 +151,16 @@
 
 <div ng-include="'layout/footer.view.html'"></div>
 
+<script>
+
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("icn-eye");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+</script>

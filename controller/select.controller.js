@@ -15,20 +15,19 @@
         $('#myModal').modal('hide');
         initController();
         
-        function login() {
-            var path = "/select";
+        function login(){
+            var path = "";
             AuthenticationService.Login(vm.uname, vm.password, path, function (response) {
             });
         }
 
-        function register() {
-            var path = "/select";
+        function register(){
+            var path = "";
             AuthenticationService.Register(vm.fname,vm.lname,vm.email,vm.phone,vm.password, vm.promocode, path, function (response) {
             });
         }
 
-        function initController() {
-            // alert(UserService.getProcedureId());
+        function initController(){
             var param = JSON.stringify({"procedure":UserService.getProcedureId()});
                 $http({
                     url: getAverage,
@@ -58,7 +57,8 @@
 
                 });
         }
-        $scope.selectPlan = function(id) {
+
+        $scope.selectPlan = function(id){
           UserService.setPlan(id);
           $location.path('/reserve');
         }

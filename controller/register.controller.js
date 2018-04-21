@@ -14,14 +14,14 @@
     function login() {
         vm.dataLoading = true;
         var path="/";
-        AuthenticationService.Login(vm.uname, vm.password, path, function (response) {
+        AuthenticationService.Login(vm.uname, vm.password1, path, function (response) {
         });
     }
 
     function register() {
         vm.dataLoading = true;
         var path="/";
-        AuthenticationService.Register(vm.fname,vm.lname,vm.email,vm.phone,vm.password, vm.promocode, path, function (response) {
+        AuthenticationService.Register(vm.fname,vm.lname,vm.email,vm.phone,vm.password2, vm.promocode, path, function (response) {
         });
     }
  

@@ -21,6 +21,18 @@
                 controllerAs: 'vm',
                 title: 'Welcome'
             })
+            .when('/doctor', {
+                controller: 'DoctorController',
+                templateUrl: 'views/doctor.view.html',
+                controllerAs: 'vm',
+                title: 'Welcome'
+            })
+            .when('/listdoc', {
+                controller: 'ListDoc',
+                templateUrl: 'views/listdoc.view.html',
+                controllerAs: 'vm',
+                title: 'List Doctor'
+            })
             .when('/search', {
                 controller: 'SearchController',
                 templateUrl: 'views/search.view.html',
