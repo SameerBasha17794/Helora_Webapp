@@ -17,9 +17,10 @@
 
    <div class="row">
    
-
   <div class="listdoc-hd"> <h2>Our Concierge Service Will Contact Your Doctor</h2><p>Great move... Doctors love to be on our network</p></div>
 <div class="clr">&nbsp;</div>
+<div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+
        <div class="col-md-6">
           
 <h3>You</h3>
@@ -27,15 +28,15 @@
 
 
 
-          <form>
+          <form name="form">
           
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.Email" required class="lgn-inpt" name="Email" placeholder="Email *"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.Name" required class="lgn-inpt" name="Name" placeholder="Name *"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.Phone" class="lgn-inpt" name="Pone" placeholder="Phone"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.Address" class="lgn-inpt" name="Address" placeholder="Address"/></div>
         
          
-          </form>
+        
 
 
         
@@ -51,13 +52,15 @@
 
 
 
-          <form>
+         
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.DoctorName" required class="lgn-inpt" name="DoctorName" placeholder="Doctor Name"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.DoctorCity" required class="lgn-inpt" name="DoctorCity" placeholder="Doctor City"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.DoctorEmail" class="lgn-inpt" name="DoctorEmail" placeholder="Doctor Email"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.DoctorPhone" class="lgn-inpt" name="DoctorPhone" placeholder="Doctor Phone"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.DoctorFax" class="lgn-inpt" name="DoctorFax" placeholder="Doctor Fax"/></div>
+          <div class="col-md-6 mb25">  <input type="text" ng-model="vm.Note" class="lgn-inpt" name="Note" placeholder="Note"/></div>
           
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-          <div class="col-md-6 mb25">  <input type="text" class="lgn-inpt" placeholder="Email"/></div>
-        <input type="submit" class="sbmt-btn">
+          <input ng-click="instant()" type="submit" name="submit" class="sbmt-btn">
           </form>
 
 
