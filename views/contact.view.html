@@ -19,20 +19,21 @@
     <div class="col-md-6 cont-sctn2">
       <h3 class="pl15">Send Us Message</h3>
       <p  class="pl15">Please don’t hesitate to chat with me just drop a line.</p>
-      <form>
+       <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+      <form ng-submit="vm.instant()" name="form" role="form">
         <div class="form-group">
           <div class="col-md-6">
-            <input type="text" name="name" class="form-control" />
+            <input type="text" required name="name" ng-model="vm.name" placeholder="Name *" class="form-control" />
           </div>
           <div class="col-md-6">
-            <input type="text" name="name" class="form-control" />
+            <input type="text" required name="email" ng-model="vm.email" placeholder="Email *" class="form-control" />
           </div>
         </div>
         <div class="form-group">
           <div class="col-md-12 mt10">
-            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="message" required></textarea>
+            <textarea name="message" ng-model="vm.message" cols="30" rows="5" class="form-control" placeholder="Message *" required></textarea>
           </div>
-          <a href="" class="border-btn ml20">Submit</a> </div>
+          <input class="border-btn ml20" type="submit" value="submit"> </div>
       </form>
     </div>
 	
