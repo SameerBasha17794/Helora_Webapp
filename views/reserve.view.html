@@ -44,9 +44,10 @@
            
            <h2 class="mt0">Payment Summary</h2>
            <div class="paymnt-popb mt40">
+                            <div class="pb5 thm-text"><h4><b>Due Now : </b><span class="pull-right">${{displayProcedure.reservePrice}}</span></h4></div>
+                            
                             <div class="pb5"><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
                             <div class="pb5"><h4><b>Amount Due at visit :</b> <span class="pull-right"> ${{displayProcedure.balance}}</span></h4></div>
-                            <i class="thm-text"><div class="pb5"><h4><b>Reservation Charges : </b><span class="pull-right">${{displayProcedure.reservePrice}}</span></h4></div></i>
                             
                              
                              <div class="clr">&nbsp;</div>
@@ -128,10 +129,12 @@
                   <div class="text-center"> <img src="images/{{displayProcedure.image}}" width="80"></div>
                   
               <div class="paymnt-popb mt40">
+              <div class="thm-text"><h4><b>Due Now : </b><span class="pull-right">{{displayProcedure.reservePrice}}</span></h4></div>
+              <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">${{displayProcedure.balance}}</span></h4></div>
                       <div><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
                        
-                      <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">${{displayProcedure.balance}}</span></h4></div>
-                      <i class="thm-text"><div><h4><b>Pay Now : </b><span class="pull-right">{{displayProcedure.reservePrice}}</span></h4></div></i>
+                      
+                      
                        
                     </div>
 
