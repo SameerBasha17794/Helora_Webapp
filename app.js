@@ -39,6 +39,18 @@
                 controllerAs: 'vm',
                 title: 'Search'
             })
+            .when('/healthtalks', {
+                controller: 'Blog',
+                templateUrl: 'views/blog.view.html',
+                controllerAs: 'vm',
+                title: 'Blog'
+            })
+            .when('/healthdetail/:key', {
+                controller: 'BlogDetail',
+                templateUrl: 'views/blogdetail.view.html',
+                controllerAs: 'vm',
+                title: 'Blog Detail'
+            })
             .when('/searchdetail', {
                 controller: 'SearchDetail',
                 templateUrl: 'views/searchdetail.view.html',
