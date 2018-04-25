@@ -1,0 +1,38 @@
+﻿<div ng-include="'layout/header.view.html'"></div>
+<div class="clr"></div>
+
+<section class="blog-mn">
+  <div class="container">
+     <div class="row">
+        <div class="title-text">
+           <h1><b>Health BLOGS</b></h1>
+        </div>
+     </div>
+  </div>
+</section>
+<div class="clr">&nbsp;</div>
+
+<div class="blog-section">
+  <div class="container">
+    <div class="row">
+      
+        <div ng-repeat="blog in blogList" class="col-sm-6"> 
+           <div class="item-holder">
+             <div class="image-box"><img src="images/blog-box.jpg" width="100%"/></div>
+             <div class="content-box">
+             <h3>{{blog.name}}</h3>
+             <p>{{blog.short_name}}</p>
+             <br />
+             <a href="#/healthdetail/{{blog.url}}" class="button search-doctor">Read More</a>
+             </div>
+          </div>
+        </div>
+   
+
+    </div>
+    
+  </div>
+</div>
+
+<div class="clr">&nbsp;</div>
+<div ng-include="'layout/footer.view.html'"></div>
