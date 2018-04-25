@@ -44,6 +44,7 @@ var order = domain +"/product/placeOrder/";
 var verifyToken = domain +"/user/verifyToken/";
 var sendAllEmail = domain +"/user/sendAllEmail/";
 var getBlogList = domain +"/user/blogList/";
+var getBlogDetail = domain +"/user/blogDetail/";
 var getDoctorProcedure = domain +"/product/getDoctorProcedure/";
 var getDoctors = domain +"/product/getDoctors/";
 var redirect = domainurl +"/paypal/payredirect.php";

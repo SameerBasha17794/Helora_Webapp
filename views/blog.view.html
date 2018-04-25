@@ -18,12 +18,12 @@
       
         <div ng-repeat="blog in blogList" class="col-sm-6"> 
            <div class="item-holder">
-             <div class="image-box"><img src="static/images/blog-box.jpg" width="100%"/></div>
+             <div class="image-box"><img src="images/blog-box.jpg" width="100%"/></div>
              <div class="content-box">
              <h3>{{blog.name}}</h3>
              <p>{{blog.short_name}}</p>
              <br />
-             <a href="{{ url_for('blog_details', blog_id=blog['blog_id']) }}" class="button search-doctor">Read More</a>
+             <a href="#/healthdetail/{{blog.url}}" class="button search-doctor">Read More</a>
              </div>
           </div>
         </div>
