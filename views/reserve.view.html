@@ -44,10 +44,12 @@
            
            <h2 class="mt0">Payment Summary</h2>
            <div class="paymnt-popb mt40">
-                            <div class="pb5 thm-text"><h4><b>Due Now : </b><span class="pull-right">${{displayProcedure.reservePrice}}</span></h4></div>
+                            <div class="pb5 thm-text"><h4><b>Due Now: <span class="rf">(Reservation fee)</span></b><span class="pull-right clr-grey">
+                            <b>${{displayProcedure.reservePrice}}</b></span></h4></div>
                             
-                            <div class="pb5"><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
-                            <div class="pb5"><h4><b>Amount Due at visit :</b> <span class="pull-right"> ${{displayProcedure.balance}}</span></h4></div>
+                            <div class="pb5 rptxt"><h4><b>Amount Due at visit :</b> <span class="pull-right"> ${{displayProcedure.balance}}</span></h4></div>
+                            <div class="pb5 rptxt"><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
+                            
                             
                              
                              <div class="clr">&nbsp;</div>
@@ -129,9 +131,9 @@
                   <div class="text-center"> <img src="images/{{displayProcedure.image}}" width="80"></div>
                   
               <div class="paymnt-popb mt40">
-              <div class="thm-text"><h4><b>Due Now : </b><span class="pull-right">{{displayProcedure.reservePrice}}</span></h4></div>
-              <div><h4><b>Amount Due at visit :</b></b> <span class="pull-right">${{displayProcedure.balance}}</span></h4></div>
-                      <div><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
+              <div class="thm-text"><h4><b>Due Now: <span class="rf">(Reservation fee)</span></b><span class="pull-right clr-grey"><b>{{displayProcedure.reservePrice}}</b></span></h4></div>
+              <div class="rptxt"><h4><b>Amount Due at visit :</b></b> <span class="pull-right">${{displayProcedure.balance}}</span></h4></div>
+                      <div class="rptxt"><h4><b>Total Price: </b><span class="pull-right">${{displayProcedure.total}}</span></h4></div>
                        
                       
                       
