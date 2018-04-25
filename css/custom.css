@@ -496,7 +496,9 @@ span.speciality-active{color:#00b2e2;font-size:18px;font-weight:bold;}
 .rp-btn{margin-top:60px;}
 .rp-popmn{width:630px !important;margin-left:-160px;margin-top:7.75rem !important;}
 .reserve-btn{padding:10px;border-radius: 30px;background: transparent;color:#FF7600;border: 1px solid #FF7600;text-align:center;font-size: 18px;margin-left:25px;}
-
+.rf{color:#333;font-size:12px;}
+.clr-grey{color:#333 !important;}
+.rptxt h4{margin:0;}
 .popup-lft ul li{list-style-type:none;border-bottom:1px solid #dfdfdf;padding:10px 0;color:#666666;}
 .popup-lft ul li div{display:inline-block;padding-right:10px;}
 .popup-lft ul{margin-left:0;padding-left:0;padding-top:15px;}
