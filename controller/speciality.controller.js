@@ -18,6 +18,7 @@
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
                     $scope.displayProcedure = data.data['procedure'];
+                    $scope.image = data.data['image'];
                 }).error(function (data, status, headers, config) {
                     console.log("error")
                    
