@@ -19,8 +19,11 @@
                     if (data['status']!="0"){
                         $scope.displayProcedure = data.data;
                         $scope.total = data.data['total'];
+                        $scope.showtotal = data.data['showtotal'];
                         $scope.balance = data.data['balance'];
+                        $scope.showbalance = data.data['showbalance'];
                         $scope.reservePrice = data.data['reservePrice'];
+                        $scope.showreservePrice = data.data['showreservePrice'];
                         $scope.covered = data.data['proc_detail'];
                     }else{
                         // alert("here");
