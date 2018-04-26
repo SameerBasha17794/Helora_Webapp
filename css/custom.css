@@ -107,6 +107,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .how-mn{background:url(../images/abt-bg1.png);background-size:cover;overflow:hidden;}
 .clr{clear:both;margin:10px 0 !important;}
 .divider{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-top:15px;}
+.divider-speciality{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-left:50px;}
 .how-mn{color:#fff;}
 .search-doctor{background:#FF7600;color:#fff;border-radius:50px;padding:15px;font-size:16px;}
 .wht-clr{color:#fff;}
