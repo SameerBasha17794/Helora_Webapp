@@ -75,6 +75,12 @@
                 controllerAs: 'vm',
                 title: 'About'
             })
+            .when('/forgot', {
+                controller: 'ForgotController',
+                templateUrl: 'views/forgot.view.html',
+                controllerAs: 'vm',
+                title: 'Forgot'
+            })
             .when('/contact', {
                 controller: 'ContactController',
                 templateUrl: 'views/contact.view.html',

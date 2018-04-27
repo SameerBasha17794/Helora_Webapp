@@ -435,7 +435,7 @@ span.navbar-toggler-icon i.fa {
 .abt-cont p{font-size:20px;color:#fff;margin-top:5px;font-weight:lighter;}
 .single-slider-for{padding:10px;}
 .testimonials{background:url(../images/testimonials.png);background-size:cover;padding:80px 0 80px 0;}
-.team-title{padding-top:50px;}
+.team-title{padding-top:60px;}
 .single-team-detail{text-align:center;color:#333;}
 .single-team-item{border:1px solid #757589;text-align:center;}
 .single-team-item img{width:100%;}
@@ -839,3 +839,12 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
 
 
 
+/*about new*/
+.social-mediamn .col-md-1{
+	width: 5% !important;
+	padding-bottom: 60px; 
+
+}
+
+.li-scnmedia{text-align:center;}
+.li-scnmedia .col-md-4{margin-left:15px;}
