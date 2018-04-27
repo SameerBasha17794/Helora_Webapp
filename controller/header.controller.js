@@ -9,11 +9,11 @@
         var vm = this;
         $scope.name = "";
         $window.scrollTo(0, 0);
-        alert($rootScope.globals.currentUser.username);
+        // alert($rootScope.globals.currentUser.username);
         loadCurrentUser();
         // alert(UserService.GetId());
         function loadCurrentUser() {
-            if (UserService.GetId()!="" && $rootScope.globals.currentUser.username != ""){
+            if (UserService.GetId()!=""){
                 UserService.GetByUsername($rootScope.globals.currentUser.username)
                     .then(function (user) {
                     $scope.user = $rootScope.globals.currentUser.username;
