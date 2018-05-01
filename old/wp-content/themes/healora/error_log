@@ -1,0 +1,3 @@
+[01-Oct-2017 01:00:09 Europe/Copenhagen] PHP Fatal error:  Call to undefined function language_attributes() in /home/healora/public_html/wp-content/themes/healora/header.php on line 2
+[11-Oct-2017 11:11:17 Europe/Copenhagen] PHP Fatal error:  Call to undefined function language_attributes() in /home/healora/public_html/wp-content/themes/healora/header.php on line 2
+[13-Oct-2017 15:31:18 Europe/Copenhagen] PHP Fatal error:  Call to undefined function language_attributes() in /home/healora/public_html/wp-content/themes/healora/header.php on line 2

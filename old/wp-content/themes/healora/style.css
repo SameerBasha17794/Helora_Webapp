@@ -1,0 +1,2621 @@
+/*
+Theme Name: Healora Theme
+Theme URI: http://www.enki-technologies.com/
+Author: Enki Technologies
+Author URI: http://www.enki-technologies.com/
+Template: medicom
+Version: 2.0.2
+*/
+div[class^="bp-avatar-"],.bp-uploader-window {
+	display:none;
+}
+.patient-profile-information {
+	width : 100%;
+}
+.homepage-registration-form-have-account a {
+    font-size: 24px;
+}
+/* ----------------------------------------- */
+/* -------- Global for all website --------- */
+/* ----------------------------------------- */
+.item-list-tabs, #members-dir-search, #buddypress .field-visibility-settings-toggle, .base .profile-fields, .procedures .profile-fields, .item-header-content .item-meta, #buddypress div#item-header div#item-header-content, p#field-visibility-settings-toggle-1.field-visibility-settings-notoggle, div.gmw-fl-yellow-form-wrapper .xfield-trigger-wrapper, .ls-wp-fullwidth-container .ls-shadow, #buddypress span.activity, .single-doctor-profile-map .display-name, .gmw-fl-grid-gray-results-wrapper .results-count-wrapper, .gmw-fl-grid-gray-results-wrapper .pagination-per-page-wrapper.top, .gmw-fl-grid-gray-results-wrapper .pagination-per-page-wrapper.bottom, .gmw-fl-grid-gray-results-wrapper ul.members-list-wrapper li .top-wrapper, .gmw-fl-grid-gray-results-wrapper .bottom-wrapper, .modal-registration-form #reg_forms label, div#pass-strength-result.short, .modal-login-form .login-username>label, .modal-login-form .login-password>label, div#buddypress>div#item-header, div#buddypress>div#item-body>div.profile>div.bp-widget.base, .ls-borderlessdark .ls-shadow, .all-bundle-categories-list-mobile, #menu-main-menu #nav-menu-item-1366 {
+	display: none !important;
+}
+
+.blue-button, input.wpcf7-form-control.wpcf7-submit.buton.b_asset.buton-2.buton-mini, .login-page-login-form #loginform input#wp-submit, div.gmw-fl-yellow-form-wrapper .gmw-submit, .doctor-search-form #buddypress input[type=submit], #buddypress .standard-form#bps_widget1461 div.submit input, .doctor-profile-change-password #submit, #profile-group-edit-submit, #registration-form-employer input#rm_next_form_page_button_2_1, #registration-form-patient input#rm_next_form_page_button_3_1, span.single-bundle-details-show {
+	color: #fff !important;
+	background-color: #08c !important;
+	font-size: 14px !important;
+	padding: 8px 15px !important;
+	border-radius: 5px !important;
+	border: 0px;
+}
+
+.registration #buddypress .standard-form div.submit input {
+	color: #fff !important;
+	background-color: #08c !important;
+	font-size: 22px !important;
+	padding: 17px 40px !important;
+	border-radius: 5px !important;
+	border: 0px;
+}
+
+.blue-button:hover, #buddypress .standard-form div.submit input {
+	color: #fff;
+}
+
+span {
+    color: #A5A5A5;
+}
+
+.caption {
+	background-size: cover;
+}
+
+.header-2 .logo {
+	max-width: 270px;
+}
+
+.footer-logo {
+	max-width: 256px;
+}
+
+/* Bootstrap modal */
+.modal-dialog {
+	margin-top: 15%;
+}
+
+div.modal-dialog.modal-lg {
+    width: 80% !important;
+}
+
+/* Blue header on top of the page - reduce height */
+.caption {
+	padding: 50px 0 !important;
+	height: 174px !important;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus, .header-2 .navbar-default .navbar-nav>.firstitem.current-menu-item>a, .header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a, .header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a:hover, .header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a:focus {
+	background-color: transparent !important;
+	color: #00b2e2 !important;
+}
+
+
+
+/* ----------------------------------------- */
+/* ------------- Buttons style ------------- */
+/* ----------------------------------------- */
+
+/* Blue button */
+.homepage-find-your-doctor-button {
+    background-color: #00b2e2;
+		border: 2px solid #00b2e2;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 8px 38px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.homepage-find-your-doctor-button:hover {
+	color: #00b2e2 !important;
+	background-color: #fff;
+	border: 2px solid #00b2e2;
+}
+
+/* Orange button */
+.accent-color-button, input#rm_next_form_page_button_4_1.rm_next_btn.btn, input#rm_submit_btn.rm_btn.rm_login_btn.btn.btn-primary {
+    background-color: #FF7600 !important;
+	border: 2px solid #FF7600 !important;
+    color: #fff !important;
+    font-size: 30px !important;
+    font-weight: 300 !important;
+    padding: 8px 38px !important;
+    border-radius: 50px !important;
+    display: inline-block !important;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20) !important;
+}
+
+.accent-color-button:hover, input#rm_next_form_page_button_4_1.rm_next_btn.btn:hover, input#rm_submit_btn.rm_btn.rm_login_btn.btn.btn-primary:hover {
+	color: #FF7600 !important;
+	background-color: #fff !important;
+	border: 2px solid #FF7600 !important;
+	cursor: pointer;
+}
+
+/* Orange inversed button */
+.accent-color-inverse-button {
+    background-color: #fff;
+	border: 2px solid #FF7600;
+    color: #FF7600;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 8px 38px;
+    border-radius: 50px;
+    display: inline-block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20) !important;
+}
+
+.accent-color-inverse-button:hover {
+	color: #fff !important;
+	background-color: #FF7600;
+	cursor: pointer;
+}
+
+/* ----------------------------------------- */
+/* --------------- Home page --------------- */
+/* ----------------------------------------- */
+.homepage-contact-form-submit {
+	margin-left: 0px !important;
+}
+
+.homepage-services-items {
+    min-height: 100px;
+}
+
+.medicom-forms {
+	border: 1px solid #DAD7D7 !important;
+}
+
+div.gmw-fl-yellow-form-wrapper {
+	background: #fff !important;
+}
+
+#homepage-search-popup .gmw-unit-distance-wrapper {
+	display: none;
+}
+
+/* Search in main slider */
+.search-form-homepage-slider .gmw-unit-distance-wrapper, .search-form-homepage-slider .gmw-2-field-2-wrapper label {
+	display: none;
+}
+
+.search-form-homepage-slider {
+	width: 100%;
+    position: absolute;
+    bottom: 180px;
+    z-index: 100;
+}
+
+input#gmw-address-2 {
+	display: none;
+}
+
+.search-form-homepage-slider div.gmw-fl-yellow-form-wrapper input[type="text"] {
+	width: 96% !important;
+}
+
+.search-form-homepage-slider div.gmw-fl-yellow-form-wrapper input[type="text"]:focus {
+	outline-color: #fff !important;
+}
+
+.search-form-homepage-slider div.gmw-fl-yellow-form-wrapper, .search-form-homepage-slider div.gmw-cl-wrapper, .search-form-homepage-slider div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields, .search-form-homepage-slider div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields .editfield span {
+	background: transparent !important;
+	border: 0px !important;
+}
+
+.search-form-homepage-slider div.gmw-cl-wrapper {
+	box-shadow: none !important;
+}
+
+.search-form-homepage-slider .gmw-cl-title, .search-form-homepage-slider .gmw-cl-location {
+	color: #fff !important;
+}
+
+.search-form-homepage-slider div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields {
+	display: block;
+	margin-bottom: 0px;
+	padding: 5px 15px;
+}
+
+.search-form-homepage-slider #gmw-submit-wrapper-2 {
+	text-align: center;
+}
+
+.search-form-homepage-slider div.gmw-fl-yellow-form-wrapper .gmw-locator-btn-wrapper {
+	background-color: transparent !important;
+	border: 0px !important;
+	color: #fff !important;
+	padding: 0px !important;
+}
+
+#homepage-slider-logo {
+	max-height: 250px !important;
+	width: auto !important;
+}
+
+#s2id_gmw-2-field-2 a {
+	height: 50px;
+}
+
+div.gmw-fl-yellow-form-wrapper input[type="text"] {
+	border: 0px !important;
+    background: transparent !important;
+    color: #fff !important;
+    margin-bottom: 0px !important;
+}
+
+div.gmw-fl-yellow-form-wrapper input::-webkit-input-placeholder {
+	color: #fff;
+	opacity: 0.7;
+}
+
+div.gmw-fl-yellow-form-wrapper .gmw-address-field-wrapper .gmw-locator-btn-within-wrapper .gmw-locator-button::before {
+	color: rgba(255, 255, 255, 1) !important;
+	margin-left: -18px !important;
+}
+
+.select2-container .select2-choice {
+	border: 0px !important;
+}
+
+
+.select2-container .select2-choice div b {
+	margin-top: 13px;
+}
+
+.search-form-homepage-slider .select2-container .select2-choice div::before {
+	width: 50px;
+	background-color: #00B2E2;
+}
+
+
+i.fa.fa-map-marker.gmw-locator-btn-within.gmw-locator-button::after {
+    content: "\f041" !important;
+
+}
+
+i.fa.fa-map-marker.gmw-locator-btn-within.gmw-locator-button::before {
+    content: "Click to find location " !important;
+    font-size: 11px !important;
+    font-family: "Source Sans Pro", sans-serif !important;
+    margin-left: -120px !important;
+    font-weight: 600 !important;
+    opacity: 0.7 !important;
+}
+
+div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields .editfield input[type="text"] {
+	background: #fff !important;
+    color: #000 !important;
+    width: 100% !important;
+    height: 50px;
+}
+
+form.gmw-form.gmw-form-2 ul.es-list {
+	text-align: left;
+}
+
+form.gmw-form.gmw-form-2 ul.es-list li:first-child {
+	display: none !important;
+}
+
+.gmw-2-field-1950-wrapper, .gmw-2-field-1952-wrapper, .gmw-2-field-1954-wrapper, .gmw-2-field-1956-wrapper, .gmw-2-field-1960-wrapper, .gmw-2-field-1962-wrapper, .gmw-2-field-1966-wrapper, .gmw-2-field-1974-wrapper, .gmw-2-field-1982-wrapper, .gmw-2-field-1984-wrapper, .gmw-2-field-1986-wrapper, .gmw-2-field-1988-wrapper, .gmw-2-field-1990-wrapper, .gmw-2-field-1992-wrapper, .gmw-2-field-1994-wrapper, .gmw-2-field-1996-wrapper, .gmw-2-field-1998-wrapper, .gmw-2-field-2000-wrapper, .gmw-2-field-2002-wrapper, .gmw-2-field-2004-wrapper, .gmw-2-field-2006-wrapper, .gmw-2-field-2008-wrapper, .gmw-2-field-2010-wrapper, .gmw-2-field-2012-wrapper, .gmw-2-field-2014-wrapper, .gmw-2-field-2016-wrapper, .gmw-2-field-2018-wrapper, .gmw-2-field-2036-wrapper, .gmw-2-field-2034-wrapper, .gmw-2-field-2032-wrapper, .gmw-2-field-2030-wrapper, .gmw-2-field-2028-wrapper, .gmw-2-field-2026-wrapper, .gmw-2-field-2024-wrapper, .gmw-2-field-2022-wrapper, .gmw-2-field-2020-wrapper, .gmw-2-field-14552-wrapper  {
+	display: none;
+}
+
+.es-list {
+	background: #08c !important;
+	color: #fff ;
+	margin-top: 76px !important;
+	max-height: 286px !important;
+	border: 0px !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,.25) !important;
+}
+
+.es-list li {
+	border-bottom: 1px solid #0c91d4;
+	padding: 10px !important;
+}
+
+.es-list li.selected {
+	background: #0c91d4 !important;
+}
+
+.es-list li:hover {
+	background: #0c91d4 !important;
+	color: #fff;
+}
+
+.es-list::-webkit-scrollbar {
+    width: 1em;
+}
+
+.es-list::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+}
+
+.es-list::-webkit-scrollbar-thumb {
+  background-color: #0c91d4;
+}
+
+#gmw-2-field-2::-webkit-input-placeholder {
+   color: #888;
+   font-size: 16px;
+}
+
+.popular-healthcare-specialties {
+	color: #00B2E2;
+    text-align: left;
+    background: #08c;
+    padding: 5px 10px;
+    position: absolute;
+    top: 100px;
+    width: 96.2%;
+}
+
+/* Steps icons */
+.homepage-steps-icons {
+	display: block;
+    text-align: center;
+    color: #00B2E2;
+    background-color: #fff;
+    border: 1px solid #00B2E2;
+    font-size: 36px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 13px;
+}
+
+.homepage-steps-title {
+	padding-top: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.homepage-steps-line {
+	border-top: 1px solid #00B2E2;
+	margin-top: -50px;
+    position: relative;
+    z-index: -1;
+}
+
+/* ----------------------------------------- */
+/* ------- All doctors profiles page ------- */
+/* ----------------------------------------- */
+.doctor-first-last-name, .modal-doctor-first-last-name {
+	width: 100% !important;
+}
+
+.doctor-first-last-name a, .doctor-info-geo-search a, .modal-doctor-first-last-name a {
+	font-size: 22px;
+}
+
+.avatar-healora-icon {
+	position: absolute;
+    max-width: 50px;
+    bottom: 0;
+}
+
+.avatar-healora-icon-doctor-profile {
+	position: absolute;
+    max-width: 50px;
+    margin-top: -35px;
+}
+
+.doctor-info a {
+	color: #646464;
+	font-size: 13px;
+	padding: 0 10px 0 3px;
+}
+
+.doctor-specialty {
+	color: #fff !important;
+	background-color: #626262;
+	font-size: 10px;
+	padding: 3px 7px;
+	border-radius: 5px;
+}
+
+.doctor-procedure {
+	color: #fff !important;
+	background-color: #767676;
+	font-size: 10px;
+	padding: 3px 7px;
+	border-radius: 5px;
+	margin-bottom: -6px;
+	display: inline-block;
+	width: auto;
+    /*max-width: 50%;
+    width: 200px;
+    height: 19px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap !important;*/
+}
+
+.doctor-procedure-box {
+	color: #fff !important;
+	background-color: #00B2E2;
+	font-size: 10px;
+	padding: 3px 7px;
+	border-radius: 5px;
+	display: inline-block;
+	width: auto;
+}
+
+.doctor-address {
+	font-size: 24px;
+	width: 70%;
+}
+
+.doctor-address span {
+	color: #646464;
+}
+
+/* Sidebar "Doctor search" widget */
+.doctor-search-form #buddypress input, .doctor-search-form #buddypress select {
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.doctor-search-form #buddypress input {
+	height: 34px;
+}
+
+.doctor-search-form #buddypress select {
+	-webkit-appearance: menulist-button;
+    height: 30px;
+    color: #555;
+}
+
+div.gmw-fl-yellow-form-wrapper input[type="text"], .doctor-search-form #buddypress input {
+	border-radius: 5px !important;
+}
+
+.doctor-search-form #buddypress label, .doctor-search-form h5 {
+    color: #00B2E2;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.doctor-search-form .sidebar-widget h2, .ask-doctor-question-form h3, .book-doctor-appointment h3 {
+	font-size: 22px;
+	font-weight: 400;
+	color: #00B2E2;
+}
+
+.book-doctor-appointment h2 {
+	color: #00B2E2;
+}
+
+.appointments-list table td {
+    border: 1px solid #fff !important;
+}
+}
+
+#buddypress #bps_widget1313 select {
+	width: 100%;
+}
+
+/* Geolocation form */
+div.gmw-fl-yellow-form-wrapper {
+	padding: 0px !important;
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+}
+
+.doctor-search-form #buddypress input[type=submit] {
+	width: 27% !important;
+}
+
+.doctor-search-form #buddypress input[type=submit] {
+	margin-top: 10px;
+	height: 36px;
+}
+
+/* Advanced doctors search */
+.doctors-advanced-search {
+	height: 300px;
+}
+
+.doctors-advanced-search #gmw-3-field-2, .doctors-advanced-search div.gmw-fl-yellow-form-wrapper input[type="text"] {
+	height: 30px;
+}
+
+.doctors-advanced-search #gmw-3-field-2 {
+	margin-bottom: 0px;
+}
+
+.doctors-advanced-search div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields-3 {
+    width: 44%;
+    float: left;
+    height: 200px;
+}
+
+.doctors-advanced-search div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields-3::after {
+	content: "- OR -";
+	color: #ccc;
+	font-size: 24px;
+    position: absolute;
+    top: 44px;
+    right: 48%;
+}
+
+.doctors-advanced-search div.gmw-fl-yellow-form-wrapper .gmw-address-field-wrapper-3, .doctors-advanced-search div.gmw-unit-distance-wrapper {
+	width: 45%;
+    float: right;
+}
+
+.doctors-advanced-search #gmw-submit-wrapper-3 {
+	width: 100%;
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*div.gmw-fl-yellow-form-wrapper .gmw-submit {
+	position: absolute;
+    right: 15px;
+    top: 5px;
+    height: 50px;
+    width: 100px !important;
+    border-top-right-radius: 4px! important;
+    border-bottom-right-radius: 4px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    background-color: #00B2E2 !important;
+    background-image: url("https://healora.com/wp-content/uploads/2017/03/get-pricing.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
+}*/
+
+div.gmw-fl-yellow-form-wrapper .gmw-submit {
+		position: absolute;
+		height: 60px;
+		width: 380px !important;
+		background-color: #FF7600 !important;
+		border: 2px solid #FF7600;
+		color: #fff;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 50px !important;
+		bottom: 15px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		font-size: 28px !important;
+		font-weight: 300;
+}
+
+div.gmw-fl-yellow-form-wrapper .gmw-submit:hover {
+		background-color: #fff !important;
+		color: #FF7600 !important;
+}
+
+
+.doctors-advanced-search div.gmw-fl-yellow-form-wrapper .gmw-address-field-wrapper-3 {
+	margin-top: 45px;
+}
+
+.doctors-advanced-search div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields {
+	background: #fff !important;
+	display: block;
+}
+
+/* Search forms */
+.doctor-search-form {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.specialty-search-form {
+	width: 45%;
+}
+
+.geo-search-form {
+	width: 45%;
+}
+
+.or-search-form {
+	width: 10%;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    color: #ccc;
+}
+
+.specialty-search-form .select2-container {
+	width: 100% !important;
+}
+
+.select2-container input.select2-input {
+	border: 0px !important;
+}
+
+.doctor-search-form div.gmw-fl-yellow-form-wrapper .gmw-submit {
+	width: 28%;
+}
+
+/* Geo search results */
+div.gmw-fl-grid-gray-results-wrapper ul.members-list-wrapper li .top-wrapper h2.user-name-wrapper a {
+	color: #00B2E2 !important;
+}
+
+div.gmw-fl-grid-gray-results-wrapper .bottom-wrapper {
+	background: #00B2E2 !important;
+}
+
+div.gmw-fl-grid-gray-results-wrapper .bottom-wrapper a {
+	color: #fff;
+}
+
+.avatar-healora-icon-geo-search {
+	position: absolute;
+    max-width: 50px;
+    margin-top: -35px;
+}
+
+.gmw-fl-grid-gray-results-wrapper .user-avatar {
+	width: 15%;
+}
+
+.gmw-fl-grid-gray-results-wrapper .avatar {
+	max-width: 135px !important;
+	height: auto !important;
+}
+
+.gmw-fl-grid-gray-results-wrapper .single-member {
+	border-style: solid;
+    border-width: 0px 0px 1px 0px !important;
+    padding-bottom: 10px;
+}
+
+/*.doctor-info-geo-search {
+	text-align: left;
+	padding-left: 145px;
+}
+
+.doctor-info-geo-search span {
+	color: #00B2E2;
+}*/
+
+.geo-search-profile-link {
+	margin-top: 12px;
+}
+
+div.gmw-fl-grid-gray-results-wrapper ul.members-list-wrapper {
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+}
+
+/*div.gmw-map-wrapper {
+	width: 35% !important;
+    height: 300px !important;
+    float: right !important;
+}*/
+
+div.gmw-fl-grid-gray-results-wrapper ul.members-list-wrapper li {
+		box-shadow: none !important;
+    list-style: none !important;
+    list-style-type: none !important;
+    border: 1px solid #00b2e2;
+		padding: 20px;
+    margin-bottom: 50px;
+}
+
+div.gmw-fl-grid-gray-results-wrapper ul.members-list-wrapper li div.user-info {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+}
+
+/* Doctors list in modal in geo search results */
+/* Modal background color */
+.modal-backdrop {
+   background-color: transparent !important;
+}
+
+.modal-doctor-first-last-name {
+	text-align: left;
+}
+
+.save-price-modal {
+    font-size: 22px !important;
+    position: absolute !important;
+    right: 90px !important;
+    margin-top: -4px;
+}
+
+.doctor-name-title-modal {
+	color: #00B2E2;
+}
+
+.doctor-name-title-modal h3 {
+	font-weight: 500;
+}
+
+.procedures-table-modal {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.procedures-table-modal span {
+	color: #767676;
+}
+
+.procedures-table-modal-align-left {
+	text-align: left !important;
+}
+
+.procedures-table-modal-align-right {
+	float: right !important;
+}
+
+
+/* Registration form in modal window */
+.modal-registration-form .reg-form-group {
+	padding: 0;
+	margin: 2px 5px;
+}
+
+.modal-registration-form p {
+	text-align: left;
+	margin: 0 5px;
+}
+
+.modal-login-form, .modal-registration-form {
+	margin: 0 5px 20px 0;;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.modal-login-form {
+	background-color: rgba(229, 229, 229, 0.5);
+}
+
+.modal-registration-form {
+	background-color: rgba(1, 179, 226, 1);
+}
+
+.modal-registration-form #reg_forms, .modal-login-form {
+	text-align: left;
+}
+
+.registration-note-modal {
+	text-align: center;
+	margin: 10px;
+}
+
+.modal-login-form-wrapper .login-username, .modal-login-form-wrapper .login-password, .modal-login-form-wrapper .login-remember {
+	margin-bottom: 0px;
+}
+
+.reg-form-group input[name="register"], .modal-login-form-wrapper input[name="wp-submit"], .modal-registration-form.modal-registration-form-doctor-profile .reg-form-group input[name="register"] {
+	float: right;
+    margin: 5px 0px;
+}
+
+.modal-login-form-wrapper input[name="wp-submit"] {
+	float: right;
+    margin: -20px 0px;
+}
+
+.modal-login-form-wrapper>p.login-username>input, .modal-login-form-wrapper>p.login-password>input, .modal-login-form-wrapper p.login-username input#user_login, .modal-login-form-wrapper p.login-username input#user_pass {
+	width: 49% !important;
+	float: left;
+}
+
+.modal-login-form-wrapper>p.login-password>input, .modal-login-form-wrapper p.login-username input#user_pass {
+	margin-left: 2%;
+	margin-top: 0px !important;
+}
+
+.modal-login-form-wrapper>p.login-username>input, .modal-login-form-wrapper p.login-username input#user_login {
+	padding: 4px;
+}
+
+.modal-registration-form .reg-form-group:last-child, .modal-registration-form.modal-registration-form-doctor-profile .reg-form-group:last-child, .modal-registration-form.modal-registration-form-doctor-profile .reg-form-group:nth-child(4), .modal-registration-form.modal-registration-form-doctor-profile .reg-form-group:nth-child(5) {
+	height: 35px;
+}
+
+.modal-login-form-wrapper .login-remember {
+	font-size: 12px;
+}
+
+/* Resgistration form in doctor profile */
+.modal-login-form-doctor-profile #loginform p.login-password input {
+	width: 49% !important;
+	float: left !important;
+	margin-left: 2% !important;
+	margin-top: 0px !important;
+}
+
+.modal-registration-form-doctor-profile #reg_forms .reg-form-group input:not(input[type=submit]) {
+	width: 100% !important;
+}
+
+
+/* ----------------------------------------- */
+/* ------ Single doctor profile page ------- */
+/* ----------------------------------------- */
+div#item-header {
+	margin-bottom: 2%;
+}
+
+.single-profile-info{
+	margin-top: 95px;
+}
+
+.single-profile-info a{
+	color: #646464;
+}
+
+.single-profile-info i {
+	padding-right: 5px;
+}
+
+table.profile-fields {
+	margin-left: 200px;
+}
+
+table.profile-fields .label {
+	color: #333;
+	font-size: 100%;
+}
+
+#buddypress table.profile-fields tr td.label {
+	border-right: 0px;
+}
+
+#buddypress table.profile-fields tr.alt td {
+	background: #fff;
+}
+
+/*.doctor-first-last-name-single-profile h2 {
+	font-weight: 600;
+	margin-top: 0px;
+	color: #00B2E2;
+}*/
+
+/*.doctor-profile-info-wrapper {
+	display: table-cell;
+    vertical-align: top;
+    padding: 0 10px 20px 0;
+}*/
+
+.doctor-profile-info-wrapper .avatar {
+	width: 135px;
+	height: 135px;
+	max-width: 135px;
+}
+
+.app_services_dropdown_title {
+	font-size: 1em !important;
+	margin: 0px !important;
+}
+
+/* Profile field "Procedure" position */
+.procedures .profile-fields {
+	position: absolute;
+	top: 0;
+	margin: 40px 0 0 200px;
+	display: none !important;
+}
+
+.procedures table.profile-fields {
+	width: 83% !important;
+}
+
+table.profile-fields td.data a {
+	color: #646464;
+}
+
+.procedures table.profile-fields .label {
+	font-size: 120%;
+	font-weight: 500;
+}
+
+.procedures table.profile-fields tr td.label {
+	padding-top: 0px !important;
+}
+
+/* Book an appontment */
+.app_services_dropdown_title {
+	font-size: 1em;
+	font-weight: 600;
+}
+
+/* Ask doctor question form */
+.ask-doctor-question-form {
+	padding-top: 20px;
+}
+
+.ask-doctor-question-form h3 {
+	margin-left: -5px;
+}
+
+.you-are-employee-employer {
+    padding-left: 10px;
+}
+
+.you-are-employee-employer-container {
+	padding: 15px;
+}
+
+.b_asset {
+   box-shadow: none !important;
+   margin-left: 10px;
+}
+
+#buddypress .standard-form input[type=text] {
+	width: 90%;
+}
+
+.procedure-price-code {
+	padding-top: 10px;
+}
+
+
+/* Menu for single profile settings */
+.user-profile-settings-menu {
+	padding-bottom: 10px;
+}
+
+.user-profile-settings-menu ul {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.user-profile-settings-menu ul li {
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.user-profile-settings-menu ul li a:hover {
+	text-decoration: underline;
+}
+
+#profile-edit-form div.editfield.field_11120.field_user-info.optional-field.visibility-public.field_type_checkbox, #profile-edit-form div.editfield.field_11130.field_doctor-info.optional-field.visibility-public.alt.field_type_checkbox {
+	margin-left: 20px !important;
+}
+
+/* Change password/email page */
+.doctor-profile-change-password input {
+	width: 30%;
+}
+
+.doctor-profile-change-password #submit {
+	width: 140px;
+}
+
+/* Location map */
+.single-doctor-profile-map .map-wrapper {
+	width: 100% !important;
+}
+
+.gmw-single-member-sc-wrapper .address-wrapper {
+	font-size: 20px;
+}
+
+/* Procedures prices table */
+.procedures-table {
+	width: 100%;
+	background-color: #f5f5f5;
+	border: 5px solid #f5f5f5;
+}
+
+.procedures-table thead {
+	border-bottom: 3px solid #626262;
+    font-size: 15px;
+}
+
+.procedures-table tbody td {
+	height: 54px;
+	border-bottom: 1px solid #767676;
+}
+
+.procedures-table-healora, .procedures-table-service-name {
+	color: #00B2E2;
+}
+
+.procedures-table-service-name, .procedures-table-services, .procedures-table-bundle-name, .search-results-procedures-table-procedures  {
+	text-transform: uppercase;
+    font-size: 14px;
+    width: 50%;
+}
+
+.procedures-table-claim {
+	color: #08c;
+}
+
+.procedures-table-regional, .procedures-table-healora, .procedures-table-claim, .procedures-table-initial-price, .procedures-table-healora-price, .procedures-table-claim, .search-results-procedures-table-regional-price, .search-results-procedures-table-healora-price, .search-results-procedures-table-healora-name, .reserve-price-button {
+	text-align: center;
+	padding: 0 5px;
+}
+
+/* Procedure table in geo search results */
+.search-results-procedures-table-procedures, .search-results-procedures-table-procedure-name {
+	padding: 0 0 0 10px;
+}
+
+/* Buttons */
+.light-blue-btn-inactive {
+	color: #fff !important;
+	background-color: #00B2E2 !important;
+	border-radius: 5px !important;
+	border: 0px !important;
+	cursor: default !important;
+	margin-left: 20px;
+}
+
+.light-blue-btn, #buddypress .wpcf7-form input[type=submit], .reserve-price-button input, .wpcf7-f1562-p1378-o1 input[type=submit] {
+	color: #fff !important;
+	background-color: #00B2E2 !important;
+	border-radius: 5px !important;
+	border: 0px !important;
+	cursor: default !important;
+}
+
+.dark-blue-btn, .modal-login-form input#wp-submit.button-primary, .modal-registration-form .reg-form-group input[name="register"] {
+	color: #fff !important;
+	background-color: #08c !important;
+	border-radius: 5px !important;
+	border: 0px !important;
+	text-transform: uppercase !important;
+	font-size: 12px !important;
+    padding: 5px 10px;
+}
+
+/* Coupon pop up */
+.coupon-form {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+.coupon-form input {
+	border-radius: 5px !important;
+}
+
+.form-control {
+	height: 36px;
+}
+
+.modal-header i {
+	padding: 0 10px;
+}
+
+h4.modal-title-registration, h4.modal-title-login, h4.modal-title {
+	text-align: center;
+}
+
+.modal-footer button {
+	margin-right: 10px;
+}
+
+/* Paypal button */
+#easy_paypal_form_div table td {
+	border-bottom: 0px;
+}
+
+/* Coupon generator */
+.coupon-code-modal {
+	text-align: center;
+}
+
+.coupon-code-modal span {
+	font-weight: 600;
+}
+
+.pay-to-activate {
+	margin: 20px 0;
+}
+
+.coupon-code-modal .wpcf7-form-control-wrap.ticket input {
+	border: 0;
+	text-align: center;
+	pointer-events: none;
+}
+
+.wpcf7-f1562-p1378-o1 input[name=your-name] {
+	width: 100% !important;
+}
+
+#buddypress .wpcf7-form input[type=submit] {
+	width: 20%;
+    float: right;
+    margin-top: 12px;
+}
+
+/* Claim additional 10% */
+.claim-additional-modal {
+	text-align: center;
+	color: #08c;
+	padding-bottom: 40px;
+}
+
+.claim-additional-modal span {
+	color: #00B2E2;
+	font-weight: 600;
+}
+
+/* Discount modal in search results */
+.discount-modal-search-results {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.discount-modal-search-results-old-price {
+	text-decoration: line-through;
+}
+
+.discount-modal-search-results-new-price {
+	color: #00B2E2;
+	font-size: 28px;
+    margin-left: 20px;
+}
+
+.discount-modal-search-results-tip {
+	border-top: 1px solid #e5e5e5;
+    margin-top: 25px;
+    padding-top: 5px;
+}
+
+/* Procedures in doctor profile without table */
+.table-head, .table-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 5px;
+}
+
+.doctor-profile-procedures-table .table-conten {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.doctor-profile-procedures-table .table-head {
+	padding-top: 15px;
+}
+
+.table-head {
+	border-bottom: 3px solid #626262;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+/*.table-head .procedures-table-healora, .table-content .procedures-table-healora-price {
+	position: absolute;
+	right: 130px;
+}*/
+
+.table-content .procedures-table-healora-price {
+	color: #00B2E2;
+}
+
+/*.table-head .procedures-table-regional, .table-content .procedures-table-initial-price {
+	position: absolute;
+	right: 270px;
+}*/
+
+.table-content {
+	min-height: 54px;
+	height: auto;
+	border-bottom: 1px solid #767676;
+	padding-top: 16px
+}
+
+/* Login form in modal */
+/*.modal-login-form input#user_login.input {
+	width: 100% !important;
+}*/
+
+/* ----------------------------------------- */
+/* ----------- Registration page ----------- */
+/* ----------------------------------------- */
+#buddypress .standard-form #basic-details-section input[type=password], input#signup_email {
+	width: 90% !important;
+}
+
+#signup_form .bp-required-field-label {
+	color: #646464;
+}
+
+#buddypress .standard-form select, #buddypress   p.description {
+	width: 250px;
+}
+
+div.editfield.field_1727.field_immunotherapy.optional-field.visibility-public.field_type_selectbox {
+	overflow: hidden;
+}
+
+#buddypress .standard-form#signup_form div.submit {
+	text-align: center;
+	float: none !important;
+	padding-top: 250px;
+}
+
+#buddypress .standard-form #basic-details-section {
+	width: 25%;
+}
+
+#buddypress .standard-form #profile-details-section {
+	float: none !important;
+	width: 75%;
+	margin-top: -19px !important;
+}
+
+
+#profile-details-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 450px !important;
+}
+
+#ajax-response {
+	margin-top: 40px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	border-top: 5px solid #08c;
+}
+
+#ajax-response .procedure-info-container:first-child {
+	margin-top: 20px;
+}
+
+.procedure-info-container {
+	background-color: #00b2e2;
+	color: #fff;
+	padding: 50px;
+}
+
+.procedure-info {
+	display: flex;
+}
+
+.procedure-info-label {
+	font-weight: 600;
+	width: 125px;
+}
+
+.field_1950 select, .field_1952 select, .field_1954 select, .field_1956 select, .field_1958 select, .field_1960 select, .field_1962 select, .field_1964 select, .field_1966 select, .field_1968 select, .field_1970 select, .field_1972 select, .field_1974 select, .field_1976 select, .field_1978 select, .field_1980 select, .field_1982 select, .field_1984 select, .field_1986 select, .field_1988 select, .field_1990 select, .field_1992 select, .field_1994 select, .field_1996 select, .field_1998 select, .field_2000 select, .field_2002 select, .field_2004 select, .field_2006 select, .field_2008 select, .field_2010 select, .field_2012 select, .field_2014 select, .field_2016 select, .field_2018 select {
+	height: 93px !important;
+	width: 100% !important;
+}
+
+#buddypress #basic-details-section label, #buddypress #profile-details-section label {
+	margin-top: 20px;
+}
+
+#field_1786, #field_2, #field_11533 {
+	height: 34px;
+}
+
+.field_1786, .field_11533 {
+	margin-top: -6px;
+}
+
+/* Upload profile image */
+.upload-profile-image-registration {
+	margin-bottom: 35px;
+}
+
+/* Terms & conditions */
+.terms-conditions-container {
+	width: 100%;
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	padding-left: 35px;
+}
+
+.terms-conditions-container legend {
+	font-size: 15px;
+}
+
+#tearmsAndConditions h4.modal-title {
+	font-weight: 500;
+}
+
+#tearmsAndConditions ol {
+	padding-left: 20px;
+}
+
+.terms-conditions-hover:hover {
+	cursor: pointer;
+}
+
+
+/* Are you a doctor button */
+#doctor-button-registration-page {
+	background-color: #00B2E2;
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	text-align: center;
+	width: 200px;
+	cursor: pointer;
+	margin: 40px 0;
+}
+
+#doctor-button-registration-page p {
+	margin-bottom: 0px;
+}
+
+#buddypress .standard-form #basic-details-section {
+	margin-top: 60px;
+}
+
+/* Patient/Employe/Third Part Administrator */
+div#field_11120.input-options.checkbox-options, div#field_11130.input-options.checkbox-options {
+	display: flex;
+}
+
+div#field_11120.input-options.checkbox-options label.option-label {
+	width: 120px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+div#field_11120.input-options.checkbox-options label.option-label:last-child {
+	width: 180px !important;
+}
+
+.field_11120 legend, .field_11130 legend {
+	display: none !important;
+}
+
+/* Physician/Facility/Lab/Imaging */
+div#field_11130.input-options.checkbox-options label.option-label {
+	width: 100px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/* Other fields */
+.profile-information-title {
+	margin-top: 6%;
+}
+
+.doctor-profile-information-title {
+	margin-top: 6.8%;
+}
+
+.registration-profile-title, .provider-registration-title {
+	margin-bottom: 3%;
+}
+
+/* Registration form for doctors */
+.field_11135 legend, .field_11139 legend, .field_11533 legend {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 14px;
+	line-height: 1.428571429;
+	color: #646464;
+	border: 0px;
+	margin-left: -20px !important;
+}
+
+.field_11135, .field_11139, .field_11533 {
+	margin-left: 20px;
+}
+
+.field_11139>div#field_11139 {
+	margin-left: -20px !important;
+}
+
+input#field_11140_0, div#field_11130>label {
+	margin-right: 5px !important;
+}
+
+/*.field_11135, .field_11139, .field_11533, .field_1786, #field_11135, #field_11139, #field_11533, .field_11565, #field_11565, .field_11566, #field_11566 {
+	margin-top: -6px;
+}*/
+
+#field_11135 label, #field_11139 label, #field_11533 label, #field_11565 label, #field_11566 label {
+	margin-top: 1px !important;
+}
+
+#field_11565, #field_11566 {
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-left: 0px !important;
+	border-bottom: 1px solid #ccc !important;
+	padding: 0px !important;
+	width: 60% !important;
+}
+
+.field_11565 label, .field_11566 label {
+	margin-top: 5px !important;
+	margin-bottom: 0px !important;
+	width: 60px !important;
+}
+
+.doctors-extra-specialty-styling {
+	display: block;
+    position: absolute;
+    bottom: 230px;
+    left: 15px;
+    width: 45%;
+}
+
+.field select#field_2, .field select#field_1950[] {
+	width: 100% !important;
+}
+
+.doctors-extra-procedures-styling {
+	position: absolute;
+    bottom: 170px;
+    right: 15px;
+    width: 45%;
+}
+
+select#field_1950[] {
+	width: 100% !important;
+}
+
+/* Checkboxes */
+/*#field_1950, #field_1952, #field_1954, #field_1956, #field_1958, #field_1960, #field_1962, #field_1966, #field_1968, #field_1970, #field_1972, #field_1974, #field_1976, #field_1978, #field_1980, #field_1982, #field_1984, #field_1986, #field_1988, #field_1990, #field_1992, #field_1994, #field_1996, #field_1998, #field_2000, #field_2002, #field_2004, #field_2006, #field_2008, #field_2010, #field_2012, #field_2014, #field_2016, #field_2018 {
+	height: 100px !important;
+	overflow-x: hidden !important;
+	padding-left: 5px !important;
+	border: 1px solid #e5e5e5 !important;
+}
+
+#field_1950 input, #field_1952 input, #field_1954 input, #field_1956 input, #field_1958 input, #field_1960 input, #field_1962 input, #field_1964 input, #field_1966 input, #field_1968 input, #field_1970 input, #field_1972 input, #field_1974 input, #field_1976 input, #field_1978 input, #field_1980 input, #field_1982 input, #field_1984 input, #field_1986 input, #field_1988 input, #field_1990 input, #field_1992 input, #field_1994 input, #field_1996 input, #field_1998 input, #field_2000 input, #field_2002 input, #field_2004 input, #field_2006 input, #field_2008 input, #field_2010 input, #field_2012 input, #field_2014 input, #field_2016 input, #field_2018 input {
+	float: right !important;
+}
+
+.field_1950 legend, .field_1952 legend, .field_1954 legend, .field_1956 legend, .field_1958 legend, .field_1960 legend, .field_1962 legend, .field_1966 legend, .field_1968 legend, .field_1970 legend, .field_1972 legend, .field_1974 legend, .field_1976 legend, .field_1978 legend, .field_1980 legend, .field_1982 legend, .field_1984 legend, .field_1986 legend, .field_1988 legend, .field_1990 legend, .field_1992 legend, .field_1994 legend, .field_1996 legend, .field_1998 legend, .field_2000 legend, .field_2002 legend, .field_2004 legend, .field_2006 legend, .field_2008 legend, .field_2010 legend, .field_2012 legend, .field_2014 legend, .field_2016 legend, .field_2018 legend {
+	font-size: 14px !important;
+	color: #646464 !important;
+	border-bottom: 0px !important;
+}*/
+
+/*a.clear-value:after {
+	content: "Select All";
+    color: #A5A5A5;
+}*/
+
+/* Extra classes added via jquery for doctor/patient registration page */
+.patients-extra-styling-width {
+	width: 45% !important;
+}
+
+.patients-extra-styling {
+	position: absolute;
+	top: 40px;
+	left: 35px;
+}
+
+.doctors-extra-styling {
+	position: absolute;
+	top: 30px;
+	left: 35px;
+}
+
+a.select-all-values {
+	float: right;
+	margin-top: -21px;
+}
+
+#profile-details-section>div.editfield>legend {
+	font-size: 14px !important;
+	color: #646464 !important;
+	border-bottom: 0px !important;
+}
+
+div#profile-details-section.register-section.patients-extra-styling-width {
+	padding-top: 6px;
+}
+
+#profile-details-section>div.editfield>input#field_11565, #profile-details-section>div.editfield>input#field_11566 {
+	margin-left: 15px;
+}
+
+#registration-form-employer, .registration-popup-title-employer, #registration-form-patient, .registration-popup-title-patient, #registration-form-login, .registration-popup-title-login {
+	display: none;
+}
+
+#registration-form-employer .rmrow {
+	padding:0px;
+	min-height: 40px;
+}
+
+/* ------------------------------------------- */
+/* ---- New registration forms in pop ups ---- */
+/* ------------------------------------------- */
+.registration-form-employer-add-employees-heading {
+	font-size: 26px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 15px !important;
+}
+
+#registration-form-employer textarea#form_2_1-element-14, #registration-form-patient textarea#form_3_1-element-14 {
+	height: 50px;
+}
+
+/* ----------------------------------------- */
+/* --------------- Login page -------------- */
+/* ----------------------------------------- */
+.login-page-login-form {
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+.login-page-login-form #loginform {
+	width: 20%;
+	margin: 0 auto;
+}
+
+
+.login-page-login-form #loginform label, .login-page-login-form #loginform input {
+	width: 100%;
+}
+
+.login-page-login-form #loginform input#rememberme {
+	width: auto;
+}
+
+.login-page-login-form #loginform input#user_login, .login-page-login-form #loginform input#user_pass {
+	height: 40px;
+}
+
+/* ----------------------------------------- */
+/* --------------- Blog page --------------- */
+/* ----------------------------------------- */
+.blog-wrapper, .blog-wrapper .blog-thumbnail img {
+	width: 100%;
+}
+
+/* ----------------------------------------- */
+/* ----------------- Header ---------------- */
+/* ----------------------------------------- */
+#nav-menu-item-1543, #nav-menu-item-1545, #nav-menu-item-1546, #nav-menu-item-1568 {
+	margin-top: -5px;
+}
+
+#nav-menu-item-1543 a, #nav-menu-item-1545 a, #nav-menu-item-1546 a {
+	padding: 37px 6px 24px;
+	color: #00B2E2;
+}
+
+#nav-menu-item-1543 a:hover, #nav-menu-item-1545 a:hover, #nav-menu-item-1546 a:hover {
+	color: #fff;
+}
+
+#menu-main-menu #nav-menu-item-1366 {
+	text-transform: uppercase !important;
+}
+
+/* ----------------------------------------- */
+/* ----------------- Footer ---------------- */
+/* ----------------------------------------- */
+.extra-footer-menu {
+	display: flex;
+	justify-content: center;
+	list-style:none;
+	padding-left: 0px;
+}
+
+.extra-footer-menu li {
+	padding: 0 20px;
+}
+
+/* ----------------------------------------- */
+/* ------------ Bundled services ----------- */
+/* ----------------------------------------- */
+.bundle-services-container {
+	margin-top: 15px;
+}
+
+.bundle-services-container h2 {
+	text-align: center;
+	padding-bottom: 2%;
+}
+
+.bundle-services-total {
+	text-align: right;
+}
+
+.bundle-services-bundle-total {
+	text-align: right;
+}
+
+.bundled-services-title, .procedures-table-bundle-name {
+	color: #767676;
+}
+
+.single-bundle-item-info {
+    display: inline-block;
+    float: right;
+    color: #646464;
+    width: 20%;
+    text-align: right;
+}
+
+.single-bundle-item-title {
+    display: inline-block;
+    float: left;
+    color: #646464;
+    width: 80%;
+}
+
+.doctors-offering-bundles-list {
+	list-style: none;
+	padding-left: 0px;
+}
+
+.procedure-categories-separator1 {
+	border-top: 3px solid #08c;
+}
+
+.bundle-services-find-procedures-wrapper {
+	text-align: center;
+	margin: 5% 0;
+}
+
+.bundle-services-find-procedures {
+	font-size: 14px !important;
+    padding: 10px;
+    border: 2px solid #08c !important;
+}
+
+.bundle-services-find-procedures-home-page.bundle-services-find-procedures {
+    padding: 9.5px !important;
+    width: 90% !important;
+    margin: 2px !important;
+}
+
+.bundle-services-find-procedures:hover {
+	color: #08c !important;
+	background-color: #fff !important;
+	border-radius: 5px !important;
+	border: 2px solid #08c !important;
+}
+
+span.single-bundle-details-show {
+	font-size: 10px !important;
+    padding: 2px 4px !important;
+    background-color: #00B2E2 !important;
+    margin-left: 10px;
+}
+
+span.single-bundle-details-show:hover {
+	cursor: pointer;
+}
+
+.single-bundle-wrapper {
+	display: table;
+    width: 100%;
+}
+
+.single-bundle-wrapper>.bundle-regional-wrapper {
+	text-align: right;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.avg-healora-total, .bundle-regional-price, .single-bundle-title, .bundle-regional-wrapper {
+	color: #646464 !important;
+}
+
+/*.single-bundle-title {
+	width: 500px;
+    display: inline-block;
+
+}*/
+
+.bundle-services-request-button {
+	margin-left: 5px !important;
+}
+
+table#all>thead {
+	border-bottom: 3px solid #08c;
+}
+
+table#all>thead>tr>th {
+	padding-right: 0px !important;
+}
+
+table#all tbody>tr>td {
+	padding: 2px 0 !important;
+	/*vertical-align: bottom !important;*/
+}
+
+table#all tbody>tr>td:last-child {
+	border-bottom: 1px solid #fff !important;
+}
+
+table#all thead>tr>th {
+	border-bottom: 2px solid #fff !important;
+}
+
+table#all>tbody>tr {
+	border-top: 2px solid #ddd !important;
+}
+
+.all-bundle-categories-list-homepage {
+	width: 100%;
+    display: block;
+    text-align: center;
+}
+
+/* All bundles category list */
+.all-bundle-categories-list {
+	/*width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 10000;
+    background-color: #ddd;
+    padding: 10px 0;
+    display: block;
+    text-align: center;*/
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.all-bundle-categories-list a, .all-bundle-categories-list-homepage a  {
+	margin: 2px;
+}
+
+/* Show/hide on mobile */
+.all-bundle-categories-list-mobile {
+	bottom: 0;
+    right: 0;
+    position: fixed;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10001;
+}
+
+/* Admin section */
+form#add-new-bundle-table input {
+	width: 50% !important;
+}
+
+
+/* ----------------------------------------- */
+/* ---------------- FAQ page --------------- */
+/* ----------------------------------------- */
+.faq-container a {
+    font-size: 22px;
+}
+
+.faq-container .vc_tta-controls-icon-plus {
+	background-color: #00B2E2;
+	border: 4px solid #00B2E2;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff !important;
+}
+
+.vc_tta-color-grey.vc_tta-style-modern .vc_tta-controls-icon::after, .vc_tta-color-grey.vc_tta-style-modern .vc_tta-controls-icon::before {
+	border-color: #fff !important;
+}
+
+
+
+/* ------------------------------------------ */
+/* ----------- NEW WEBSITE DESIGN ----------- */
+/* ------------------------------------------ */
+
+/* Header */
+.medicom-header {
+    position: relative !important;
+}
+
+.navbar-header {
+	margin-top: -55px;
+}
+
+#menu-main-menu {
+	margin-top: -10px;
+}
+
+.custom-top-header-bar {
+	background-color: #00b2e2;
+	height: 32px;
+	margin-top: -20px;
+    padding-top: 6px;
+}
+
+.custom-top-header-bar-content ul {
+	margin-left: 0px;
+	margin-bottom: 0px !important;
+}
+
+.custom-top-header-bar-content ul li {
+	display: inline-block;
+	font-size: 16px;
+    font-weight: 100;
+    margin: 0 5px;
+}
+
+.custom-top-header-bar-content ul li.top-bar-social-icons {
+	border: 1px solid #fff;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin: 0 2px;
+}
+
+.custom-top-header-bar-content a {
+	color: #fff;
+}
+
+.custom-top-header-bar-content a:hover {
+	opacity: 0.7;
+}
+
+.header-request-specialist-container {
+	text-align: right;
+	margin-top: 33px;
+}
+
+/* Homepage */
+.fields-of-specialties-icons img {
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-right: 20px;
+}
+
+.fields-of-specialties-title {
+	color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+    padding-top: 17px;
+}
+
+.homepage-box-buttons-containers-left {
+	border: 2px solid #00b2e2;
+	border-left: 4px solid #00b2e2;
+}
+
+.homepage-box-buttons-containers-right {
+	border-top: 2px solid #00b2e2;
+	border-right: 2px solid #00b2e2;
+	border-bottom: 2px solid #00b2e2;
+}
+
+#gmw-submit-wrapper-1 {
+	padding-top: 52px;
+}
+
+.how-does-healora-work-homepage {
+	border: 2px solid #00b2e2;
+	color: #00b2e2;
+	background-color: #fff;
+}
+
+.how-does-healora-work-homepage .bigP h1:hover {
+	color: #fff !important;
+}
+
+.how-does-healora-work-homepage:hover {
+	border: 2px solid #00b2e2;
+	background-color: #00b2e2;
+	cursor: pointer;
+}
+
+
+/* Specialties in procedures page */
+.fields-of-specialties-title-procedures-page {
+	color: #00b2e2;
+	font-size: 20px;
+	font-weight: 100;
+	display: block;
+	padding-top: 17px;
+}
+
+.fields-of-specialties-icons img {
+	border-radius: 50%;
+	border: 1px solid #fff;
+	margin-right: 20px;
+}
+
+/* About page */
+.about-intro-section {
+	font-size: 36px;
+}
+
+.meet-the-team-members {
+	font-size: 24px;
+}
+
+.meet-the-team-members img {
+	max-width: 200px;
+  border-radius: 50%;
+  border: 1px solid #646464;
+	margin-bottom: 25px !important;
+}
+
+.about-page-icons img {
+	padding: 30px 0
+}
+
+.about-page-icons h3 {
+	font-weight: 600;
+}
+
+/* Body image */
+#pricing-widget img {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.pw-circle {
+	position: absolute;
+	cursor: pointer;
+	opacity: 0.4;
+	width: 26px;
+	height: 26px;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	background-color: #00b2e2;
+	z-index: 1000;
+}
+
+.pw-circle:hover {
+	background-color: #FF7600;
+}
+
+/* Body search */
+.homepage-body-search-categories-container, .gmw-1-field-14576-wrapper, .gmw-1-field-14578-wrapper, .gmw-1-field-14580-wrapper, .gmw-1-field-14582-wrapper, .gmw-1-field-14584-wrapper, .gmw-1-field-14586-wrapper, .gmw-1-field-14588-wrapper, .gmw-1-field-14590-wrapper, .gmw-1-field-14592-wrapper, .gmw-1-field-14594-wrapper, .gmw-1-field-14596-wrapper, .gmw-1-field-14598-wrapper, .gmw-1-field-14600-wrapper, .gmw-1-field-14602-wrapper, .gmw-1-field-14604-wrapper, .gmw-1-field-14606-wrapper, .gmw-1-field-14608-wrapper, .gmw-1-field-14610-wrapper, .gmw-1-field-14612-wrapper, .gmw-1-field-14614-wrapper, .gmw-1-field-14616-wrapper, .gmw-1-field-14618-wrapper, .gmw-1-field-14620-wrapper {
+	display: none;
+}
+
+.homepage-body-search-categories-container {
+	border: 1px solid #d7d8d8;
+}
+
+.homepage-body-search-intro {
+	text-align: center;
+}
+
+.homepage-body-search-intro>img {
+	margin: auto;
+    text-align: right;
+}
+
+.homepage-body-search-title {
+	color: #61605f;
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+/* Footer */
+.footer-copyright {
+	background: #dfdfdf;
+    border-bottom: 0px;
+}
+
+.footer-copyright a {
+	color: #fff !important;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.footer-copyright a:hover {
+	opacity: 0.7;
+}
+
+.copyright-section {
+	padding: 0px !important;
+}
+
+.extra-footer-menu-powered-by, .extra-footer-menu-powered-by>a {
+	font-size: 12px;
+	color: #fff !important;
+}
+
+/* Choose your doctor steps */
+.choose-your-doctor-container {
+	text-align: center;
+	padding-top: 52px;
+}
+
+.choose-your-doctor-wrapper {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.choose-your-doctor-left-column, .choose-your-doctor-right-column {
+	width: 50%;
+}
+
+.choose-your-doctor-left-column{
+	margin-top: 20px;
+}
+
+.choose-your-doctor-wrapper span {
+	display: block;
+	width: 100%;
+	font-size: 22px;
+}
+
+.avg-healora-title, .avg-healora-price {
+    color: #00b2e2;
+    font-size: 32px !important;
+}
+
+div.gmw-fl-yellow-form-wrapper .gmw-fl-form-xprofile-fields {
+	border: 0px !important;
+}
+
+/* Register with us */
+.register-withus-form p {
+	font-size: 30px;
+	margin: 30px 0;
+}
+
+.homepage-registration-form-container p {
+	font-size: 30px;
+	color: #00b2e2;
+}
+
+.homepage-registration-form-container, .homepage-registration-form {
+	display: none;
+}
+
+.rmagic {
+	float: none !important;
+}
+
+.homepage-registration-form-have-account, .homepage-registration-form-new-to-healora {
+	font-size: 14px !important;
+	color: #646464 !important;
+}
+
+.homepage-registration-form-have-account:hover, .homepage-registration-form-new-to-healora:hover {
+	cursor: pointer;
+}
+
+/* Search results */
+#registerModal .modal-body {
+	text-align: center;
+}
+
+/* Search results when user came from specialty icons  */
+.single-procedure-container {
+	display: flex;
+	justify-content: space-between !important;
+	border: 1px solid #00b2e2;
+	padding: 15px;
+	margin-bottom: 25px;
+}
+
+/* Doctor profile */
+.doctor-profile-see-more-providers {
+	margin: 70px 0 40px 0;
+}
+
+/* ----------------------------------------- */
+/* ----------- Search results NEW ---------- */
+/* ----------------------------------------- */
+
+
+/* Members search results */
+h1.search-results-current-category-title {
+    color: #00b2e2;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+h3.search-results-current-procedure-title {
+	font-weight: 500;
+	font-size: 42px;
+}
+
+.search-results-main-category {
+	display: flex;
+	margin: 30px 0;
+}
+
+.doctor-profile-procedure-details-wrapper {
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+		margin: 70px 0;
+}
+
+.search-results-main-category>img {
+		border-radius: 50%;
+    border: 1px solid #00b2e2;
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+.search-results-current-procedure-cpt-sku span {
+		color: #fff;
+		font-size: 20px;
+		padding: 30px 0 0 15px;
+		display: inline-block;
+		font-weight: 300;
+}
+
+.search-results-description {
+		border-top: 1px solid #fff;
+		margin-top: 20px;
+    padding-top: 20px;
+}
+
+.search-results-description p {
+	font-size: 24px;
+}
+
+.choose-your-doctor, .doctor-profile-other-procedures-wrapper {
+    margin: 50px 0;
+}
+
+.choose-your-doctor>h3 {
+		font-size: 36px;
+    font-weight: 500;
+}
+
+.doctor-profile-other-procedures-wrapper {
+		display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.doctor-info-geo-search a {
+		color: #646464;
+    font-size: 32px;
+}
+
+.select-doctor-wrapper {
+		padding-top: 10px;
+		width: 15%;
+		text-align: right;
+}
+
+.select-doctor-wrapper span {
+		color: #00b2e2;
+    font-size: 26px;
+		padding-right: 20px;
+}
+
+.select-doctor-wrapper img {
+		border-radius: 50%;
+    border: 1px solid #00b2e2;
+    width: 40px;
+    height: 40px;
+}
+
+.select-doctor-procedure-title {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+.select-doctor-button {
+    background-color: #fff;
+    color: #646464 !important;
+    font-size: 18px !important;
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
+.search-results-procedure-prices {
+		padding: 40px 15px 20px 15px;
+}
+
+.search-results-procedure-prices span {
+	color: #646464;
+	font-size: 26px;
+	font-weight: 300;
+}
+
+/* Single doctor profile */
+.doctor-profile-name-wrapper {
+	border: 1px solid #00b2e2;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.doctor-profile-procedure-details {
+	width: 50%;
+}
+
+.doctor-profile-procedure-details span {
+	color: #646464;
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.doctor-profile-procedure-price {
+	display: block;
+    font-size: 42px !important;
+    padding-right: 0px;
+}
+
+.doctor-profile-name-wrapper>h2, .doctor-profile-location-wrapper>h3, .doctor-profile-name-wrapper h3, .doctor-profile-other-procedures-wrapper h3 {
+	color: #646464;
+    font-size: 42px;
+    font-weight: 500;
+    margin-top: 10px !important;
+}
+
+.doctor-profile-location-wrapper .gmw-sl-wrapper {
+    padding: 0px;
+    box-shadow: none;
+    margin-top: 40px;
+}
+
+.doctor-profile-location-wrapper .gmw-map-wrapper {
+    border: 0px !important;
+    padding: 0px !important;
+}
+
+/* Reserve price modal */
+.reserve-price-wrapper {
+	text-align: center;
+}
+
+.reserve-price-wrapper h3 {
+	font-weight: 600 !important;
+}
+
+.reserve-price-wrapper>a.homepage-find-your-doctor-button {
+	font-size: 22px;
+  padding: 8px 30px;
+}
+
+.reserve-price-total {
+	margin: 20px 0 30px 0;
+}
+
+.reserve-price-total-prices {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.reserve-price-wrapper span {
+	color: #646464;
+	font-size: 22px;
+}
+
+.reserve-price-doctor-name {
+	margin-top: 10px;
+	font-size: 28px;
+}
+
+/* No results found page design */
+.search-results-no-results-found {
+	text-align: center;
+}
+
+.search-results-no-results-found p {
+	font-size: 24px;
+}
+
+.search-results-no-results-found-contact, .search-results-no-results-found-affiliates {
+	display: flex;
+	justify-content: center;
+}
+
+.search-results-no-results-found-contact-item, .search-results-no-results-found-affiliates div.wpb_column.vc_column_container.vc_col-sm-3 {
+	padding: 5%;
+}
+
+
+/* ---------------------------------------- */
+/*              Contact form page           */
+/* ---------------------------------------- */
+.wpcf7-form-control-wrap {
+    margin-bottom: 10px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background-color: #FF7600 !important;
+	border: 2px solid #FF7600 !important;
+	color: #fff !important;
+	font-size: 30px !important;
+	font-weight: 300 !important;
+	padding: 8px 38px !important;
+	border-radius: 50px !important;
+	display: inline-block !important;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.20) !important;
+	height: 46px !important;
+	font-size: 20px !important; 
+
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+    background-color: #fff !important;
+	border: 2px solid #FF7600 !important;
+	color: #FF7600 !important;
+}
+
+.wpcf7-form input {
+	background-image: none !important;
+    background-color: #cecdcd !important;
+    border-radius: 20px !important;
+    height: 40px !important;
+    border: 1px solid #a2a4a6 !important;
+    padding-left: 15px !important;
+}
+
+.wpcf7-form textarea {
+    background-image: none !important;
+    background-color: #cecdcd !important;
+    border-radius: 20px !important;
+    border: 1px solid #a2a4a6 !important;
+    width: 80% !important;
+    padding-left: 15px !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #ffffff !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #ffffff !important;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #ffffff !important;
+}
+
+span.wpcf7-list-item {
+    display: flex;
+}
+
+span.wpcf7-list-item-label {
+    padding: 14px 0 0 10px;
+}
+
+
+/* ---------------------------------------- */
+/* "Registratin Magic" plugin custom design */
+/* ---------------------------------------- */
+input#rm_next_form_page_button_7_1.rm_next_btn.btn {
+	background-color: #00b2e2;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 10px 40px;
+	border-radius: 50px;
+}
+
+
+/* ---------------------------------------- */
+/* ------------ Doctor profile ------------ */
+/* ---------------------------------------- */
+.doctor-procedures-wrapper {
+	margin: 40px 0;
+}
+
+.doctor-procedures-wrapper p {
+	border: 1px solid #00b2e2;
+	padding: 15px;
+	font-size: 20px;
+}
+
+
+/* ----------------------------------------- */
+/* --------- Patient settings page --------- */
+/* ----------------------------------------- */
+.patient-profile-information {
+	text-align: center;
+	font-size: 24px;
+}
+
+.user-profile-booked-procedures {
+	margin-top: 20px;
+}
+
+.user-profile-booked-procedures-container {
+	border: 1px solid #00b2e2;
+	text-align: center;
+	padding: 20px;
+	margin: 10px;
+}
+
+.user-profile-booked-procedures-wrapper {
+	border-top: 1px solid #00b2e2;
+	text-align: center;
+	margin-top: 50px;
+	padding-top: 40px;
+}
+
+.patient-profile-questions {
+	text-align: center;
+	margin-top: 30px;
+}
+
+
+/* ----------------------------------------- */
+/* ------- Thank you for your payment ------ */
+/* ----------------------------------------- */
+.thank-you-for-payment-wrapper, .thank-you-for-payment-appointment {
+	margin: 50px 0 !important;
+	font-size: 32px;
+}
+
+.thank-you-for-payment-procedure {
+	text-align: center;
+}
+
+.thank-you-for-payment-procedure span {
+	color: #FF7600 !important;
+}
+
+.thank-you-for-payment-appointment-numbers {
+	font-size: 24px;
+	border: 1px solid #00b2e2;
+	border-radius: 50px;
+	color: #00b2e2 !important;
+	padding: 5px 15px;
+	margin-right:10px
+}
+
+/* ----------------------------------------- */
+/* --------------- Responsive -------------- */
+/* ----------------------------------------- */
+@media (max-width: 1050px) {
+	#buddypress .standard-form #basic-details-section, #buddypress .standard-form #profile-details-section, #field_2 {
+		width: 100% !important;
+	}
+
+	/*#buddypress .standard-form select, #buddypress .standard-form p.description, .select2-container {
+		width: 90%;
+	}*/
+
+	#profile-details-section {
+		height: auto;
+	}
+
+	#buddypress .standard-form #basic-details-section {
+	    margin-bottom: 25px;
+	}
+
+	.login-page-login-form #loginform {
+		width: 40%;
+	}
+
+	/* Extra classes added via jquery for doctor/patient registration page */
+	.patients-extra-styling-width {
+		width: 100% !important;
+	}
+
+	.patients-extra-styling, .doctors-extra-styling {
+		position: static;
+		top: auto;
+		left: auto;
+	}
+
+	div#field_11120.input-options.checkbox-options, div#field_11130.input-options.checkbox-options {
+		display: block;
+	}
+
+	div#field_11120.input-options.checkbox-options label.option-label, div#field_11130.input-options.checkbox-options label.option-label {
+		margin-left: 20px;
+		width: 100% !important;
+	}
+
+	.doctors-extra-specialty-styling, .doctors-extra-procedures-styling {
+		display: block;
+	    position: static;
+	    bottom: auto;
+	    left: auto;
+	}
+
+	#buddypress .standard-form#signup_form div.submit {
+		padding-top: 120px;
+	}
+
+	#buddypress .standard-form#signup_form input[type=text], #buddypress .standard-form input[type=email], #buddypress .standard-form #basic-details-section input[type=password], input#signup_email, #buddypress .standard-form select, .doctors-extra-specialty-styling, .doctors-extra-procedures-styling {
+		width: 100% !important;
+	}
+
+	.search-form-homepage-slider {
+	    bottom: 150px;
+	}
+
+	#profile-edit-form div.editfield.field_11120.field_user-info.optional-field.visibility-public.field_type_checkbox, #profile-edit-form div.editfield.field_11130.field_doctor-info.optional-field.visibility-public.alt.field_type_checkbox {
+		margin-left: 0px !important;
+	}
+}
+
+@media (max-width: 992px) {
+	/*.doctor-profile-info-wrapper {
+    	padding: 15px 10px 20px 15px;
+	}*/
+
+	.search-form-homepage-slider {
+	    bottom: 130px;
+	}
+
+	.gmw-fl-grid-gray-results-wrapper .avatar, .doctor-profile-info-wrapper .avatar {
+		width: 80px !important;
+    	max-width: 80px !important;
+    	height: auto !important;
+	}
+
+	/*.doctor-info-geo-search {
+	    padding-left: 90px;
+	}*/
+
+	/*.doctor-profile-info-wrapper {
+		padding: 0px 5px 10px 5px;
+	}*/
+}
+
+
+@media screen and (max-width: 768px) {
+	/* Bootstrap modal */
+	.modal-dialog {
+		padding-top: 120px !important;
+		margin-top: 0px !important;
+	}
+
+	div.modal-dialog.modal-lg {
+	    width: 100% !important;
+	}
+
+	.header-2 .logo {
+	    max-width: 220px;
+	}
+
+	.bundle-services-find-procedures {
+		font-size: 10px !important;
+    	padding: 2px;
+	}
+
+	.all-bundle-categories-list-mobile {
+		display: block !important;
+	}
+
+	.all-bundle-categories-list {
+		display: none;
+	}
+}
+
+@media (max-width: 720px) {
+	.login-page-login-form #loginform {
+		width: 80%;
+	}
+}
+
+@media (max-width: 680px) {
+	.doctor-profile-procedures-table .table-head .procedures-table-regional, .doctor-profile-procedures-table .table-content .procedures-table-initial-price, .doctor-profile-procedures-table .table-head .procedures-table-healora, .doctor-profile-procedures-table .table-content .procedures-table-healora-price {
+		position: static !important;
+		right: auto !important;
+	}
+
+	.caption h1 {
+		font-size: 32px !important;
+	}
+}
+
+@media (max-width: 620px) {
+	.search-form-homepage-slider {
+	    bottom: 110px;
+	}
+}
+
+@media (max-width: 415px) {
+	#buddypress .standard-form#signup_form div.submit {
+		padding-top: 150px;
+	}
+
+	.header-2 .logo {
+		max-width: 200px;
+	}
+}

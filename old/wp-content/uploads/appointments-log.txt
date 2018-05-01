@@ -1,0 +1,5 @@
+<b>[July 13, 2016 6:15 am]</b> Status of Appointment(s) with id(s):1 changed to confirmed by user:heal-admin
+<b>[July 13, 2016 6:15 am]</b> Confirmation message sent to iet@apogee.gr for appointment ID:1
+<b>[July 27, 2016 3:10 pm]</b> Reminder message sent to iet@apogee.gr for appointment ID:1
+<b>[July 28, 2016 11:02 am]</b> Reminder message sent to rosskaplanmd@gmail.com for appointment ID:1
+

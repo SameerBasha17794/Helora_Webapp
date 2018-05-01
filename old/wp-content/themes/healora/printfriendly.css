@@ -1,0 +1,3 @@
+nav.navbar>div.header-request-specialist-container>a.accent-color-button, #registration-form-employer, #registration-form-patient, div.doctor-profile-location-wrapper>h3 {
+	display: none !important;
+}
