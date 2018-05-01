@@ -9,6 +9,7 @@
         var vm = this;
         $scope.name = "";
         $window.scrollTo(0, 0);
+        // alert($rootScope.globals.currentUser.username);
         loadCurrentUser();
         // alert(UserService.GetId());
         function loadCurrentUser() {
