@@ -132,9 +132,9 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .select-btn{padding:15px 50px;border-radius:30px;background:transparent;border:1px solid #FF7600;text-align:right;font-size:18px;}
 a.select-btn{color:#FF7600 !important;}
 a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
-.select-btnwht{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #fff;text-align:right;font-size:18px;}
+.select-btnwht{padding:15px 40px;border-radius:30px;background:#FF7600;text-align:right;font-size:18px;}
 a.select-btnwht{color:#fff !important;}
-a.select-btnwht:hover{background:#FF7600 !important;color:#fff !important;border:1px solid #FF7600;text-decoration:none !important;}
+a.select-btnwht:hover{background:#db6601 !important;color:#fff !important;text-decoration:none !important;}
 .img-degree{margin-top:-3px;}
 .select-pagepnt ul li{list-style-type:none;font-size:16px;margin-bottom:10px;}
 .select-pagepnt ul{margin-left:0;padding-left:0;}
@@ -143,7 +143,7 @@ a.select-btnwht:hover{background:#FF7600 !important;color:#fff !important;border
 .hvr-btn:hover{background:#FF7600 !important;}
 .clr-2thm{background:#FF7600 !important;}
 .text-justify{text-align:justify;}
-
+.blck{color:#000 !important;}
 
 
 .inr-sectiondetail{overflow:hidden;}
