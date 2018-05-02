@@ -97,6 +97,8 @@ html{font-family: 'source_sans_proregular';}
 .f22{font-size:22px !important;}
 .mr10{margin-right:10px !important;}
 .w100{width:}
+.clr-wht{color:#fff !important;}
+.bg-wht{background:#fff !important;color:#fff !important;border-top:3px solid #fff !important;}
 
 /*Index Page*/
 .dropdown-menu li a {color:#333 !important;padding:0px 5px;}
@@ -104,14 +106,15 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .header2 h1 img{margin-top:-10px;}
 .repair-header{padding:5px 0;}
 .thm-hd{text-align:left;width:100%;}
-.how-mn{background:url(../images/abt-bg1.png);background-size:cover;overflow:hidden;}
+.how-mn{overflow:hidden;background:#fff;}
 .clr{clear:both;margin:10px 0 !important;}
 .divider{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-top:15px;}
 .divider-speciality{width:40px;border-top:3px solid #00b2e2;display:block;background:red;margin-left:50px;}
-.how-mn{color:#fff;}
+.how-mn{color:#333;}
 .search-doctor{background:#FF7600;color:#fff;border-radius:50px;padding:15px;font-size:16px;}
 .wht-clr{color:#fff;}
-.works-btn{padding:15px 40px;font-size:20px;background:#FF7600;border-radius:30px;color:#fff;border:0;margin-top:40px;}
+.works-btn{padding:15px 40px;font-size:24px;color:#fff;border:0;margin-top:40px;}
+#services{background:#00b2e2;color:#fff;padding-bottom:25px;padding-top:25px;}
 
 /*Footer*/
 .footer{background:#595b5b;padding:40px 20px;color:#fff;font-size:16px;}
@@ -162,8 +165,8 @@ ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 	z-index: 1;
 	color: #fff;
 	font-size: 14px;
-	padding-top: 190px;
-	padding-bottom: 254px;
+	padding-top: 140px;
+	padding-bottom: 60px;
 }
 
 .hero-area::after {
@@ -765,8 +768,7 @@ body{font-size:16px;}
 .single-team-detail h4{font-weight:bold;}
 .dot-popbtn{text-align:center !Important; padding:15px; }
 .mb15{margin-bottom:15px !important;}   
-.works-btn:hover{background:#db6601;}
-.works-btn:hover{background:#db6601;}
+.works-btn:hover{text-decoration:underline;}
 .thm-btn:hover{background: #06a0ca;color:#fff;}
 .zoom.hover{ transform: scale(1.2); }
 .zoom:hover{   -ms-transform: scale(1.2); /* IE 9 */

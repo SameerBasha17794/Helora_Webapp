@@ -1,6 +1,11 @@
 @media screen and (max-width: 1099px) {}
 @media screen and (max-width: 979px) {}
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+	
+	
+	  .footer .col-md-4{padding-left:15px !important;margin-top:20px;}
+	  .tyup-com .col-md-3{margin:0;display:block;margin-bottom:20px;}
+}
 @media screen and (max-width: 639px) {
 	
 	
