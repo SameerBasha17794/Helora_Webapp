@@ -821,11 +821,10 @@ body{font-size:16px;}
 .cmnt-cont{display:table-cell;vertical-align:top;margin-left:10px;padding-left:10px;}
 .cmnt-cont h4{margin-top:0 !important;padding-top:0;}
 .cmnt-cont p{color:#9C9C9C;}
-.comment-inner input{height:60px;border:1px solid #F0F0F0;padding-left:20px;margin-bottom:20px;width:100%;}
 .form-send{    background: #00b2e2;
     color: #fff;    border-radius: 50px;
     padding:15px  34px;width:40%;}
-	.comment-form textarea{height:221px;border:1px solid #F0F0F0;padding-left:10px;}
+	.comment-form textarea{height:221px;border:1px solid #F0F0F0;padding-left:10px;padding-top:10px;}
 .button-read{color:#00b2e2;font-weight:bold;}
 .blog-itemhd{font-size:18px;}
 .content-box p{margin-top:10px;}
