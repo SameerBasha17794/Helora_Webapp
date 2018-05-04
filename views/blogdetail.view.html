@@ -14,7 +14,7 @@
              
              <div class="blog-itemhd pull-left">
                <h3>{{detail.name}}</h3>
-               <p><i class="far fa-user"></i> Dr. Amar Amale | <i class="far fa-calendar-alt"></i> 25-10-2018</p>
+               <p><i class="far fa-user"></i> {{detail.created_by}}| <i class="far fa-calendar-alt"></i> {{detail.date_created}}</p>
              </div>
              
              <div class="blog-itemrgt pull-right">
@@ -30,7 +30,7 @@
              </div>
              
              
-             <div class="image-box"><img src="images/blog-box.jpg" width="100%"/></div>
+             <div class="image-box"><img src="images/{{detail.image}}" width="100%"/></div>
              <div class="content-box">
               </br>
              <p>{{detail.desc}} </p>
