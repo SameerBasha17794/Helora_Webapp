@@ -4,8 +4,8 @@
         .module('app')
         .controller('BlogDetail', BlogDetail);
 
-    BlogDetail.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location','FlashService','$routeParams'];
-    function BlogDetail($cookieStore,UserService, $rootScope, $scope,$http,$location,FlashService,$routeParams) {
+    BlogDetail.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location','FlashService','$routeParams','$sce'];
+    function BlogDetail($cookieStore,UserService, $rootScope, $scope,$http,$location,FlashService,$routeParams,$sce) {
         var vm = this;
         $scope.detail = "";
         if($routeParams.key){
@@ -22,6 +22,7 @@
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
                     $scope.detail = data.data;
+                    $scope.desc=$sce.trustAsHtml(data.data['desc']);
                     
                 }).error(function (data, status, headers, config) {
                     FlashService.Error("Something went wrong. Please try again");
