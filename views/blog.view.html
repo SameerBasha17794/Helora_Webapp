@@ -17,13 +17,13 @@
   <div class="container">
     <div ng-repeat="blog in blogList" class="row">
            <div class="item-holder col-md-4">
-             <div class="image-box"><img src="images/blog-box.jpg" width="100%"/></div></div>
+             <div class="image-box"><img src="images/{{blog.image}}" width="100%"/></div></div>
              <div class="content-box col-md-8">
              <h3>{{blog.name}}</h3>
-<p><i class="far fa-user"></i> Dr. Amar Amale</p>
+<p><i class="far fa-user"></i> {{blog.created_by}}</p>
 
              <p>{{blog.short_text}}</p>
-           <p><i>10th Aug, 2016</i></p>
+           <p><i>{{blog.date_created}}</i></p>
              <a href="#/healthdetail/{{blog.url}}" class="button-read">Read More >></a>
              </div>
     </div>
