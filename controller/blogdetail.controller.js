@@ -29,7 +29,9 @@
                 });
         }
 
-        $scope.instant = function() {
+        $scope.instant = function(name) {
+          UserService.setSpeciality(name);
+          $location.path('/myspeciality');
         }
     }
 
