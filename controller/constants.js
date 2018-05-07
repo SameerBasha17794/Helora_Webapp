@@ -42,6 +42,7 @@ var order = domain +"/product/placeOrder/";
 var verifyToken = domain +"/user/verifyToken/";
 var sendAllEmail = domain +"/user/sendAllEmail/";
 var getBlogList = domain +"/user/blogList/";
+var getComment = domain +"/user/getComment/";
 var getBlogDetail = domain +"/user/blogDetail/";
 var getDoctorProcedure = domain +"/product/getDoctorProcedure/";
 var getDoctors = domain +"/product/getDoctors/";
