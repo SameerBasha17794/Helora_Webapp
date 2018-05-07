@@ -25,5 +25,15 @@
 @media screen and (max-width: 479px) {
 
  #services .col-md-4{margin-bottom:50px;}
-  
+ 
+ .easy-steps  .col-xs-12{margin-top:30px;}
+ .res-none{display:none;}
+ .thm-hd{margin-top:10px;}
+  .select-btnwht{margin-top:20px;}
+  .res-left{text-align:left !important;}
+  p.res-font15{font-size:15px !important;}
+  .select-pagepnt li span{display:block;}
+  .amt-sctn ul{padding-left:0;}
+    .amt-sctn .col-md-6{padding:0 !important;}
+	  .amt-sctn .col-md-12{padding:0 !important;}
 }
