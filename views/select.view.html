@@ -8,16 +8,16 @@
     <div class="row">
       <div class="inr-sectiondetail">
         <div class="detail-heading">
-          <div class="col-md-6"><img src="images/{{image}}" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
-          <div class="col-md-6 text-right"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
+          <div class="col-md-6 col-xs-12"><img src="images/{{image}}" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
+          <div class="col-md-6 col-xs-12 text-right res-left"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
         </div>
-        <p class="p15">{{desc}}</p>
+        <p class="p15 res-font15">{{desc}}</p>
 		
 		
 			
 			<div class="select-pagepnt pull-left p15 col-md-6">
 			  <ul>
-				 <li ng-repeat="getRep in covered"><img src="images/check.png" width="20px"> &nbsp;&nbsp; {{getRep.data}}</li>
+				 <li ng-repeat="getRep in covered"> <span class="select-pagepnts1"><img src="images/check.png" width="20px"></span><span> {{getRep.data}} </span></li>
 	<!-- 			<li><img src="images/check.png" width="20px">&nbsp;&nbsp; MAC anesthesia</li>
 				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Physician Professional Fee (Esophagogastroduodenoscopy)</li>
 				<li><img src="images/check.png" width="20px">&nbsp;&nbsp; Facility Fee</li>
@@ -27,13 +27,13 @@
 			
 			  
 			  
-			  <div class="amt-sctn col-md-6 p15">
+			  <div class="amt-sctn col-md-6 p15 col-xs-12">
 			  <ul>
-			  <li class="col-md-12"><div class="col-md-6 pull-left"><b><i>Avg Insurance Price :</i></b></div><div class="col-md-6 pull-right text-right"><i>${{insaurancePrice}}</i></div></li>
-				<li class="col-md-12 thm-text"><div class="col-md-6 pull-left"><b>AVG HEALORA PRICE :</b></div><div class="col-md-6 pull-right text-right">
+			  <li class="col-md-12 col-xs-12"><div class="col-md-6 pull-left col-xs-12"><b><i>Avg Insurance Price :</i></b></div><div class="col-md-6 col-xs-12 pull-right res-left text-right"><i>${{insaurancePrice}}</i></div></li>
+				<li class="col-md-12 thm-text col-xs-12"><div class="col-md-6 pull-left col-xs-12"><b>AVG HEALORA PRICE :</b></div><div class="col-md-6 pull-right text-right res-left col-xs-12">
         ${{averagePrice}}</div></li>
       
-        <li class=" f16 col-md-12"><div class="col-md-6 pull-left"><b>Savings : </b>({{savingPercent}}%)</div><div class="col-md-6 pull-right text-right">${{saving}}</div></li>
+        <li class=" f16 col-md-12 col-xs-12"><div class="col-md-6 pull-left col-xs-12"><b>Savings : </b>({{savingPercent}}%)</div><div class="col-md-6 col-xs-12 pull-right res-left text-right">${{saving}}</div></li>
 			  </ul>
 			  
 			  
@@ -56,11 +56,12 @@
 
   <div ng-hide="getId == ''">
     <div class="container">
-      <div class="row">
-        <h2 class="thm-hd">
+	 <h2 class="thm-hd">
           Choose your Doctor or Provider
           <div class="divider"></div>
         </h2>
+      <div class="row">
+       
         <br />
         <div ng-repeat="getDoc in doctorList">
           <div class="col-md-12 pt25 pb25 select-doctor">
@@ -74,7 +75,7 @@
               <br />
            <!--   <span><b>Experience:</b> 11yrs</span> -->
             </div>
-            <div class="col-md-4 mt65 text-right"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
+            <div class="col-md-4 mt65 text-right res-left res-mt15"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
           </div>
         </div>
       </div>
