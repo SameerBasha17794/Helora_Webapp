@@ -849,3 +849,9 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
 
 .li-scnmedia{text-align:center;}
 .li-scnmedia .col-md-4{margin-left:15px;}
+
+
+
+/*Responsive css*/
+.select-pagepnt span{display:inline-block;vertical-align:top;width:80%;}
+.select-pagepnts1{width:12%;}
