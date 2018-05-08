@@ -46,27 +46,29 @@
              </div>
 			 
 			 
-			 
-			 <div class="comnts-sctn">
-           
-           <div class="inner-box">
+		<div ng-if="comment.length">	 
+				<div ng-repeat="keydata in comment"  class="comnts-sctn">
+		           
+		           <div class="inner-box">
 
-              <img src="images/cmnt-blog.png" />
+		              <img height="40" src="images/{{keydata.image}}" />
 
-           </div>
-           
-           <div class="cmnt-cont">
-              
-              <h4><b>John Cena</b></h4>
-              <span class="pull-left"><b>24 Feb, 2015 at 2:40pm</b></span>
-              
-              <br />
-              <p class="mt10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lore Ipsum has been the eloi industry's standard dummy text ever since the 1500s</p>
-              
-           </div>
-           
+		           </div>
+		           
+		           <div class="cmnt-cont">
+		              
+		              <h4><b>{{keydata.name}}</b></h4>
+		              <span class="pull-left"><b>{{keydata.date_created}}</b></span>
+		              
+		              <br />
+		              <p class="mt10">{{keydata.desc}}</p>
+		              
+		           </div>
+		           
+		          </div>
+
           </div>
-		  
+
 		  <div class="clr">&nbsp;</div>
 		  
 		  <div class="comment-form">
@@ -78,7 +80,7 @@
            
           <textarea name="message" placeholder="Message" cols="100" rows="10"></textarea>
 		  <div class="clr">&nbsp;</div>
-           <a href="#" class="button form-send">Send</a>
+           <a href="" class="button form-send" data-toggle="modal" data-target="#myModal">Send</a>
            
            
            </form>
@@ -90,6 +92,72 @@
            
           </div>
 			 
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+      </div>
+      <div class="modal-body">
+        <div class="register-mn">
+          <div class="container">
+            <div class="row">
+              <div class="register-cont" style="position: static; width: 480px;">
+                <div class="tab-panel">
+                  <input id="tab1" type="radio" name="tabs" checked>
+                  <label for="tab1">LOGIN</label>
+                  <input id="tab2" type="radio" name="tabs">
+                  <label for="tab2">SIGNUP</label>
+                  <section id="content1">
+                    <div class="login">
+                      <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
+                        <input class="lgn-inpt" required ng-model="vm.uname" type="text" placeholder="Email *">
+                        <br> 
+                        <input id="password-field1" class="lgn-inpt" required ng-model="vm.password1" type="password" placeholder="Password *">
+                        <span toggle="#password-field1" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="25" /></span>
+                        <br>
+                        <input class="sign-in-btn" type="submit" value="Sign In">
+                      </form>
+                    </div>
+                  </section>
+                  <section id="content2">
+                    <div class="signup">
+                      <form id="formregister" name="form" ng-submit="vm.register()" role="form">
+                       <input class="lgn-inpt" required ng-model="vm.fname" type="text" placeholder="First Name *">
+                           <br>
+                          <input class="lgn-inpt" required ng-model="vm.lname" type="text" placeholder="Last Name *">
+                          <br>
+                          <input class="lgn-inpt" required ng-model="vm.email" type="text" placeholder="Email *">
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="Phone *">
+                          <br>
+                          <input id="password-field" class="lgn-inpt" required ng-model="vm.password2" type="password" placeholder="Password *">
+                         <span toggle="#password-field" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="25" /></span>
+                          <br>
+                          <input class="lgn-inpt" ng-model="vm.promocode" type="text" placeholder="Promo Code">
+                          <br>
+                          <input class="sign-in-btn clr-2thm" type="submit" value="Sign Up">
+                      </form>
+                    </div>
+                  </section>
+                  <!-- <p class="alrdy-act text-center">Already Have Account?</p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+       
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
 			 
           </div>
           
