@@ -10,9 +10,11 @@
 
 
   <div class="container">
-    <div class="row"><h3 class="thm-hd">Reserve Your Price
+  <h3 class="thm-hd">Reserve Your Price
         <div class="divider"></div>
       </h3>
+  
+    <div class="row">
       <br />
       
       
@@ -40,10 +42,10 @@
          
          
         
-        <div class="col-md-4 pull-right">
+        <div class="col-md-4 pull-right res-left res-float col-xs-12">
            
-           <h2 class="mt0">Payment Summary</h2>
-           <div class="paymnt-popb mt40">
+           <h2 class="mt0 res-mt15">Payment Summary</h2>
+           <div class="paymnt-popb mt40 res-mt15">
                             <div class="pb5 thm-text"><h4><b>Due Now: <span class="rf">(Reservation fee)</span></b><span class="pull-right clr-grey">
                             <b>${{displayProcedure.showreservePrice}}</b></span></h4></div>
                             
@@ -126,7 +128,7 @@
           <img src="images/cancel-btn.png" width="30">
         </button>
 
-              <div class="col-md-6 popup-lft pull-right mt65">
+              <div class="col-md-6 popup-lft pull-right res-float res-mt15 mt65 col-xs-12">
                   
                   <div class="text-center"> <img src="images/{{displayProcedure.image}}" width="80"></div>
                   
@@ -140,11 +142,11 @@
                        
                     </div>
 
-                    <div class="align-center"><a ng-click="reserve()" class="button reserve-btn mt40 col-md-10">Pay Reservation Fee</a></div>
+                    <div class="align-center"><a ng-click="reserve()" class="button reserve-btn mt40 col-md-10 res-ml0 col-xs-12">Pay Reservation Fee</a></div>
                 
               </div>
  
-              <div class="popup-rgt pull-left col-md-6">
+              <div class="popup-rgt pull-left res-float res-left col-md-6 col-xs-12">
 
               <div class="f16"><h3 class="f22"><b>{{displayProcedure.catName}}</b></h3>
               <p><b>CPT :</b> <span>{{displayProcedure.cpt}}</span>&nbsp; <b>SKU :</b> <span>{{displayProcedure.sku}}</span></p>
@@ -156,7 +158,7 @@
                     <div class="paymnt-popm">
 
                             <ul>
-             <li ng-repeat="getRep in covered"><div class="mr10"><img src="images/tick.png" width="20"> </div><div class="pop-text"> {{getRep.data}} </div></li>
+             <li ng-repeat="getRep in covered"><div class="mr10 pop-icn"><img src="images/tick.png" width="20"> </div><div class="pop-text"> {{getRep.data}} </div></li>
                             </ul>
 
                     </div>
