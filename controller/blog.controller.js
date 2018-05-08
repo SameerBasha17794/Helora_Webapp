@@ -18,6 +18,7 @@
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
                     $scope.blogList = data.data['list'];
+                   
                     
                 }).error(function (data, status, headers, config) {
                     FlashService.Error("Something went wrong. Please try again");
