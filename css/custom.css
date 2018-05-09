@@ -809,7 +809,7 @@ body{font-size:16px;}
 
   
 /*Blog*/
-.blog-mn{background:url(../images/blog.jpg);position:relative;height:350px;background-size:cover;background-position:center center;background-repeat: no-repeat;}
+.blog-mn{background:url(../images/blog_banner.png);position:relative;height:350px;background-size:100% 180%;background-position:center center;background-repeat: no-repeat;}
 .title-text{position: relative;top:150px;font-size: 40px; color: #ffffff;line-height: 50px;font-weight: bold;font-family: 'Poppins', sans-serif; text-transform: uppercase;}
 .blog-section{padding:20px 0;}
 .content-box h3{font-weight:700;}
