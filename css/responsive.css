@@ -10,6 +10,7 @@
   .res-float{float:left !important;}
     .res-mt15{margin-top:15px !important;}
 	  	  .res-ml0{margin-left:0 !important;}
+		  .res-center{text-align:center;}
 	  .footer .col-md-4{padding-left:15px !important;margin-top:20px;}
 	  .tyup-com .col-md-3{margin:0;display:block;margin-bottom:20px;}
 }
@@ -28,29 +29,25 @@
 	   	.rp-popmn{width:auto !important;margin-left:0 !important;}
 }
 @media screen and (max-width: 479px) {
-
  #services .col-md-4{margin-bottom:50px;}
- 
  .easy-steps  .col-xs-12{margin-top:30px;}
  .res-none{display:none;}
  .thm-hd{margin-top:10px;}
   .select-btnwht{margin-top:20px;}
-
   p.res-font15{font-size:15px !important;}
   .select-pagepnt li span{display:inline-block;}
-
     .amt-sctn .col-md-6{padding:0 !important;}
 	  .amt-sctn .col-md-12{padding:0 !important;}
-	
-	 
 	  .adrs-sctn{width:14%;}
 	    .adrs-sctn1{width:75%;}
-	
 		.popup-lft{height:auto !important;padding-bottom:20px;}
 		.pop-icn{display:inline-block;vertical-align:top;width:10%;}
-        .pop-text{display:inline-block;vertical-align:top;width:88%;}
-		
+        .pop-text{display:inline-block;vertical-align:top;width:88%;}	
 .select-pagepnt span{display:inline-block;vertical-align:top;width:86% !important;}
 span.select-pagepnts1{width:12% !important;}
-		
+.register-res{left:0 !important;z-index:9999;margin:0 10px 0 10px;right:0 !important;}
+.register-res p{font-size:20px !important;}
+		.select-doctor-inner{padding-top:0 !important;}
+		.text-inline div{display:block !important;width:100% !important;}
+		.text-inline div img{padding-left:0 !important;width:auto;}
 }
