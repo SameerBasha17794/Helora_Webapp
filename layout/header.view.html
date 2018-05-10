@@ -1,12 +1,12 @@
 <div ng-controller="Header">
   <header class="header-area fixed-menu-bg">
-    <nav class="main-nav navbar navbar-expand-lg  header2">
+   <!-- <nav class="main-nav navbar navbar-expand-lg  header2">
       <div class="container">
         <h1><a class="navbar-brand kash-logo" ng-click="logoClick()"> <img class="img-responsive" src="images/healora-logo1.png" width="170" alt="abokash"></a> </h1>
-        <!-- Toggler/collapsibe Button -->
+    
         <button class="navbar-toggler  navbar-toggler-right" type="button" data-toggle="collapse"
                       data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span> </button>
-        <!-- Brand -->
+
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
           <ul id="navScrollspy" class="navbar-nav pull-right mtm5">
             <li class="nav-item"><a href="#/home" class="nav-link active">Home</a></li>
@@ -26,6 +26,60 @@
           </ul>
         </div>
       </div>
+    </nav> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<nav class="main-nav navbar navbar-expand-lg header2 navbar navbar-default role = "navigation">
+      <div class="container">
+       
+       
+	   <div class = "navbar-header">
+         <button type = "button" class = "navbar-toggle" 
+			 data-toggle = "collapse" data-target = "#example-navbar-collapse">
+			 <span class = "sr-only">Toggle navigation</span>
+			 <span class = "icon-bar"></span>
+			 <span class = "icon-bar"></span>
+			 <span class = "icon-bar"></span>
+		  </button>
+					  
+					  
+					  
+					   <h1><a class="navbar-brand kash-logo" ng-click="logoClick()"> <img class="img-responsive" src="images/healora-logo1.png" width="170" alt="abokash"></a> </h1>
+					  
+					  </div>
+
+        <div class="collapse navbar-collapse justify-content-end" id = "example-navbar-collapse">
+          <ul id="navScrollspy" class="navbar-nav pull-right mt10 res-float res-padding">
+            <li class="nav-item"><a href="#/home" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#/about" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="#/category" class="nav-link">Procedure</a></li>
+
+            <li class="nav-item" ng-if="!name" ><a href="#/register" class="nav-link">Register</a></li>
+            <li class="nav-item dropdown" ng-if="name"><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, {{name}} <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                 <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">Logout</a></li>
+                 <li class="nav-item" ng-if="name"><a href="#/history" class="nav-link">History</a></li>
+              </ul>
+            </li>
+
+            </li>
+           
+          </ul>
+        </div>
+      </div>
     </nav>
+	
+	
+	
+	
+	
+	
   </header>
 </div>

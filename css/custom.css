@@ -370,6 +370,9 @@ header.fixed-menu-bg {
 	color: #333;
 }
 
+.navbar-toggle{margin-top:18px;background:transparent;color:#fff;}
+.navbar-toggle:hover{background:transparent !important;}
+
 span.navbar-toggler-icon i.fa {
 	color: #fff;
 }
