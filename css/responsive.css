@@ -8,6 +8,7 @@
 	
 	  .res-left{text-align:left !important;}
   .res-float{float:left !important;}
+  .res-padding{padding-left:0 !important;}
     .res-mt15{margin-top:15px !important;}
 	  	  .res-ml0{margin-left:0 !important;}
 		  .res-center{text-align:center;}
@@ -50,4 +51,5 @@ span.select-pagepnts1{width:12% !important;}
 		.select-doctor-inner{padding-top:0 !important;}
 		.text-inline div{display:block !important;width:100% !important;}
 		.text-inline div img{padding-left:0 !important;width:auto;}
+
 }
