@@ -9,7 +9,7 @@
       <div class="inr-sectiondetail">
         <div class="detail-heading">
           <div class="col-md-6 col-xs-12"><img src="images/{{image}}" width="34">&nbsp;<b class="hd-select">{{catName}}</b></div>
-          <div class="col-md-6 col-xs-12 text-right res-left"><b>CPT:&nbsp; </b>{{cpt}} &nbsp;<b>SKU: &nbsp;</b>{{sku}}</div>
+          <div class="col-md-6 col-xs-12 text-right res-left"><b><!--CPT:&nbsp; </b>{{cpt}} &nbsp;--><b>SKU: &nbsp;</b>{{sku}}</div>
         </div>
         <p class="p15 res-font15">{{desc}}</p>
 		
@@ -56,11 +56,12 @@
 
   <div ng-hide="getId == ''">
     <div class="container">
-      <div class="row">
-        <h2 class="thm-hd">
+	 <h2 class="thm-hd">
           Choose your Doctor or Provider
           <div class="divider"></div>
         </h2>
+      <div class="row">
+       
         <br />
         <div ng-repeat="getDoc in doctorList">
           <div class="col-md-12 pt25 pb25 select-doctor">
@@ -74,7 +75,7 @@
               <br />
            <!--   <span><b>Experience:</b> 11yrs</span> -->
             </div>
-            <div class="col-md-4 mt65 text-right"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
+            <div class="col-md-4 mt65 text-right res-left res-mt15"> <a ng-click="selectPlan(getDoc.doctor_proc_id)" class="button select-btn">Select</a> </div>
           </div>
         </div>
       </div>

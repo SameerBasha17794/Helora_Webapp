@@ -132,7 +132,7 @@ ul.dropdown-menu{border:none;border-radius:0;left:10px;min-width:120px;}
 .inr-sectiondetail{border:1px solid #ccc;padding:20px;}
 .detail-heading{border-bottom:1px solid #ccc;padding-bottom:10px;overflow:hidden;font-size:18px;}
 .section-detail p{font-size:20px;}
-.select-btn{padding:15px 50px;border-radius:30px;background:transparent;border:1px solid #FF7600;text-align:right;font-size:18px;}
+.select-btn{padding:15px 40px;border-radius:30px;background:transparent;border:1px solid #FF7600;text-align:right;font-size:18px;}
 a.select-btn{color:#FF7600 !important;}
 a.select-btn:hover{background:#FF7600 !important;color:#fff !important; transition-duration: 0.7s;text-decoration:none !important;}
 .select-btnwht{padding:15px 40px;border-radius:30px;background:#FF7600;text-align:right;font-size:18px;}
@@ -370,6 +370,9 @@ header.fixed-menu-bg {
 	color: #333;
 }
 
+.navbar-toggle{margin-top:18px;background:transparent;color:#fff;}
+.navbar-toggle:hover{background:transparent !important;}
+
 span.navbar-toggler-icon i.fa {
 	color: #fff;
 }
@@ -500,6 +503,7 @@ span.speciality-active{color:#00b2e2;font-size:18px;font-weight:bold;}
 .rp-btn{margin-top:60px;}
 .rp-popmn{width:630px !important;margin-left:-160px;margin-top:7.75rem !important;}
 .reserve-btn{padding:10px;border-radius: 30px;background: transparent;color:#FF7600;border: 1px solid #FF7600;text-align:center;font-size: 18px;margin-left:25px;}
+.reserve-btn:hover{background:#FF7600;color:#fff;}
 .rf{color:#333;font-size:12px;}
 .clr-grey{color:#333 !important;}
 .rptxt h4{margin:0;}
@@ -809,7 +813,7 @@ body{font-size:16px;}
 
   
 /*Blog*/
-.blog-mn{background:url(../images/blog.jpg);position:relative;height:350px;background-size:cover;background-position:center center;background-repeat: no-repeat;}
+.blog-mn{background:url(../images/blog_banner.png);position:relative;height:350px;background-size:contain;background-position:center center;background-repeat: no-repeat;background-color:#00b0e1;}
 .title-text{position: relative;top:150px;font-size: 40px; color: #ffffff;line-height: 50px;font-weight: bold;font-family: 'Poppins', sans-serif; text-transform: uppercase;}
 .blog-section{padding:20px 0;}
 .content-box h3{font-weight:700;}
@@ -853,5 +857,4 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
 
 
 /*Responsive css*/
-.select-pagepnt span{display:inline-block;vertical-align:top;width:80%;}
-.select-pagepnts1{width:12%;}
+
