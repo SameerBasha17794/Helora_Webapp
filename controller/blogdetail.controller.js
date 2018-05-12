@@ -66,6 +66,30 @@
           UserService.setSpeciality(name);
           $location.path('/myspeciality');
         }
+
+        $scope.submitComment = function(desc) {
+          UserService.setCommment(desc);
+          if(UserService.GetId()==""){
+            addComment();
+          }
+        }
+
+        function addComment() {
+             var param = JSON.stringify({"url":key});
+                $http({
+                    url: getBlogDetail,
+                    method: "POST",
+                    data: param,
+                    headers: { 'Content-Type': 'application/json' }
+                }).success(function (data, status, headers, config) {
+                    $scope.detail = data.data;
+                    $scope.desc=$sce.trustAsHtml(data.data['desc']);
+                    
+                }).error(function (data, status, headers, config) {
+                    FlashService.Error("Something went wrong. Please try again");
+                });
+
+        }
     }
 
 })();
