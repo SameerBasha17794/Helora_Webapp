@@ -9,7 +9,6 @@
         var vm = this;
         // angular.element('.loading').css("display", "none");
        // angular.element('#element').css('height', '100px');
-
         initController();
         function initController() {
             // alert("fasfa")s;
