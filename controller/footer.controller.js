@@ -10,6 +10,10 @@
         $scope.footerLogo = function() {
           $window.scrollTo(0, 0);
         }
+        $scope.footLink = function(name) {
+          $window.scrollTo(0, 0);
+          $location.path('/'+name);
+        }
     }
 
 })();
