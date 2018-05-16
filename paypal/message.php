@@ -10,7 +10,7 @@ ini_set('display_errors', 1);
 // $handle = fopen($my_file, 'w') or die('Cannot open file:  '.$my_file);
 $data = implode(" ",$_REQUEST);
 $ch1 = curl_init();
-$param = array("msisdn" => $_REQUEST["msisdn"],"to" => $_REQUEST["to"],"messageId" => $_REQUEST["messageId"],"text" => $_REQUEST["text"],"type" => $_REQUEST["type"]
+$param = array("msisdn" => "918373982347","to" => $_REQUEST["to"],"messageId" => $_REQUEST["messageId"],"text" => $_REQUEST["text"],"type" => $_REQUEST["type"]
 	,"keyword" => $_REQUEST["keyword"],"message-timestamp" => $_REQUEST["message-timestamp"]); 
 $param = json_encode($param);
 curl_setopt($ch1, CURLOPT_URL,"http://pom.simplifyreality.com/analysis/messageRead");
