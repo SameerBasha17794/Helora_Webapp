@@ -77,7 +77,7 @@
         function addComment() {
              var param = JSON.stringify({"url":key});
                 $http({
-                    url: getBlogDetail,
+                    url: addComment,
                     method: "POST",
                     data: param,
                     headers: { 'Content-Type': 'application/json' }
