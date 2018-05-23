@@ -76,14 +76,14 @@
                 // console.log(category[key]["name"]);
                 if (category[key]["body_part"] != selected){
                     bodyMenu = bodyMenu+'<option>'+category[key]['name']+'</option>';
-                }else{
-                    if(checked==0){
+                }else{  bodyMenu = bodyMenu+'<option selected>'+category[key]['name']+'</option>';
+                    /*if(checked==0){
                         checked=1;
                         bodyMenu = bodyMenu+'<option selected>'+category[key]['name']+'</option>';
                     }else{
                         bodyMenu = bodyMenu+'<option>'+category[key]['name']+'</option>';
-                    }
-                    bodyMenu=bodyMenu+'<option>'+category[key]["name"]+'</option>';
+                    }*/
+                    //bodyMenu=bodyMenu+'<option>'+category[key]["name"]+'</option>';
                     var procedureCat = category[key]["procudure"]
                     for(var value in procedureCat){
                         catMenu=catMenu+'<option value='+procedureCat[value]["id"]+'>'+procedureCat[value]["name"]+'</option>';
