@@ -818,8 +818,8 @@ body{font-size:16px;}
 .blog-itemrgt ul li{list-style-type:none;display:inline-block;margin-right:5px;}
 .blog-itemhd h3{margin-top:0;}
 ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
-
 .blog-video{position:relative;top:70px;}
+.ptext{color:#00b2e2;font-size:18px !important;}
 
 
 /*about new*/
