@@ -31,6 +31,10 @@
           $window.scrollTo(0, 0);
           $location.path('/');
         }
+        $scope.headLink = function(name) {
+          $window.scrollTo(0, 0);
+          $location.path('/'+name);
+        }
         
     }
 })();
