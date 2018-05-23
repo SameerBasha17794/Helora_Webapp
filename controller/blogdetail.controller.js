@@ -4,15 +4,18 @@
         .module('app')
         .controller('BlogDetail', BlogDetail);
 
-    BlogDetail.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location','FlashService','$routeParams','$sce','AuthenticationService'];
-    function BlogDetail($cookieStore,UserService, $rootScope, $scope,$http,$location,FlashService,$routeParams,$sce,AuthenticationService) {
+    BlogDetail.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location','FlashService','$routeParams','$sce','AuthenticationService','$route','$window'];
+    function BlogDetail($cookieStore,UserService, $rootScope, $scope,$http,$location,FlashService,$routeParams,$sce,$window,AuthenticationService,$route) {
         var vm = this;
         vm.register = register;
         vm.login = login;
+        $scope.getId = UserService.GetId();
+        
+       // console.log(getId);
         $('.modal-backdrop').remove();
         $('.dropdown-backdrop').remove();
         $('#myModal').modal('hide');
-        $scope.detail = "";
+       $scope.detail = "";
         if($routeParams.key){
              var key = $routeParams.key;
              key = key.trim();
@@ -67,28 +70,34 @@
           $location.path('/myspeciality');
         }
 
-        $scope.submitComment = function(desc) {
-          UserService.setCommment(desc);
-          if(UserService.GetId()==""){
-            addComment();
-          }
-        }
+       $scope.addComment = function() {
+            console.log("ok");
 
-        function addComment() {
-             var param = JSON.stringify({"url":key});
+            var param = JSON.stringify({        "desc":vm.desc,
+                                                "url":key,
+                                                "user_id": UserService.GetId()
+                                                
+                                            });
+            console.log(param)
+                
                 $http({
                     url: addComment,
                     method: "POST",
                     data: param,
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
-                    $scope.detail = data.data;
-                    $scope.desc=$sce.trustAsHtml(data.data['desc']);
+                    console.log("inside")
+                    if (data['status']=="1"){
+                        console.log("here");
+                          
+                    }
+                     
+                    
                     
                 }).error(function (data, status, headers, config) {
                     FlashService.Error("Something went wrong. Please try again");
                 });
-
+                $location.path('/healthdetail/'+key);
         }
     }
 
