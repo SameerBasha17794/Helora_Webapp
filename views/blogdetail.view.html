@@ -26,13 +26,21 @@
              <div class="blog-itemrgt pull-right">
              
              <ul>
-             <li><a href="https://soundcloud.com/health-talks/"><img src="images/health_Talks.png" width="25"/></a></li>
+             	<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_linkedin"></a>
+<a class="a2a_button_copy_link"></a>
+</div>
+            <!--<li><a href="https://soundcloud.com/health-talks/"><img src="images/health_Talks.png" width="25"/></a></li>
              <li><a href="https://www.linkedin.com/in/thomasafarmer"><img src="images/linkedin.png" width="25"/></a></li>
              <li><a href="https://twitter.com/Healora/"><img src="images/twitter.png" width="25"/></a></li>
              <li><a href="https://www.quora.com/profile/Thomas-Farmer-9"><img src="images/quora.png" width="25"/></a></li>
              <li><a href="https://www.youtube.com/channel/UCQlX_ailOFtsQrDnuFfKuog"><img src="images/youtube.png" width="25"/></a></li>
              </ul> 
-             
+             -->
              </div>
 			 
 			 <br>
@@ -78,16 +86,26 @@
            
            <form class="comment-inner">
            
-          <textarea name="message" placeholder="Message" cols="100" rows="10"></textarea>
-		  <div class="clr">&nbsp;</div>
+          <textarea name="message" ng-model="vm.desc" placeholder="Message" cols="100" rows="10"></textarea>
+      <div class="clr">&nbsp;</div>
+            <div ng-hide="getId != ''" >
            <a  class="button form-send" data-toggle="modal" data-target="#myModal">Send</a>
-           <a  class="button form-send" data-toggle="modal" data-target="#myModal">Send</a>
-           
+           </div>
+
+           <div ng-hide="getId == ''" "vm.getId"=getId>
+            <a  class="button form-send" ng-click="addComment()">Send2</a>
+           </div>
+
            
            </form>
            
            </div>
+            <!--
+              ng-model="addComment()"
            
+             ng-model="vm.comment"
+             ng-click="addComment()"
+           -->
          
            
            
@@ -234,3 +252,11 @@
 
 <div class="clr">&nbsp;</div>
 <div ng-include="'layout/footer.view.html'"></div>
+
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.prioritize = ["linkedin", "twitter", "facebook", "copy_link"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
