@@ -1,0 +1,113 @@
+<style>
+	/* **************************** */
+	/* ***** All bundles page ***** */
+	/* **************************** */
+	.admin-all-bundles-list {
+		margin-top: 2%;
+	}
+
+	.admin-all-bundles-list>tbody>tr.table .admin-all-bundles-list-item {
+		margin-bottom: 2%;
+		padding: 10px;
+		display: block;
+		border-bottom: 1px solid #ddd;
+	}
+
+	.admin-all-bundles-list>tbody>tr>td>p {
+		margin: 0.4em 0 !important;
+	}
+
+	.admin-all-bundles-list-procedures {
+		margin: 0 !important;
+		padding-left: 35px;
+	}
+
+	.admin-all-bundles-list-procedures li, .admin-all-bundles-list-procedures a {
+		margin-bottom: 0px;
+		font-size: 12px;
+	}
+
+	/* Edit single bundle procedure */
+	#edit-single-procedure input.bundle-services-form-input, #edit-single-procedure select {
+		width: 60%;
+		height: 28px;
+	}
+
+	#edit-single-procedure label {
+		width: 100px;
+    	display: inline-block;
+    	font-size: 12px;
+	}
+
+
+	/* *********** */
+	/* Drag & Drop */
+	/* *********** */
+	.admin-all-bundles-list-item {
+		background-color: #ddd;
+	}
+
+	.admin-all-bundles-list-item>td {
+		padding: 10px;
+	}
+
+	/* **************************** */
+	/* ****** Add new bundle ****** */
+	/* **************************** */
+	.new-bundle-item-bundle-name {
+		margin-bottom: 20px !important;
+	    padding-bottom: 20px;
+	    border-bottom: 3px solid #ddd;
+	}
+
+	#add-new-bundle-table input.bundle-services-form-input, #add-new-bundle-table select {
+		width: 30%;
+		height: 36px;
+	}
+
+	#add-new-bundle-table>table>tbody>tr>tr, #add-new-bundle-table>table>tbody>tr>th, #edit-single-procedure>table>tbody>tr>tr, #edit-single-procedure>table>tbody>tr>th {
+		padding: 0px !important;
+	}
+
+	#add-new-bundle-table input.bundle-services-form-input, #add-new-bundle-table select {
+		width: 30%;
+	}
+
+	#add-new-bundle-table p, #edit-single-procedure p, #edit-bundle p {
+		margin: 2px 0;
+	}
+
+	.add-new-bundle-item {
+		margin: 20px 0;
+	    padding: 20px 0;
+	    border-bottom: 1px solid #ddd;
+	}
+
+	.remove_field {
+		color: red;
+	    font-size: 10px;
+	    display: block;
+	    text-align: right;
+	}
+
+	/* ***************************** */
+	/* ******* Update bundle ******* */
+	/* ***************************** */
+	.edit-bundle-container {
+		margin: 5% 0;
+	}
+
+	.edit-bundle-container label, #add-new-bundle-table label {
+		width: 100px;
+    	display: inline-block;
+	}
+
+	.delete-bundle-wrapper, .delete-bundle-procedure-wrapper {
+		color: #fb2c2c;
+		font-style: italic;
+	}
+
+	.edit-bundle-container input.bundle-services-form-input, .edit-bundle-container select {
+		width: 70%;
+	}
+</style>

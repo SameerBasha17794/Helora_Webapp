@@ -1,0 +1,106 @@
+span {color:#cda659;}
+a, a:hover {color:#cda659;}
+.navbar-default .navbar-nav>li.firstitem.current-menu-item>a, .navbar-default .navbar-nav>li.firstitem.current-menu-parent>a {background-color: #cda659;}
+.medicom-header.header-2:before {background:#cda659;}
+.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-item>a,.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-item>a:hover,.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-item>a:focus {background-color: #cda659;}
+.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a,.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a:hover,.header-2 .navbar-default .navbar-nav>.firstitem.current-menu-parent>a:focus {background-color: #cda659;}
+.header-2 .navbar-default .navbar-nav>.open>a,.header-2 .navbar-default .navbar-nav>.open>a:hover,.header-2 .navbar-default .navbar-nav>.open>a:focus {background-color: #cda659;}
+.header-2 .dropdown-menu>li>a:hover, .header-2 .dropdown-menu>li>a:focus {color: #cda659; }
+.header-2 .dropdown-menu {border-top: 4px solid #cda659;}
+.header-6 span {color: #cda659;}
+.header-6 .dropdown-menu {border-top: 4px solid #cda659;}
+.header-6 .dropdown-menu>li>a:hover, .header-6 .dropdown-menu>li>a:focus{color:#cda659;}
+.header-1 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {color:#cda659;}
+.header-1 .dropdown-menu{border-top: 6px solid #cda659;}
+.multi .dropdown-menu ul li a:hover {color:#cda659;}
+button.search-icon{background:#cda659;}
+.fullstyle{background:#cda659;}
+.asset-bg{background: #cda659;}
+.teal-highlight{background: #cda659;}
+.widget_nav_menu h2, .menu-widget h4 {background-color: #cda659;}
+.widget_nav_menu ul li:hover, .menu-widget ul li:hover {color: #cda659;}
+ul.sub-menu li:hover a,ul.sub-menu li:active{color:#cda659;}
+.b_asset {background: #cda659;}
+.b_blue {background: #cda659;}
+.b_inherit { background: #cda659;}
+.b_teal { background: #cda659;}
+.page-numbers>.current>a,.page-numbers>.current>span, .page-numbers>.current>a:hover, .page-numbers>.current>span:hover, .page-numbers>.current>a:focus, .page-numbers>.current>span:focus {background: #cda659;border-color: #cda659;}
+.page-numbers .current, .page-numbers .current:hover {background: #cda659;border-color: #cda659;}
+.list-none i {color:#cda659;}
+.tabs-classic .nav-tabs>li.active>a, .tabs-classic .nav-tabs>li.active>a:hover, .tabs-classic .nav-tabs>li.active>a:focus, .tabs-classic .nav-tabs>li>a:hover {color: #cda659;}
+.services-1:hover {background: #cda659;}
+.services-1:hover .holder {color: #cda659;}
+.services-2:hover {background: #cda659;}
+.services-2:hover .holder {background: #cda659;}
+.services-3:hover h4 {color: #cda659;}
+.services-3:hover .holder {background: #cda659;}
+.services-3:hover .caret {border-top: 12px solid #cda659;}
+.services-3:hover .b_inherit {background: #cda659;}
+.services-4 .holder{background-color: #cda659;}
+.services-5:hover .holder {color: #cda659;border: 6px double #cda659;}
+.medicom-table .back-inherit {background: #cda659;}
+.medicom-table .b_inherit {background: #cda659;}
+.asset-bg .call-to-action a{color: #cda659;}
+.carousel-container li:hover .latest-item  {-webkit-box-shadow: 0px 7px 0px #cda659;-moz-box-shadow:0px 7px 0px #cda659;box-shadow:0px 7px 0px #cda659;}
+.blog-widget .disabled {background: #cda659;}
+.blog-widget .slide-pagination a.disabled, .blog-widget .slide-pagination a:hover {background: #cda659;}
+.blog-wrapper .blog-title a:hover {color: #cda659;}
+.blog-wrapper .blog-thumbnail {position: relative; border-bottom: 4px solid #cda659;}
+.blog-wrapper .blog-type-logo {border-bottom: 5px solid #cda659;}
+.blog-wrapper .half-round {background: #cda659;}
+.blog-wrapper .social-widget a:hover .socialbox{background: #cda659;}
+.blog-style-2 .blog-date {background: #cda659;}
+.blog-wrapper .blog-categories ul li.current-cat a {color: #cda659;}
+.blog-wrapper .blog-categories ul li a:hover {color: #cda659;}
+.blog-style-two-column .blog-date {background: #cda659;}
+.blog-style-3 .blog-date {background: #cda659;}
+.sidebar-widget h2 {color: #cda659;}
+.sidebar-widget .popular-post h4 a:hover {color: #cda659;}
+.sidebar-widget ul li a:hover i {color: #cda659;}
+.sidebar-widget ul li a:hover {color: #cda659;}
+.sidebar-widget .medicom-tag-cloud ul li:hover a {border: 1px solid #cda659; color: #cda659;}
+.sidebar-widget .subscribe-mini .b_inherit {background: #cda659;}
+#wp-calendar tbody td a{color: #cda659;}
+#wp-calendar tfoot #next {color: #cda659;}
+#wp-calendar tfoot #prev {color: #cda659;}
+#wp-calendar tfoot #next a{color: #cda659;}
+#wp-calendar tfoot #prev a{color: #cda659;}
+.portfolio-style-1-filter ul li.active {color:#cda659;}
+.portfolio-style-1-filter ul li:hover {color: #cda659;}
+.portfolio-style-1 .portfolio-content {border-bottom: 4px solid #cda659;}
+.portfolio-style-1 .portfolio-meta:hover .holder {background: #cda659;}
+.portfolio-style-1 .portfolio-meta:hover .project-meta, .project-meta a:hover {color: #cda659;}
+.portfolio-style-3 .portfolio-item-3:hover {-webkit-box-shadow: 0px 7px 0px #cda659;-moz-box-shadow: 0px 7px 0px #cda659;box-shadow: 0px 7px 0px #cda659;}
+.html_carousel div.slide .blog-date {background: #cda659;}
+.html_carousel .nextprev .slidebox:hover {background: #cda659;}
+.contact-info .social-widget a:hover .socialbox{border-color:#cda659;}
+.contact-info .social-widget a:hover .socialbox i{color: #cda659;}
+.bottom-section {background: #cda659;}
+footer h4 {position: relative;color: #cda659;}
+footer h4 span {border-bottom: 1px solid #cda659;}
+.footer-widget ul li:hover:before {color: #cda659;}
+.footer-widget ul li a:hover {color: #cda659 ;}
+.footer-widget .twitter-widget .bird {color: #cda659;}
+.footer-widget .medicom-tag-cloud ul li:hover a { background: #cda659;}
+.footer-widget .social-widget a:hover .socialbox{border-color:#cda659;}
+.footer-widget .social-widget a:hover .socialbox i{color: #cda659;}
+.custom-categories ul li.active a { color: #cda659;}
+.custom-categories ul li a:hover { color: #cda659;}
+.wpb_accordion_header i {color: #cda659;}
+.flex-control-paging li a.flex-active {background: #cda659 !important;}
+.entry-title {color: #cda659 !important;}
+h4.wpb_pie_chart_heading {color: #cda659 !important;}
+.ui-datepicker-header{background: #cda659 !important;}
+.medicom-feature-list li i{background: #cda659 !important;}
+.wpb_toggle.wpb_toggle_title_active { color: #cda659 !important; }
+.wpb_toggle.wpb_toggle_title_active:before {background: #cda659 !important; }
+.ui-icon-triangle-1-s:before {color: #cda659 !important;}
+.ui-icon-triangle-1-e:before {color: #cda659 !important;}
+.tablepress tfoot th, .tablepress thead th {background-color: #cda659 !important;}
+.services_lists .services_list .list_icon:hover i{color:#cda659 !important; }
+h2.tablepress-table-name {color: #cda659 !important;}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{background-color: #cda659;}
+.item-box:hover {border-color: #cda659;}
+.titleBorder{color:#cda659}
+.bigP h1{color:#cda659}
+.services-4 .services-4-content a{color:#cda659}
