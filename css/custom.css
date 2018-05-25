@@ -644,7 +644,7 @@ body{font-size:16px;}
 .faq-block1{display:block;max-width:630px;padding:0;margin:0;}
 .faq-block2{display:block;max-width:630px;padding:0;margin:0;}
 
-
+/*
 
 
 .ac-label {
@@ -731,7 +731,7 @@ body{font-size:16px;}
 .ac-sub-text {
   padding: 0 1em 0 2em;
 }
-.ac-label p{color:#9b9b9b;}
+.ac-label p{color:#9b9b9b;} */
 
 /*Loading Background*/
 .loading{height:100%;width:100%;position:fixed;background:rgba(0,0,0,0.5);top:0;right:0;left:0;z-index:10000;text-align: center;display: none;}
@@ -856,3 +856,62 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
     background-color: white;
     overflow: hidden;
 }
+
+
+
+
+/*FAQ*/
+.acc-style2 .acc-hd{cursor: pointer;
+    position: relative;
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid rgba(0,0,0,0.03);
+    padding: 10px 20px;
+    color: #1f2229;
+    border-radius: 2px;}
+	
+	.acc-style2 .acc-open, .acc-style2 .acc-close{right: 15px;
+    opacity: 0.5;
+    font-size: 18px;}
+	
+	
+	.acc-hd .acc-open, .acc-hd .acc-close{position: absolute; */
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 50%;}
+	
+	.acc-style2 .acc-block{    margin-bottom: 5px;}
+	
+	.rw, .flex-row{box-sizing: border-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;}
+	
+	.gt40{    margin-right: -20px;
+    margin-left: -20px;}
+	
+	.gt40>[class*="cl"], .gt40>[class*="col-"], .gt40>[class*="flex-col-"]{padding-right:20px;padding-left:20px;}
+	
+	.acc-style2 .active.acc-hd{background-color: #1f2229;
+    color: #fff;
+    border-radius: 2px 2px 0 0;}
+	
+	.acc-style2 .acc-content{    padding: 20px;
+    border: 1px solid rgba(0,0,0,0.03);
+    background-color: rgba(0,0,0,0.02);
+    border-radius: 0 0 2px 2px;}
+	
+	
+	
