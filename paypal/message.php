@@ -13,8 +13,8 @@ $ch1 = curl_init();
 $param = array("msisdn" => $_REQUEST["msisdn"],"to" => $_REQUEST["to"],"messageId" => $_REQUEST["messageId"],"text" => $_REQUEST["text"],"type" => $_REQUEST["type"]
 	,"keyword" => $_REQUEST["keyword"],"message-timestamp" => $_REQUEST["message-timestamp"]); 
 $param = json_encode($param);
-// curl_setopt($ch1, CURLOPT_URL,"http://pom.simplifyreality.com/analysis/messageRead");
-curl_setopt($ch1, CURLOPT_URL,"127.0.0.1:5000/analysis/messageRead");
+ curl_setopt($ch1, CURLOPT_URL,"http://pom.simplifyreality.com/analysis/messageRead");
+//curl_setopt($ch1, CURLOPT_URL,"127.0.0.1:5000/analysis/messageRead");
 curl_setopt($ch1, CURLOPT_POST, 1);
 curl_setopt($ch1, CURLOPT_POSTFIELDS,$param);
 curl_setopt($ch1, CURLOPT_RETURNTRANSFER, true);
