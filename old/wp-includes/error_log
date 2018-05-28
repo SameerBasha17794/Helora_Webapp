@@ -1,0 +1,5 @@
+[05-Jan-2017 13:17:30 Europe/Copenhagen] PHP Fatal error:  require(): Failed opening required 'ABSPATHWPINC/option.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/healora/public_html/wp-includes/functions.php on line 8
+[03-Mar-2017 16:20:57 Europe/Copenhagen] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/healora/public_html/wp-includes/rss-functions.php on line 8
+[09-Mar-2017 11:26:53 Europe/Copenhagen] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/healora/public_html/wp-includes/rss-functions.php on line 8
+[21-Mar-2017 09:02:08 Europe/Copenhagen] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/healora/public_html/wp-includes/registration-functions.php on line 7
+[22-Oct-2017 04:57:56 Europe/Copenhagen] PHP Fatal error:  Call to undefined function _deprecated_file() in /home/healora/public_html/wp-includes/registration-functions.php on line 7
