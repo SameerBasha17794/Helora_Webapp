@@ -1,1 +1,1 @@
-test
+messageId='m-hytnbofnehi6nczr3dj3cni', from='+13102799918', eventType='sms', text='What's Simplify reality ', time='2018-05-23T17:46:31Z', to='+12482707727', state='received', messageUri='https://api.catapult.inetwork.com/v1/users/u-ggbvdtrc2ry2mocczh6m43a/messages/m-hytnbofnehi6nczr3dj3cni', applicationId='a-lo7gxl7ocwajm4fb42udi7i', direction='in'
