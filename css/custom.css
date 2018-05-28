@@ -462,7 +462,7 @@ span.navbar-toggler-icon i.fa {
 /*Procedure1*/
 .hd-procedure1{margin-top:85px;}
 .product-mn{position:relative;}
-.pw-circle{position: absolute;cursor: pointer;opacity: 0.4;width: 26px;height: 26px;border:2px solid #FFF;border-radius: 50%;background-color:#00b2e2;
+.pw-circle{position: absolute;cursor: pointer;opacity: 0.4;width: 23px;height: 23px;border:2px solid #FFF;border-radius: 50%;background-color:#00b2e2;
     z-index: 1000;}
 /*.modal-content{width:60% !important;}
 .modal-header{border-top:4px solid #00b2e2;}
@@ -866,7 +866,7 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
     background-color: rgba(0,0,0,0.03);
     border: 1px solid rgba(0,0,0,0.03);
     padding: 10px 20px;
-    color: #00b2e2;
+    color: #1f2229;
     border-radius: 2px;}
 	
 	.acc-style2 .acc-open, .acc-style2 .acc-close{right: 15px;
@@ -904,7 +904,7 @@ ul.blg-rgtscl li{display:inline-block;margin-right:10px;}
 	
 	.gt40>[class*="cl"], .gt40>[class*="col-"], .gt40>[class*="flex-col-"]{padding-right:20px;padding-left:20px;}
 	
-	.acc-style2 .active.acc-hd{background-color: #1f2229;
+	.acc-style2 .active.acc-hd{background-color: #00b2e2;
     color: #fff;
     border-radius: 2px 2px 0 0;}
 	
