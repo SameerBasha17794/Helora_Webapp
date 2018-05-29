@@ -9,18 +9,26 @@
         var vm = this;
         $scope.name = "";
         $window.scrollTo(0, 0);
+// alert(name);
         // alert($rootScope.globals.currentUser.username);
         loadCurrentUser();
         // alert(UserService.GetId());
         function loadCurrentUser() {
             if (UserService.GetId()!=""){
-                UserService.GetByUsername($rootScope.globals.currentUser.username)
+                if (typeof $rootScope.globals.currentUser !== 'undefined') {
+                    UserService.GetByUsername($rootScope.globals.currentUser.username)
                     .then(function (user) {
                     $scope.user = $rootScope.globals.currentUser.username;
                     $scope.id = UserService.GetId();
                     $scope.name = UserService.GetName();
+                    // alert(name);
                 });
+                }else{
+                    // alert("d");
+                    localStorage.clear();
+                }
             }
+
         }
         $scope.logout = function(id) {
           localStorage.clear();

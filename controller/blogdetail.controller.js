@@ -4,8 +4,8 @@
         .module('app')
         .controller('BlogDetail', BlogDetail);
 
-    BlogDetail.$inject = ['$cookieStore','UserService', '$rootScope','$scope','$http','$location','FlashService','$routeParams','$sce','AuthenticationService','$route','$window'];
-    function BlogDetail($cookieStore,UserService, $rootScope, $scope,$http,$location,FlashService,$routeParams,$sce,$window,AuthenticationService,$route) {
+    BlogDetail.$inject = ['$cookieStore','UserService','$route', '$rootScope','$scope','$http','$location','AuthenticationService','$routeParams','$sce'];
+    function BlogDetail($cookieStore,UserService, $route, $rootScope, $scope,$http,$location,AuthenticationService,$routeParams,$sce) {
         var vm = this;
         vm.register = register;
         vm.login = login;
@@ -71,10 +71,9 @@
         }
 
        $scope.addComment = function() {
-            console.log("ok");
-
             var param = JSON.stringify({        "desc":vm.desc,
                                                 "url":key,
+                                                "name": UserService.GetName(),
                                                 "user_id": UserService.GetId()
                                                 
                                             });
@@ -97,7 +96,7 @@
                 }).error(function (data, status, headers, config) {
                     FlashService.Error("Something went wrong. Please try again");
                 });
-                $location.path('/healthdetail/'+key);
+                $route.reload();
         }
     }
 
