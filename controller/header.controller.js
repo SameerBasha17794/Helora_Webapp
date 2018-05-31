@@ -35,6 +35,10 @@
           $route.reload();
           $location.path('/');
         }
+        $scope.edit = function(id) {
+          $route.reload();
+          $location.path('/edit/');
+        }
         $scope.logoClick = function(name) {
           $window.scrollTo(0, 0);
           $location.path('/');
