@@ -1,7 +1,12 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_METHOD} !OPTIONS
-RewriteRule ^(.*)$ index.html [L]
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)	#/$1
+    RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+    RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https 
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
