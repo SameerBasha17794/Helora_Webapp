@@ -21,6 +21,12 @@
                 controllerAs: 'vm',
                 title: 'Welcome'
             })
+            .when('/edit', {
+                controller: 'Edit_Profile',
+                templateUrl: 'views/edit_profile.view.html',
+                controllerAs: 'vm',
+                title: 'Edit profile'
+            })
             .when('/doctor', {
                 controller: 'DoctorController',
                 templateUrl: 'views/doctor.view.html',
