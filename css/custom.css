@@ -939,7 +939,7 @@ ul.tags-jobs{overflow:hidden;margin-top:20px;padding-left:0;margin-left:0;}
 .job-overview ul > li span{float:left;width:100%;font-size:14px;color:#888888;margin-top:4px;}
 .job-overview span{color:#888888;}
 .job-overview i{color:#00b2e2;font-size:18px;float:left;margin-right:10px;}
-
+.thm-clr{color:#00b2e2;}
 
 /*Edit Profile*/
 .edit-profile{margin:0 auto;float:none;border:1px solid #ccc;overflow:hidden;color:#657184;}
