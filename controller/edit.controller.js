@@ -17,8 +17,7 @@
                     data: param1,
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
-                    vm.email = data.data["email"];
-
+                    vm.email = data.data["email"]
                     vm.first_name = data.data["first_name"]
                     vm.last_name=data.data["last_name"]
                     vm.phone = data.data["phone"]
