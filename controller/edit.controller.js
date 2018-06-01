@@ -51,7 +51,7 @@
                                         "appartment":vm.appartment,
                                         "city":vm.city,
                                         "state":vm.state,
-                                        "zipcode":vm.zipcode,
+                                        "zipcode":parseInt(vm.zipcode),
                                         "company":vm.company,
 
                                      });
