@@ -37,10 +37,12 @@
         }
 
         $scope.instant = function() {
+            if (vm.zipcode=='') {
+                vm.zipcode=0;
+            }
             var param = JSON.stringify({
                                         "_id":UserService.GetId(),
                                         "email":vm.email,
-                                        
                                         "first_name":vm.first_name,
                                         "last_name":vm.last_name,
                                         "phone":vm.phone,
