@@ -53,3 +53,4 @@ var getDoctorProcedure = domain +"/product/getDoctorProcedure/";
 var getDoctors = domain +"/product/getDoctors/";
 var redirect = domainurl +"/paypal/payredirect.php";
 var forgot =domain +"/user/forgot/";
+var reset =domain +"/user/reset/";

@@ -1,0 +1,45 @@
+﻿<div ng-include="'layout/header.view.html'"></div>
+<div class="clr">&nbsp;</div>
+
+<div class="register-mn mt65">
+   <div class="container">
+    <div class="row">
+       <div class="register-cont reset-pwd col-md-5 col-md-offset-3 borderrm">
+        <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+
+         <p>Change your password</p>
+            <div class="tab-panel">
+             <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">LOGIN</label>
+    
+              
+              
+              
+  <section id="content1">
+     <div class="login">
+  
+        <input class="lgn-inpt" ng-model="vm.password" type="password" placeholder="Enter new password">
+  <br> 
+<input class="lgn-inpt" ng-model="vm.password2" type="password" placeholder="Re-Enter new password">
+<br>
+<input class="sign-in-btn" ng-click="instant()" type="submit" value="Submit">
+       
+       
+       </div>
+    
+  </section>
+    
+
+            
+            </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+  <div class="clr">&nbsp;</div>
+
+<div ng-include="'layout/footer.view.html'"></div>
