@@ -52,7 +52,7 @@
                                         "city":vm.city,
                                         "state":vm.state,
                                         "zipcode":parseInt(vm.zipcode),
-                                        "company":vm.company,
+                                        "company":vm.company
 
                                      });
             $http({

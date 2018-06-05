@@ -153,6 +153,12 @@
                 controllerAs: 'vm',
                 title: 'Speciality'
             })
+            .when('/docRegister', {
+                controller: 'DocRegisterController',
+                templateUrl: 'views/doc_register.view.html',
+                controllerAs: 'vm',
+                title: 'register'
+            })
             .when('/register', {
                 controller: 'RegisterController',
                 templateUrl: 'views/register.view.html',

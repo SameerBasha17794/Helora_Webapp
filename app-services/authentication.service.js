@@ -12,6 +12,8 @@
         service.SetCredentials = SetCredentials;
         service.ClearCredentials = ClearCredentials;
         service.Register = Register;
+        service.DocLogin = DocLogin;
+        service.DocRegister = DocRegister;
         var submitHit=0;
         return service;
         function Login(username, password, path, callback) {
@@ -63,7 +65,55 @@
                 });
             }
         }
-        
+         
+         function DocLogin(username, password, path, callback) {
+            if(submitHit==0){
+               submitHit=1
+                $http.post(docloginUrl, { password: password, user_name :username})
+                   .success(function (response) {
+                    submitHit=0;
+                        if(response.status){
+                            var data = response.data;
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            SetCredentials(username,password,json)
+                            if (path!=""){
+                                 $location.path(path);
+                            }else{
+                                $route.reload();
+                            }
+                        }else{
+                            FlashService.Error(response.message);
+                        }
+                   }).error(function (data, status, headers, config) {
+                    submitHit=0;
+                    FlashService.Error('Something went wrong. Please try after sometime.');
+                });
+            }
+        }
+function DocRegister(fname,lname,email,phone,password,fax,degree_title,mci,path,callback) {
+           if(submitHit==0){
+               submitHit=1
+                $http.post(docregisterUrl, { password: password,first_name:fname,last_name:lname,email:email,phone:phone,fax:fax,degree_title:degree_title,mci:mci, user_name:''})
+                   .success(function (response) {
+                    submitHit=0;
+                        if(response.status){
+                            var data = response.data;
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            SetCredentials(email,password,json)
+                            if (path!=""){
+                                 $location.path(path);
+                            }else{
+                                $route.reload();
+                            }   
+                        }else{
+                            FlashService.Error(response.message);
+                        }
+                   }).error(function (data, status, headers, config) {
+                    submitHit=0;
+                    FlashService.Error('Something went wrong. Please try after sometime.');
+                });
+            }
+        }
         
         function SetCredentials(username,password,UserData) {
             var authdata = Base64.encode(username);
@@ -187,3 +237,4 @@
     };
 
 })();
+

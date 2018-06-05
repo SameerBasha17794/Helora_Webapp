@@ -21,6 +21,10 @@
                     $scope.user = $rootScope.globals.currentUser.username;
                     $scope.id = UserService.GetId();
                     $scope.name = UserService.GetName();
+                    if (UserService.getDegree()!="") {
+                      $scope.degree=UserService.getDegree();
+
+                    }
                     // alert(name);
                 });
                 }else{
