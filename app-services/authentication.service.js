@@ -74,7 +74,7 @@
                     submitHit=0;
                         if(response.status){
                             var data = response.data;
-                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name, "degree":data.degree_title};
                             SetCredentials(username,password,json)
                             if (path!=""){
                                  $location.path(path);
@@ -98,7 +98,7 @@ function DocRegister(fname,lname,email,phone,password,fax,degree_title,mci,path,
                     submitHit=0;
                         if(response.status){
                             var data = response.data;
-                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name};
+                            var json  = {"email": data.email, "id": data.user_id,"fname":data.first_name, "degree" :data.degree_title};
                             SetCredentials(email,password,json)
                             if (path!=""){
                                  $location.path(path);
@@ -121,6 +121,9 @@ function DocRegister(fname,lname,email,phone,password,fax,degree_title,mci,path,
             UserService.setEmail(UserData.email);
             UserService.SetId(UserData.id);
             UserService.SetName(UserData.fname);
+            if (UserData.degree) {
+                UserService.SetDegree(UserData.degree);
+            }
             $cookieStore.put('username', UserData.fname);
             $cookieStore.put('forsubdomain','ok');
             $rootScope.globals = {
