@@ -1,0 +1,72 @@
+﻿<div ng-include="'layout/header.view.html'"></div>
+<div class="clr"></div>
+<div class="register-mn">
+  <div class="bg-img"><img src="images/register-bg.png" /></div>
+  <div class="container">
+    <div class="row">
+      <div class="register-cont register-res">
+        <div class= "lgn-inpt w90" ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+        <p>Sign In to your Account</p>
+        <div class="tab-panel">
+          <input id="tab1" type="radio" name="tabs" checked>
+          <label for="tab1">Doctor LOGIN</label>
+          <input id="tab2" type="radio" name="tabs">
+          <label for="tab2">Doctor SIGNUP</label>
+          <section id="content1">
+            <div class="login">
+              <form id="formlogin" name="form" ng-submit="vm.login()" role="form">
+                <input class="lgn-inpt" required ng-model="vm.uname" type="text" placeholder="Email *">
+                <br> 
+                <input id="password-field1" class="lgn-inpt" required ng-model="vm.password1" type="password" placeholder="Password *">
+                <span toggle="#password-field1" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="25" /></span>
+                <br>
+                <input class="sign-in-btn" type="submit" value="Sign In">
+              </form>
+            </div>
+          </section>
+          <section id="content2">
+            <div class="signup">
+              <form id="formregister" name="form" ng-submit="vm.register()" role="form">
+                <input class="lgn-inpt" required ng-model="vm.fname" type="text" placeholder="First Name *">
+                 <br>
+                <input required class="lgn-inpt" ng-model="vm.lname" type="text" placeholder="Last Name *">
+                <br>
+                <input required class="lgn-inpt" ng-model="vm.email" type="text" placeholder="Email *">
+                <br>
+                <input  class="lgn-inpt" ng-model="vm.phone" type="text" placeholder="xxx-xxx-xxxx">
+                <br>
+                <input  class="lgn-inpt" ng-model="vm.degree_title" type="text" placeholder="Degree_title *">
+                <br>
+                <input id="password-field" class="lgn-inpt" required ng-model="vm.password2" type="password" placeholder="Password *">
+                 <span toggle="#password-field" class="toggle-password field-icon"><img class="icn-eye" src="images/eye.png" width="25" /></span>
+                <br>
+                <input class="lgn-inpt" ng-model="vm.fax" type="text" placeholder="Fax No.">
+                <br>
+                <input class="sign-in-btn clr-2thm" type="submit" value="Sign Up">
+              </form>
+            </div>
+          </section>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+<div class="clr">&nbsp;</div>
+
+<div ng-include="'layout/footer.view.html'"></div>
+<script>
+
+$(".toggle-password").click(function() {
+
+  $(this).toggleClass("icn-eye");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+</script>

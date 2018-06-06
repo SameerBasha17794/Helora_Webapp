@@ -45,6 +45,8 @@
         service.getSearchLastName = getSearchLastName;
         service.setSearchDoc = setSearchDoc;
         service.getSearchDoc = getSearchDoc;
+        service.SetDegree = setDegree;
+        service.GetDegree = getDegree;
         
          
         return service;
@@ -280,7 +282,15 @@
             }
             return JSON.parse(localStorage.SearchDoc);
         }
-
+        function setDegree(Degree){
+             localStorage.Degree = JSON.stringify(Degree.toUpperCase());
+        }
+        function getDegree() {
+            if(!localStorage.Degree){
+                localStorage.SearchDoc = JSON.stringify([]);
+            }
+            return JSON.parse(localStorage.Degree);
+        }
         
        
     }

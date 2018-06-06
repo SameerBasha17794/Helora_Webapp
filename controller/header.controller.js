@@ -21,6 +21,12 @@
                     $scope.user = $rootScope.globals.currentUser.username;
                     $scope.id = UserService.GetId();
                     $scope.name = UserService.GetName();
+                    $scope.Doc=0;
+                    if (UserService.GetDegree()!="") {
+                      $scope.Doc=1;
+                      $scope.degree=UserService.GetDegree();
+
+                    }
                     // alert(name);
                 });
                 }else{
@@ -36,7 +42,8 @@
           $location.path('/');
         }
         $scope.edit = function(id) {
-          $route.reload();
+          $window.scrollTo(0, 0);
+          //$route.reload();
           $location.path('/edit/');
         }
         $scope.logoClick = function(name) {

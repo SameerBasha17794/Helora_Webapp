@@ -48,6 +48,7 @@
                         $scope.savingPercent = data.data['savingPercent'];
                         $scope.sku = data.data['sku'];
                         $scope.doctorList = data.data['doctorPriceList'];
+                        // alert(data.data['doctorPriceList']);
                     }else{
                         // alert("here");
                         $location.path('/norecord');

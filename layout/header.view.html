@@ -61,15 +61,21 @@
             <li class="nav-item"><a ng-click="headLink('home')" class="nav-link active">Home</a></li>
             <li class="nav-item"><a ng-click="headLink('about')" class="nav-link">About Us</a></li>
             <li class="nav-item"><a ng-click="headLink('procedure')" class="nav-link">Procedure</a></li>
-
             <li class="nav-item" ng-if="!name" ><a ng-click="headLink('register')" class="nav-link">Register</a></li>
-            <li class="nav-item dropdown" ng-if="name"><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, {{name}} <span class="caret"></span></a>
+            <li class="nav-item dropdown" ng-if="Doc==0" ng-if="name" ><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, {{name}} <span class="caret"></span></a>
               <ul class="dropdown-menu">
                  <li class="nav-item" ng-click="edit()" ng-if="name"><a class="nav-link">Edit Profile</a></li>
                  <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">Logout</a></li>
                  <li class="nav-item" ng-if="name"><a ng-click="headLink('history')" class="nav-link">History</a></li>
               </ul>
             </li>
+            <!-- <li class="nav-item" ng-if="!name" ><a ng-click="headLink('docRegister')" class="nav-link">Practitioner Registration</a></li>
+            <li class="nav-item dropdown" ng-if="Doc==1" ng-if="name" ><a class="dropdown-toggle" data-toggle="dropdown"  href="" class="nav-link">Hello, DR. {{name}}({{degree}}) <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                 <li class="nav-item" ng-click="logout()" ng-if="name"><a class="nav-link">Logout</a></li>
+                  <li class="nav-item" ng-if="name"><a ng-click="headLink('history')" class="nav-link">History</a></li> 
+              </ul>
+            </li> -->
            
           </ul>
         </div>

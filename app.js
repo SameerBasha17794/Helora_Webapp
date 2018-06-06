@@ -93,6 +93,12 @@
                 controllerAs: 'vm',
                 title: 'Forgot'
             })
+            .when('/reset/:key', {
+                controller: 'ResetController',
+                templateUrl: 'views/reset.view.html',
+                controllerAs: 'vm',
+                title: 'Reset'
+            })
             .when('/contact', {
                 controller: 'ContactController',
                 templateUrl: 'views/contact.view.html',
@@ -146,6 +152,12 @@
                 templateUrl: 'views/speciality.view.html',
                 controllerAs: 'vm',
                 title: 'Speciality'
+            })
+            .when('/docRegister', {
+                controller: 'DocRegisterController',
+                templateUrl: 'views/doc_register.view.html',
+                controllerAs: 'vm',
+                title: 'register'
             })
             .when('/register', {
                 controller: 'RegisterController',
