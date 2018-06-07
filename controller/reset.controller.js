@@ -28,7 +28,7 @@
                     }else{
                         $scope.reset = 0;
                     }
-                   //$location.path('/register');
+                   // $location.path('/reset/key');
                 }).error(function (data, status, headers, config) {
                    FlashService.Error("Something went wrong. Please try again");   
                 });
@@ -49,7 +49,7 @@
                     data: param,
                     headers: { 'Content-Type': 'application/json' }
                 }).success(function (data, status, headers, config) {
-                    FlashService.Error("You have successfully changed password");
+                    FlashService.success("You have successfully changed password");
                    $location.path('/register');
                 }).error(function (data, status, headers, config) {
                    FlashService.Error("Something went wrong. Please try again");   
