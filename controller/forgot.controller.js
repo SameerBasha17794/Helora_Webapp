@@ -10,6 +10,8 @@
         initController();
         
         function initController() {
+            $('.modal-backdrop').remove();
+        $('.dropdown-backdrop').remove();            
                 
 
         }
