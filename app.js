@@ -39,6 +39,12 @@
                 controllerAs: 'vm',
                 title: 'Welcome'
             })
+            .when('/provider-register', {
+                controller: 'ProviderController',
+                templateUrl: 'views/provider.view.html',
+                controllerAs: 'vm',
+                title: 'Provider-register'
+            })
             .when('/listdoc', {
                 controller: 'ListDoc',
                 templateUrl: 'views/listdoc.view.html',
