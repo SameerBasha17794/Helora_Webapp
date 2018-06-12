@@ -156,6 +156,8 @@ a.select-btnwht:hover{background:#db6601 !important;color:#fff !important;text-d
 .pl70{padding-left:70px !important;}
 
 /*Index Header*/
+.provider-header{background:#FF7600;color:#fff;padding:10px;border-radius:5px;margin-left:25px;}
+.provider-header:hover{background:#db6601; transition: transform .2s;}
 ul.nav li a:hover{background:transparent !important;color:#00b2e2 !important;}
 .navbar{border-radius:0;}
 .hero-area {
@@ -948,5 +950,6 @@ ul.tags-jobs{overflow:hidden;margin-top:20px;padding-left:0;margin-left:0;}
 .edit-profile input {padding:10px 10px;width:100%;border:1px solid #e4e8ee;}
 .save{background:#FF7600;border-radius:5px;color:#fff;padding:10px 10px;clear:both;float:right;width:30% !important;}
 
-
+/*Doctor Provider*/
+.doctor-provider{font-size:24px;}
 	
